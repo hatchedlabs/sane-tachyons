@@ -37,7 +37,8 @@ Key changes are:
 Future probable changes are:
 
 - Toggle-able variable font support
-- CSS builds
+- A dev friendly way to tailor the variables to each project
+- A dev friendly way to add their custom base to each project
 
 ---
 
