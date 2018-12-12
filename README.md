@@ -1,6 +1,12 @@
-# Hatched Tachyons
+# Sane Tachyons
 
-This is a fork of Tachyons.
+This is a fork of Tachyons. It is sane.
+
+Therefore, it is called `sane-tachyons`.
+
+```bash
+yarn add sane-tachyons # or `npm install sane-tachyons`
+```
 
 Tachyons gives us:
 
@@ -32,3 +38,7 @@ Future probable changes are:
 
 - Toggle-able variable font support
 - CSS builds
+
+---
+
+MIT Licence

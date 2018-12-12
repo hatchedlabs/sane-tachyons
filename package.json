@@ -1,0 +1,10 @@
+{
+  "name": "sane-tachyons",
+  "version": "0.1.0",
+  "description": "Tachyons, but marginally more coherent",
+  "main": "index.js",
+  "repository": "https://github.com/hatchedlabs/tachyons.git",
+  "author": "Tom Golden <tom@hatchedlabs.com>",
+  "license": "MIT",
+  "private": false
+}
