@@ -1,0 +1,52 @@
+// center
+.bgp-c {
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+// top
+.bgp-t {
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+// right
+.bgp-r {
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+// bottom
+.bgp-b {
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+// left
+.bgp-l {
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+@media #{$breakpoint-large} {
+  .bgp-c-l {
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .bgp-t-l {
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
+  .bgp-r-l {
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
+
+  .bgp-b-l {
+    background-repeat: no-repeat;
+    background-position: bottom center;
+  }
+
+  .bgp-l-l {
+    background-repeat: no-repeat;
+    background-position: center left;
+  }
+}

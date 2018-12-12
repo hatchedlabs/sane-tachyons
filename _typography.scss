@@ -1,0 +1,33 @@
+// you may also be looking for _type-scale
+
+.indent {
+  text-indent: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.small-caps {
+  font-variant: small-caps;
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media #{$breakpoint-large} {
+  .indent-l {
+    text-indent: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .small-caps-l {
+    font-variant: small-caps;
+  }
+  .truncate-l {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

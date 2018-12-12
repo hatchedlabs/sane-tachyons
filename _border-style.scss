@@ -1,0 +1,35 @@
+/*
+Modifiers:
+-none   = none 
+-dotted = dotted
+-dashed = dashed
+-solid  = solid
+ */
+
+.b-dotted {
+  border-style: dotted;
+}
+.b-dashed {
+  border-style: dashed;
+}
+.b-solid {
+  border-style: solid;
+}
+.b-none {
+  border-style: none;
+}
+
+@media #{$breakpoint-large} {
+  .b-dotted-l {
+    border-style: dotted;
+  }
+  .b-dashed-l {
+    border-style: dashed;
+  }
+  .b-solid-l {
+    border-style: solid;
+  }
+  .b-none-l {
+    border-style: none;
+  }
+}

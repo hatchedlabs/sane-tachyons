@@ -1,0 +1,21 @@
+// This will need to be trimmed down to probably one or two effects
+// after the design system is finalised
+
+// causes pointer when item is hovered upon
+.pointer {
+  cursor: pointer;
+}
+
+.underline-hover:hover {
+  text-decoration: underline;
+}
+
+@media #{$breakpoint-large} {
+  .pointer-l {
+    cursor: pointer;
+  }
+
+  .underline-hover-l:hover {
+    text-decoration: underline;
+  }
+}

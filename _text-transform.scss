@@ -1,0 +1,27 @@
+.ttc {
+  text-transform: capitalize;
+}
+.ttl {
+  text-transform: lowercase;
+}
+.ttu {
+  text-transform: uppercase;
+}
+.ttn {
+  text-transform: none;
+}
+
+@media #{$breakpoint-large} {
+  .ttc-l {
+    text-transform: capitalize;
+  }
+  .ttl-l {
+    text-transform: lowercase;
+  }
+  .ttu-l {
+    text-transform: uppercase;
+  }
+  .ttn-l {
+    text-transform: none;
+  }
+}

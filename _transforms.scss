@@ -1,0 +1,7 @@
+.gpu-accel {
+  // avoid nesting these: https://wesleyhales.com/blog/2013/10/26/Jank-Busting-Apples-Home-Page/
+  -webkit-transform: rotateZ(360deg);
+  transform: rotateZ(360deg);
+}
+
+// some translates to come here

@@ -1,0 +1,24 @@
+// this will not exist when a complete typography file is set up
+// modular typography css doesn't make sense in the context of a style guide
+
+.lh-solid {
+  line-height: $line-height-solid;
+}
+.lh-title {
+  line-height: $line-height-title;
+}
+.lh-copy {
+  line-height: $line-height-copy;
+}
+
+@media #{$breakpoint-large} {
+  .lh-solid-l {
+    line-height: $line-height-solid;
+  }
+  .lh-title-l {
+    line-height: $line-height-title;
+  }
+  .lh-copy-l {
+    line-height: $line-height-copy;
+  }
+}

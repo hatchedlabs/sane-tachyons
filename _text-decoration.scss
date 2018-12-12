@@ -1,0 +1,21 @@
+.strikethrough {
+  text-decoration: line-through;
+}
+.underline {
+  text-decoration: underline;
+}
+.no-underline {
+  text-decoration: none;
+}
+
+@media #{$breakpoint-large} {
+  .strikethrough-l {
+    text-decoration: line-through;
+  }
+  .underline-l {
+    text-decoration: underline;
+  }
+  .no-underline-l {
+    text-decoration: none;
+  }
+}

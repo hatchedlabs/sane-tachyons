@@ -1,0 +1,21 @@
+.word-normal {
+  word-break: normal;
+}
+.word-wrap {
+  word-break: break-all;
+}
+.word-nowrap {
+  word-break: keep-all;
+}
+
+@media #{$breakpoint-large} {
+  .word-normal-l {
+    word-break: normal;
+  }
+  .word-wrap-l {
+    word-break: break-all;
+  }
+  .word-nowrap-l {
+    word-break: keep-all;
+  }
+}

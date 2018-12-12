@@ -1,0 +1,8 @@
+.collapse {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.striped:nth-child(odd) {
+  background-color: map-get($colors, gray-98);
+}

@@ -1,0 +1,67 @@
+/*
+for global custom patterns that aren't scoped to a single component
+
+unopinionated styles also declared in _tachyons-reset
+
+all elements inherit fonts from their parents by default
+*/
+
+html {
+  // font declared in public/assets/fonts/fonts.css
+  // other html styles declared in _tachyons-reset
+  line-height: 1.5;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// utility functions
+
+.h-center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+.ml-auto {
+  margin-left: auto;
+}
+
+/*
+e.g.
+  <div className="h4 w4 relative overflow-y-hidden">
+    <img className="w-100 absolute-center" />
+  </div>
+*/
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0); // gpu accel if possible
+  transform: translate(-50%, -50%);
+}
+
+@media #{$breakpoint-large} {
+  .h-center-l {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .mr-auto-l {
+    margin-right: auto;
+  }
+  .ml-auto-l {
+    margin-left: auto;
+  }
+  .absolute-center-l {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    transform: translate(-50%, -50%);
+  }
+}

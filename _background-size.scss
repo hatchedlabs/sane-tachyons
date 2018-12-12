@@ -1,0 +1,15 @@
+.cover {
+  background-size: cover !important;
+}
+.contain {
+  background-size: contain !important;
+}
+
+@media #{$breakpoint-large} {
+  .cover-l {
+    background-size: cover !important;
+  }
+  .contain-l {
+    background-size: contain !important;
+  }
+}

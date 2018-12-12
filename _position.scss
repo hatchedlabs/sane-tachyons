@@ -1,0 +1,27 @@
+.static {
+  position: static;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.fixed {
+  position: fixed;
+}
+
+@media #{$breakpoint-large} {
+  .static-l {
+    position: static;
+  }
+  .relative-l {
+    position: relative;
+  }
+  .absolute-l {
+    position: absolute;
+  }
+  .fixed-l {
+    position: fixed;
+  }
+}
