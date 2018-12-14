@@ -1,27 +1,14 @@
-.ws-normal {
-  white-space: normal;
-}
-.nowrap {
-  white-space: nowrap;
-}
-.pre {
-  white-space: pre;
-}
-.pre-wrap {
-  white-space: pre-wrap;
-}
-
-@media #{$breakpoint-large} {
-  .ws-normal-l {
+@include breakify($breakpoints) {
+  #{bp()}ws-normal {
     white-space: normal;
   }
-  .nowrap-l {
+  #{bp()}nowrap {
     white-space: nowrap;
   }
-  .pre-l {
+  #{bp()}pre {
     white-space: pre;
   }
-  .pre-wrap-l {
+  #{bp()}pre-wrap {
     white-space: pre-wrap;
   }
 }

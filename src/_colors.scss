@@ -4,32 +4,28 @@ Tip:
   it will be set to the current text color.
 */
 
-/* Text colors */
-
-// e.g. .black   => color: map-get($colors, black);
-//      .primary => color: map-get($colors, primary);
-
-@each $name, $value in $colors {
-  .#{$name} {
-    color: $value;
+@include breakify($breakpoints) {
+  /* Text colors */
+  // e.g. .black   => color: map-get($colors, black);
+  //      .primary => color: map-get($colors, primary);
+  @each $name, $value in $colors {
+    #{bp()}#{$name} {
+      color: $value;
+    }
   }
-}
-
-.color-inherit {
-  color: inherit;
-}
-
-/* Background colors */
-
-// e.g. .bg-black   => background-color: map-get($colors, black);
-//.     .bg-primary => background-color: map-get($colors, primary);
-
-@each $name, $value in $colors {
-  .bg-#{$name} {
-    background-color: $value;
+  #{bp()}color-inherit {
+    color: inherit;
   }
-}
 
-.bg-inherit {
-  background-color: inherit;
+  /* Background colors */
+  // e.g. .bg-black   => background-color: map-get($colors, black);
+  //.     .bg-primary => background-color: map-get($colors, primary);
+  @each $name, $value in $colors {
+    #{bp()}bg-#{$name} {
+      background-color: $value;
+    }
+  }
+  #{bp()}bg-inherit {
+    background-color: inherit;
+  }
 }

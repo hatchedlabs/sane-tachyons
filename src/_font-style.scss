@@ -1,19 +1,8 @@
-.fs-i,
-em,
-i {
-  font-style: italic;
-}
-
-// n = normal
-.fs-n {
-  font-style: normal;
-}
-
-@media #{$breakpoint-large} {
-  .fs-i-l {
+@include breakify($breakpoints) {
+  #{bp()}fs-i {
     font-style: italic;
   }
-  .fs-normal-l {
+  #{bp()}fs-n {
     font-style: normal;
   }
 }

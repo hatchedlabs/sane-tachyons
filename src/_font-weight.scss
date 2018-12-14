@@ -1,21 +1,9 @@
-// no font weights < 400, poor accessibility
-
-// n = normal
-.fw-n {
-  font-weight: 400;
-}
-// b = bold
-.fw-b,
-strong,
-b {
-  font-weight: 600; // <- intentionally 600 and not 700
-}
-
-@media #{$breakpoint-large} {
-  .fw-n-l {
+@include breakify($breakpoints) {
+  // no font weights < 400, poor accessibility
+  #{bp()}fw-n {
     font-weight: 400;
   }
-  .fw-b-l {
-    font-weight: 600;
+  #{bp()}fw-b {
+    font-weight: 600; // <- intentionally 600 and not 700
   }
 }

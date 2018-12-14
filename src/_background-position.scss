@@ -1,51 +1,26 @@
-// center
-.bgp-c {
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-// top
-.bgp-t {
-  background-repeat: no-repeat;
-  background-position: top center;
-}
-// right
-.bgp-r {
-  background-repeat: no-repeat;
-  background-position: center right;
-}
-// bottom
-.bgp-b {
-  background-repeat: no-repeat;
-  background-position: bottom center;
-}
-// left
-.bgp-l {
-  background-repeat: no-repeat;
-  background-position: center left;
-}
-
-@media #{$breakpoint-large} {
-  .bgp-c-l {
+@include breakify($breakpoints) {
+  // center
+  #{bp()}bgp-c {
     background-repeat: no-repeat;
     background-position: center center;
   }
-
-  .bgp-t-l {
+  // top
+  #{bp()}bgp-t {
     background-repeat: no-repeat;
     background-position: top center;
   }
-
-  .bgp-r-l {
+  // right
+  #{bp()}bgp-r {
     background-repeat: no-repeat;
     background-position: center right;
   }
-
-  .bgp-b-l {
+  // bottom
+  #{bp()}bgp-b {
     background-repeat: no-repeat;
     background-position: bottom center;
   }
-
-  .bgp-l-l {
+  // left
+  #{bp()}bgp-l {
     background-repeat: no-repeat;
     background-position: center left;
   }

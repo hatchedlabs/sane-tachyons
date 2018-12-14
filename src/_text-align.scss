@@ -1,27 +1,14 @@
-.tl {
-  text-align: left;
-}
-.tr {
-  text-align: right;
-}
-.tc {
-  text-align: center;
-}
-.tj {
-  text-align: justify;
-}
-
-@media #{$breakpoint-large} {
-  .tl-l {
+@include breakify($breakpoints) {
+  #{bp()}tl {
     text-align: left;
   }
-  .tr-l {
+  #{bp()}tr {
     text-align: right;
   }
-  .tc-l {
+  #{bp()}tc {
     text-align: center;
   }
-  .tj-l {
+  #{bp()}tj {
     text-align: justify;
   }
 }

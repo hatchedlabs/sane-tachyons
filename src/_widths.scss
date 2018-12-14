@@ -1,139 +1,72 @@
-/* Width Scale */
-
-.w1 {
-  width: $width-1;
-}
-.w2 {
-  width: $width-2;
-}
-.w3 {
-  width: $width-3;
-}
-.w4 {
-  width: $width-4;
-}
-.w5 {
-  width: $width-5;
-}
-
-.w-10 {
-  width: 10%;
-}
-.w-20 {
-  width: 20%;
-}
-.w-25 {
-  width: 25%;
-}
-.w-30 {
-  width: 30%;
-}
-.w-33 {
-  width: 33%;
-}
-.w-34 {
-  width: 34%;
-}
-.w-40 {
-  width: 40%;
-}
-.w-50 {
-  width: 50%;
-}
-.w-60 {
-  width: 60%;
-}
-.w-70 {
-  width: 70%;
-}
-.w-75 {
-  width: 75%;
-}
-.w-80 {
-  width: 80%;
-}
-.w-90 {
-  width: 90%;
-}
-.w-100 {
-  width: 100%;
-}
-
-.w-third {
-  width: (100% / 3);
-}
-.w-two-thirds {
-  width: (100% / 1.5);
-}
-.w-auto {
-  width: auto;
-}
-
-@media #{$breakpoint-large} {
-  .w1-l {
+@include breakify($breakpoints) {
+  /* Width Scale */
+  #{bp()}w1 {
     width: $width-1;
   }
-  .w2-l {
+  #{bp()}w2 {
     width: $width-2;
   }
-  .w3-l {
+  #{bp()}w3 {
     width: $width-3;
   }
-  .w4-l {
+  #{bp()}w4 {
     width: $width-4;
   }
-  .w5-l {
+  #{bp()}w5 {
     width: $width-5;
   }
-  .w-10-l {
+
+  /* Width Percentages */
+  #{bp()}w-10 {
     width: 10%;
   }
-  .w-20-l {
+  #{bp()}w-20 {
     width: 20%;
   }
-  .w-25-l {
+  #{bp()}w-25 {
     width: 25%;
   }
-  .w-30-l {
+  #{bp()}w-30 {
     width: 30%;
   }
-  .w-33-l {
+  #{bp()}w-33 {
     width: 33%;
   }
-  .w-34-l {
+  #{bp()}w-34 {
     width: 34%;
   }
-  .w-40-l {
+  #{bp()}w-40 {
     width: 40%;
   }
-  .w-50-l {
+  #{bp()}w-50 {
     width: 50%;
   }
-  .w-60-l {
+  #{bp()}w-60 {
     width: 60%;
   }
-  .w-70-l {
+  #{bp()}w-70 {
     width: 70%;
   }
-  .w-75-l {
+  #{bp()}w-75 {
     width: 75%;
   }
-  .w-80-l {
+  #{bp()}w-80 {
     width: 80%;
   }
-  .w-90-l {
+  #{bp()}w-90 {
     width: 90%;
   }
-  .w-100-l {
+  #{bp()}w-100 {
     width: 100%;
   }
-  .w-third-l {
+
+  #{bp()}w-third {
     width: (100% / 3);
   }
-  .w-two-thirds-l {
+  #{bp()}w-two-thirds {
     width: (100% / 1.5);
   }
-  .w-auto-l {
+  #{bp()}w-auto {
     width: auto;
   }
 }

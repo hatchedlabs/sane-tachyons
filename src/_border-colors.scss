@@ -9,12 +9,14 @@ where you desire for the text and border colors to be different.
 
 // e.g. .b--primary => border-color: map-get($colors, primary);
 
-@each $name, $value in $colors {
-  .b--#{$name} {
-    border-color: $value;
+@include breakify($breakpoints) {
+  @each $name, $value in $colors {
+    #{bp()}b--#{$name} {
+      border-color: $value;
+    }
   }
-}
 
-.b--inherit {
-  border-color: inherit;
+  #{bp()}b--inherit {
+    border-color: inherit;
+  }
 }

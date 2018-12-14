@@ -19,49 +19,30 @@ body {
 }
 
 // utility functions
-
-.h-center {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.mr-auto {
-  margin-right: auto;
-}
-.ml-auto {
-  margin-left: auto;
-}
-
-/*
-e.g.
-  <div className="h4 w4 relative overflow-y-hidden">
-    <img className="w-100 absolute-center" />
-  </div>
-*/
-.absolute-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%, -50%, 0); // gpu accel if possible
-  transform: translate(-50%, -50%);
-}
-
-@media #{$breakpoint-large} {
-  .h-center-l {
+@include breakify($breakpoints) {
+  #{bp()}h-center {
     margin-right: auto;
     margin-left: auto;
   }
-  .mr-auto-l {
+
+  #{bp()}mr-auto {
     margin-right: auto;
   }
-  .ml-auto-l {
+  #{bp()}ml-auto {
     margin-left: auto;
   }
-  .absolute-center-l {
+
+  /*
+  e.g.
+    <div className="h4 w4 relative overflow-y-hidden">
+      <img className="w-100 absolute-center" />
+    </div>
+  */
+  #{bp()}absolute-center {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0); // gpu accel if possible
     transform: translate(-50%, -50%);
   }
 }

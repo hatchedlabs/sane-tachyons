@@ -1,27 +1,14 @@
-.static {
-  position: static;
-}
-.relative {
-  position: relative;
-}
-.absolute {
-  position: absolute;
-}
-.fixed {
-  position: fixed;
-}
-
-@media #{$breakpoint-large} {
-  .static-l {
+@include breakify($breakpoints) {
+  #{bp()}static {
     position: static;
   }
-  .relative-l {
+  #{bp()}relative {
     position: relative;
   }
-  .absolute-l {
+  #{bp()}absolute {
     position: absolute;
   }
-  .fixed-l {
+  #{bp()}fixed {
     position: fixed;
   }
 }

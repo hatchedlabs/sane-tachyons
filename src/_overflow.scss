@@ -1,79 +1,41 @@
-.overflow-visible {
-  overflow: visible;
-}
-.overflow-hidden {
-  overflow: hidden;
-}
-.overflow-scroll {
-  overflow: scroll;
-}
-.overflow-auto {
-  overflow: auto;
-}
-
-.overflow-x-visible {
-  overflow-x: visible;
-}
-.overflow-x-hidden {
-  overflow-x: hidden;
-}
-.overflow-x-scroll {
-  overflow-x: scroll;
-}
-.overflow-x-auto {
-  overflow-x: auto;
-}
-
-.overflow-y-visible {
-  overflow-y: visible;
-}
-.overflow-y-hidden {
-  overflow-y: hidden;
-}
-.overflow-y-scroll {
-  overflow-y: scroll;
-}
-.overflow-y-auto {
-  overflow-y: auto;
-}
-
-@media #{$breakpoint-large} {
-  .overflow-visible-l {
+@include breakify($breakpoints) {
+  #{bp()}overflow-visible {
     overflow: visible;
   }
-  .overflow-hidden-l {
+  #{bp()}overflow-hidden {
     overflow: hidden;
   }
-  .overflow-scroll-l {
+  #{bp()}overflow-scroll {
     overflow: scroll;
   }
-  .overflow-auto-l {
+  #{bp()}overflow-auto {
     overflow: auto;
   }
 
-  .overflow-x-visible-l {
+  #{bp()}overflow-x-visible {
     overflow-x: visible;
   }
-  .overflow-x-hidden-l {
+  #{bp()}overflow-x-hidden {
     overflow-x: hidden;
   }
-  .overflow-x-scroll-l {
+  #{bp()}overflow-x-scroll {
     overflow-x: scroll;
   }
-  .overflow-x-auto-l {
+  #{bp()}overflow-x-auto {
     overflow-x: auto;
   }
 
-  .overflow-y-visible-l {
+  #{bp()}overflow-y-visible {
     overflow-y: visible;
   }
-  .overflow-y-hidden-l {
+  #{bp()}overflow-y-hidden {
     overflow-y: hidden;
   }
-  .overflow-y-scroll-l {
+  #{bp()}overflow-y-scroll {
     overflow-y: scroll;
   }
-  .overflow-y-auto-l {
+  #{bp()}overflow-y-auto {
     overflow-y: auto;
   }
 }
+

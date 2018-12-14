@@ -1,21 +1,11 @@
-.strikethrough {
-  text-decoration: line-through;
-}
-.underline {
-  text-decoration: underline;
-}
-.no-underline {
-  text-decoration: none;
-}
-
-@media #{$breakpoint-large} {
-  .strikethrough-l {
+@include breakify($breakpoints) {
+  #{bp()}strikethrough {
     text-decoration: line-through;
   }
-  .underline-l {
+  #{bp()}underline {
     text-decoration: underline;
   }
-  .no-underline-l {
+  #{bp()}no-underline {
     text-decoration: none;
   }
 }

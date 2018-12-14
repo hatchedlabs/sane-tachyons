@@ -227,8 +227,26 @@ samp {
 button,
 input,
 select,
-textarea {
+textarea,
+::-moz-focus-inner {
   margin: 0;
+  border: 0;
+  padding: 0;
+}
+button,
+input:not([type]),
+input[type="text"],
+input[type="submit"],
+input[type="button"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="url"],
+input[type="search"],
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 /* Normalize stuff that tachyons cannot or should not touch */

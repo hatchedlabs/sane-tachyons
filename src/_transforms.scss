@@ -5,3 +5,13 @@
 }
 
 // some translates to come here
+@include breakify($breakpoints) {
+  .grow {
+    transform: scale(1.25, 1.25);
+    transform: scale3d(1.25, 1.25, 1);
+  }
+  .shrink {
+    transform: scale(0.8, 0.8);
+    transform: scale3d(0.8, 0.8, 1);
+  }
+}

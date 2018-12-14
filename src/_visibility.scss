@@ -1,17 +1,7 @@
 // invisible, but still readable for a screen reader
 
-.sr-only {
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  opacity: 0;
-  overflow: hidden;
-  pointer-events: none;
-  clip: rect(1px, 1px, 1px, 1px);
-}
-
-@media #{$breakpoint-large} {
-  .sr-only-l {
+@include breakify($breakpoints) {
+  #{bp()}sr-only {
     position: absolute !important;
     height: 1px;
     width: 1px;

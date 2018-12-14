@@ -1,21 +1,15 @@
-// This will need to be trimmed down to probably one or two effects
-// after the design system is finalised
+// probably will add some sweet stuff here soon
 
-// causes pointer when item is hovered upon
-.pointer {
-  cursor: pointer;
-}
-
-.underline-hover:hover {
-  text-decoration: underline;
-}
-
-@media #{$breakpoint-large} {
-  .pointer-l {
+@include breakify($breakpoints) {
+  #{bp()}cursor-pointer {
     cursor: pointer;
   }
 
-  .underline-hover-l:hover {
+  #{bp()}cursor-default {
+    cursor: default;
+  }
+
+  #{bp()}underline-hover:hover {
     text-decoration: underline;
   }
 }

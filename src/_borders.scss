@@ -11,53 +11,28 @@ Modifiers:
   n = none 
 */
 
-.ba {
-  border-style: solid;
-  border-width: 1px;
-}
-.bt {
-  border-top-style: solid;
-  border-top-width: 1px;
-}
-.br {
-  border-right-style: solid;
-  border-right-width: 1px;
-}
-.bb {
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-}
-.bl {
-  border-left-style: solid;
-  border-left-width: 1px;
-}
-.bn {
-  border-style: none;
-  border-width: 0;
-}
-
-@media #{$breakpoint-large} {
-  .ba-l {
+@include breakify($breakpoints) {
+  #{bp()}ba {
     border-style: solid;
     border-width: 1px;
   }
-  .bt-l {
+  #{bp()}bt {
     border-top-style: solid;
     border-top-width: 1px;
   }
-  .br-l {
+  #{bp()}br {
     border-right-style: solid;
     border-right-width: 1px;
   }
-  .bb-l {
+  #{bp()}bb {
     border-bottom-style: solid;
     border-bottom-width: 1px;
   }
-  .bl-l {
+  #{bp()}bl {
     border-left-style: solid;
     border-left-width: 1px;
   }
-  .bn-l {
+  #{bp()}bn {
     border-style: none;
     border-width: 0;
   }

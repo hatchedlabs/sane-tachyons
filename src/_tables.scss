@@ -1,3 +1,5 @@
-.striped:nth-child(odd) {
-  background-color: map-get($colors, gray-98);
+@include breakify($breakpoints) {
+  #{bp()}striped:nth-child(odd) {
+    background-color: map-get($colors, gray-98);
+  }
 }

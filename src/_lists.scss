@@ -1,17 +1,10 @@
-.bullets {
-  list-style: disc outside none;
-}
-
-// (default, only needed to override .bullets)
-.no-bullets {
-  list-style: disc outside none;
-}
-
-@media #{$breakpoint-large} {
-  .bullets-l {
+@include breakify($breakpoints) {
+  #{bp()}bullets {
     list-style: disc outside none;
   }
-  .no-bullets-l {
+
+  // (default, only needed to override .bullets)
+  #{bp()}no-bullets {
     list-style: disc outside none;
   }
 }

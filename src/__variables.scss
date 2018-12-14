@@ -4,7 +4,9 @@
 // .black => black text on all widths
 // .black.white-l => black text on mobile, white text on everything else
 
-$breakpoint-large: "screen and (min-width: 481px)";
+$breakpoints: (
+  l: "screen and (min-width: 481px)"
+);
 
 $colors: (
   white: #fff,

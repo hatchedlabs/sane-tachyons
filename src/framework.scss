@@ -1,13 +1,17 @@
 // Variables
 @import "__variables";
 
+// Functions
+@import "__functions";
+
+// Mixins
+@import "__mixins";
+
 // Custom reset for tachyons
 @import "_tachyons-reset";
 
 // Modules
-@import "_box-sizing";
 @import "_aspect-ratios";
-@import "_images";
 @import "_background-size";
 @import "_background-position";
 @import "_borders";
@@ -21,7 +25,6 @@
 @import "_display";
 @import "_font-style";
 @import "_font-weight";
-@import "_forms";
 @import "_heights";
 @import "_letter-spacing";
 @import "_line-height";

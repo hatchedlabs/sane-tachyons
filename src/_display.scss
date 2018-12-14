@@ -13,89 +13,51 @@ Modifiers:
  tcol  = table-column 
  tcolg = table-column-group 
 
-FLEXBOX is in separate file (_flexbox.scss)
+FLEXBOX is in separate file (_flexbox#{bp()}scss)
 */
 
-.dn {
-  display: none;
-}
-.di {
-  display: inline;
-}
-.db {
-  display: block;
-}
-.dib {
-  display: inline-block;
-}
-.dit {
-  display: inline-table;
-}
-.dt {
-  display: table;
-}
-.dtc {
-  display: table-cell;
-}
-.dt-row {
-  display: table-row;
-}
-.dt-row-group {
-  display: table-row-group;
-}
-.dt-column {
-  display: table-column;
-}
-.dt-column-group {
-  display: table-column-group;
-}
-
-/* 
-This will set table to full width and then 
-all cells will be equal width 
-*/
-.dt--fixed {
-  table-layout: fixed;
-  width: 100%;
-}
-
-@media #{$breakpoint-large} {
-  .dn-l {
+@include breakify($breakpoints) {
+  #{bp()}dn {
     display: none;
   }
-  .di-l {
+  #{bp()}di {
     display: inline;
   }
-  .db-l {
+  #{bp()}db {
     display: block;
   }
-  .dib-l {
+  #{bp()}dib {
     display: inline-block;
   }
-  .dit-l {
+  #{bp()}dit {
     display: inline-table;
   }
-  .dt-l {
+  #{bp()}dt {
     display: table;
   }
-  .dtc-l {
+  #{bp()}dtc {
     display: table-cell;
   }
-  .dt-row-l {
+  #{bp()}dt-row {
     display: table-row;
   }
-  .dt-row-group-l {
+  #{bp()}dt-row-group {
     display: table-row-group;
   }
-  .dt-column-l {
+  #{bp()}dt-column {
     display: table-column;
   }
-  .dt-column-group-l {
+  #{bp()}dt-column-group {
     display: table-column-group;
   }
 
-  .dt--fixed-l {
+  /* 
+  This will set table to full width and then 
+  all cells will be equal width 
+  */
+  #{bp()}dt--fixed {
     table-layout: fixed;
     width: 100%;
   }
 }
+

@@ -1,24 +1,11 @@
-// this will not exist when a complete typography file is set up
-// modular typography css doesn't make sense in the context of a style guide
-
-.tracked {
-  letter-spacing: $letter-spacing-1;
-}
-.tracked-tight {
-  letter-spacing: $letter-spacing-tight;
-}
-.tracked-mega {
-  letter-spacing: $letter-spacing-2;
-}
-
-@media #{$breakpoint-large} {
-  .tracked-l {
+@include breakify($breakpoints) {
+  #{bp()}tracked {
     letter-spacing: $letter-spacing-1;
   }
-  .tracked-tight-l {
+  #{bp()}tracked-tight {
     letter-spacing: $letter-spacing-tight;
   }
-  .tracked-mega-l {
+  #{bp()}tracked-mega {
     letter-spacing: $letter-spacing-2;
   }
 }

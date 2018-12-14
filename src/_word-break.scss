@@ -1,21 +1,11 @@
-.word-normal {
-  word-break: normal;
-}
-.word-wrap {
-  word-break: break-all;
-}
-.word-nowrap {
-  word-break: keep-all;
-}
-
-@media #{$breakpoint-large} {
-  .word-normal-l {
+@include breakify($breakpoints) {
+  #{bp()}word-normal {
     word-break: normal;
   }
-  .word-wrap-l {
+  #{bp()}word-wrap {
     word-break: break-all;
   }
-  .word-nowrap-l {
+  #{bp()}word-nowrap {
     word-break: keep-all;
   }
 }
