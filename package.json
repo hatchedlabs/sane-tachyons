@@ -6,5 +6,8 @@
   "repository": "https://github.com/hatchedlabs/tachyons.git",
   "author": "Tom Golden <tom@hatchedlabs.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
 }

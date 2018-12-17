@@ -1,11 +1,11 @@
 @include breakify($breakpoints) {
-  #{bp()}tracked {
-    letter-spacing: $letter-spacing-1;
+  #{bp()}ls-narrow {
+    letter-spacing: $letter-spacing-narrow;
   }
-  #{bp()}tracked-tight {
-    letter-spacing: $letter-spacing-tight;
+  #{bp()}ls-normal {
+    letter-spacing: $letter-spacing-normal;
   }
-  #{bp()}tracked-mega {
-    letter-spacing: $letter-spacing-2;
+  #{bp()}ls-wide {
+    letter-spacing: $letter-spacing-wide;
   }
 }

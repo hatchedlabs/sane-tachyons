@@ -92,25 +92,29 @@ $type-scale: (
   caption: (
     12px,
     16px
-  ) // for fineprint,
-  copyrights and credits only
+  )
+  /* caption is for fineprint, copyrights and credits only */
 );
 
-$letter-spacing-tight: -0.05em;
-$letter-spacing-1: 0.1em;
-$letter-spacing-2: 0.25em;
+$letter-spacing-narrow: -0.05em;
+$letter-spacing-normal: 0;
+$letter-spacing-wide: 0.25em;
 
 $line-height-solid: 1;
 $line-height-title: 1.25;
 $line-height-copy: 1.5;
 
-$spacing-extra-small: 0.25rem;
-$spacing-small: 0.5rem;
-$spacing-medium: 1rem;
-$spacing-large: 2rem;
-$spacing-extra-large: 4rem;
-$spacing-extra-extra-large: 8rem;
-$spacing-extra-extra-extra-large: 16rem;
+$spacing-base: 0.25rem;
+$spacing-levels: 7;
+$spacing-modifiers: (
+  'a': (''),
+  'h': ('-left', '-right'),
+  'v': ('-top', '-bottom'),
+  't': ('-top'),
+  'r': ('-right'),
+  'b': ('-bottom'),
+  'l': ('-left')
+);
 
 $spacing-copy-separator: 1.5em;
 

@@ -11,6 +11,8 @@
 @import "_tachyons-reset";
 
 // Modules
+@import "_type-scale";
+@import "_colors";
 @import "_aspect-ratios";
 @import "_background-size";
 @import "_background-position";
@@ -19,7 +21,6 @@
 @import "_border-radius";
 @import "_border-style";
 @import "_border-widths";
-@import "_colors";
 @import "_coordinates";
 @import "_flexbox";
 @import "_display";
@@ -41,7 +42,6 @@
 @import "_text-decoration";
 @import "_text-align";
 @import "_text-transform";
-@import "_type-scale";
 @import "_typography";
 @import "_visibility";
 @import "_white-space";
