@@ -6,11 +6,11 @@
 
 $breakpoints: (
   l: "screen and (min-width: 481px)"
-);
+) !default;
 
-$one-rem: 16px;
+$one-rem: 16px !default;
 
-$grid-columns: 12;
+$grid-columns: 12 !default;
 
 $colors: (
   white: #fff,
@@ -99,18 +99,18 @@ $type-scale: (
     16px
   )
   /* caption is for fineprint, copyrights and credits only */
-);
+) !default;
 
-$letter-spacing-narrow: -0.05em;
-$letter-spacing-normal: 0;
-$letter-spacing-wide: 0.25em;
+$letter-spacing-narrow: -0.05em !default;
+$letter-spacing-normal: 0 !default;
+$letter-spacing-wide: 0.25em !default;
 
-$line-height-solid: 1;
-$line-height-title: 1.25;
-$line-height-copy: 1.5;
+$line-height-solid: 1 !default;
+$line-height-title: 1.25 !default;
+$line-height-copy: 1.5 !default;
 
-$spacing-base: 0.25; /* in rem */
-$spacing-levels: 7;
+$spacing-base: 0.25 !default; /* in rem */
+$spacing-levels: 7 !default;
 $spacing-modifiers: (
   'a': (''),
   'h': ('-left', '-right'),
@@ -119,19 +119,19 @@ $spacing-modifiers: (
   'r': ('-right'),
   'b': ('-bottom'),
   'l': ('-left')
-);
+) !default;
 
-$height-base: 0.25rem; /* in rem */
-$height-levels: 7;
+$height-base: 0.25rem !default;
+$height-levels: 7 !default;
 
-$width-base: 0.25rem; /* in rem */
-$width-levels: 7;
+$width-base: 0.25rem !default;
+$width-levels: 7 !default;
 
-$max-width-base: 0.25rem; /* in rem */
-$max-width-levels: 10;
+$max-width-base: 0.25rem !default;
+$max-width-levels: 10 !default;
 
-$border-radius-base: 0.0625rem; /* in rem */
-$border-radius-levels: 6;
+$border-radius-base: 0.0625rem !default;
+$border-radius-levels: 6 !default;
 
-$border-width-base: 0.0625rem; /* in rem */
-$border-width-levels: 5;
+$border-width-base: 0.0625rem !default;
+$border-width-levels: 5 !default;
