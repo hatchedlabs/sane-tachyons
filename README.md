@@ -9,13 +9,13 @@ yarn add sane-tachyons # or `npm install sane-tachyons`
 ```
 
 ```scss
-/* (optional) define custom variables (see src/__variables.scss) */
+/* (optional) define project specific variables (see src/__variables.scss) */
 $grid-columns: 12;
 
 /* import sane-tachyons */
 @import "~sane-tachyons/sane-tachyons";
 
-/* (optional) obscure custom stuff */
+/* (optional) obscure project specific stuff */
 .fx-95a {
   flex: 9 5 auto;
 }
