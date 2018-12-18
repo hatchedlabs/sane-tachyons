@@ -10,7 +10,7 @@
 // Custom reset for tachyons
 @import "_tachyons-reset";
 
-// Modules
+/*!TACHYONS-START*/
 @import "_type-scale";
 @import "_colors";
 @import "_aspect-ratios";
@@ -48,5 +48,5 @@
 @import "_vertical-align";
 @import "_hovers";
 @import "_z-index";
-
-@import "__custom";
+@import "_utilities";
+/*!TACHYONS-END*/

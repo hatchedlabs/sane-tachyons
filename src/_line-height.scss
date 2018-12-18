@@ -1,3 +1,7 @@
+html, body {
+  line-height: $line-height-copy;
+}
+
 @include breakify($breakpoints) {
   #{bp()}lh-solid {
     line-height: $line-height-solid;
