@@ -2,7 +2,7 @@
 @include breakify($breakpoints) {
   @each $name, $value in $type-scale {
     #{bp()}#{$name} {
-      font-size: nth($value, 1);
+      font-size: #{nth($value, 1) / $one-rem}rem;
       line-height: (nth($value, 2) / nth($value, 1));
     }
   }

@@ -6,50 +6,22 @@
 
 @include breakify($breakpoints) {
   /* Height Scale */
-  #{bp()}h1 {
-    height: $height-1;
+  #{bp()}h0 {
+    height: 0;
   }
-  #{bp()}h2 {
-    height: $height-2;
-  }
-  #{bp()}h3 {
-    height: $height-3;
-  }
-  #{bp()}h4 {
-    height: $height-4;
-  }
-  #{bp()}h5 {
-    height: $height-5;
+  @for $i from 1 through $height-levels {
+    #{bp()}h#{$i} {
+      height: $height-base * pow(2, ($i - 1));
+    }
   }
 
-  /* Height Percentages - Based off of height of parent */
-  #{bp()}h-25 {
-    height: 25%;
-  }
-  #{bp()}h-50 {
-    height: 50%;
-  }
-  #{bp()}h-75 {
-    height: 75%;
-  }
   #{bp()}h-100 {
     height: 100%;
   }
-
   #{bp()}min-h-100 {
     min-height: 100%;
   }
 
-  /* Screen Height Percentage */
-  #{bp()}vh-25 {
-    height: 25vh;
-  }
-  #{bp()}vh-50 {
-    height: 50vh;
-  }
-  #{bp()}vh-75 {
-    height: 75vh;
-  }
   #{bp()}vh-100 {
     height: 100vh;
   }

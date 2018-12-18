@@ -1,36 +1,19 @@
 @include breakify($breakpoints) {
-  /* Max Width Percentages */
-  #{bp()}mw-100 {
-    max-width: 100%;
+  /* Max Width Scale */
+  #{bp()}mw0 {
+    max-width: 0;
+  }
+  @for $i from 1 through $max-width-levels {
+    #{bp()}mw#{$i} {
+      max-width: $max-width-base * pow(2, ($i - 1));
+    }
   }
 
-  /* Max Width Scale */
-  #{bp()}mw1 {
-    max-width: $max-width-1;
-  }
-  #{bp()}mw2 {
-    max-width: $max-width-2;
-  }
-  #{bp()}mw3 {
-    max-width: $max-width-3;
-  }
-  #{bp()}mw4 {
-    max-width: $max-width-4;
-  }
-  #{bp()}mw5 {
-    max-width: $max-width-5;
-  }
-  #{bp()}mw6 {
-    max-width: $max-width-6;
-  }
-  #{bp()}mw7 {
-    max-width: $max-width-7;
-  }
-  #{bp()}mw8 {
-    max-width: $max-width-8;
-  }
-  #{bp()}mw9 {
-    max-width: $max-width-9;
+  /* Percentage Max Widths */
+  @for $i from 1 through $grid-columns {
+    #{bp()}mw-#{$i}-#{$grid-columns} {
+      max-width: #{100% * $i / $grid-columns};
+    }
   }
 
   /* Max Width String Properties */

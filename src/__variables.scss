@@ -8,6 +8,10 @@ $breakpoints: (
   l: "screen and (min-width: 481px)"
 );
 
+$one-rem: 16px;
+
+$grid-columns: 12;
+
 $colors: (
   white: #fff,
 
@@ -56,6 +60,7 @@ $colors: (
 );
 
 // classname: (font-size in px, abs. line-height in px)
+// this gets turnt into rems
 $type-scale: (
   h1: (
     72px,
@@ -104,7 +109,7 @@ $line-height-solid: 1;
 $line-height-title: 1.25;
 $line-height-copy: 1.5;
 
-$spacing-base: 0.25rem;
+$spacing-base: 0.25; /* in rem */
 $spacing-levels: 7;
 $spacing-modifiers: (
   'a': (''),
@@ -116,39 +121,17 @@ $spacing-modifiers: (
   'l': ('-left')
 );
 
-$spacing-copy-separator: 1.5em;
+$height-base: 0.25rem; /* in rem */
+$height-levels: 7;
 
-$height-1: 1rem;
-$height-2: 2rem;
-$height-3: 4rem;
-$height-4: 8rem;
-$height-5: 16rem;
+$width-base: 0.25rem; /* in rem */
+$width-levels: 7;
 
-$width-1: 1rem;
-$width-2: 2rem;
-$width-3: 4rem;
-$width-4: 8rem;
-$width-5: 16rem;
+$max-width-base: 0.25rem; /* in rem */
+$max-width-levels: 10;
 
-$max-width-1: 1rem;
-$max-width-2: 2rem;
-$max-width-3: 4rem;
-$max-width-4: 8rem;
-$max-width-5: 16rem;
-$max-width-6: 32rem;
-$max-width-7: 48rem;
-$max-width-8: 64rem;
-$max-width-9: 96rem;
+$border-radius-base: 0.0625rem; /* in rem */
+$border-radius-levels: 6;
 
-$border-radius-1: 0.125rem;
-$border-radius-2: 0.25rem;
-$border-radius-3: 0.5rem;
-$border-radius-4: 1rem;
-$border-radius-circle: 100%;
-$border-radius-pill: 9999px;
-
-$border-width-1: 0.125rem;
-$border-width-2: 0.25rem;
-$border-width-3: 0.5rem;
-$border-width-4: 1rem;
-$border-width-5: 2rem;
+$border-width-base: 0.0625rem; /* in rem */
+$border-width-levels: 5;

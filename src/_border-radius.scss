@@ -7,23 +7,16 @@
   #{bp()}br-0 {
     border-radius: 0;
   }
-  #{bp()}br-1 {
-    border-radius: $border-radius-1;
-  }
-  #{bp()}br-2 {
-    border-radius: $border-radius-2;
-  }
-  #{bp()}br-3 {
-    border-radius: $border-radius-3;
-  }
-  #{bp()}br-4 {
-    border-radius: $border-radius-4;
+  @for $i from 1 through $border-radius-levels {
+    #{bp()}br-#{$i} {
+      border-radius: $border-radius-base * pow(2, ($i - 1));
+    }
   }
   #{bp()}br-100 {
-    border-radius: $border-radius-circle;
+    border-radius: 100%;
   }
   #{bp()}br-pill {
-    border-radius: $border-radius-pill;
+    border-radius: 9999px;
   }
   #{bp()}br-b {
     border-top-left-radius: 0;

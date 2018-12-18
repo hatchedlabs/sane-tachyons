@@ -1,50 +1,23 @@
-/*
-Base: 
-  bw = border-width 
-
-Modifiers: 
-  0 = 0 width border 
-  1 = 1st step in border-width scale 
-  2 = 2nd step in border-width scale 
-  3 = 3rd step in border-width scale 
-  4 = 4th step in border-width scale 
-  5 = 5th step in border-width scale 
-
-Media Query Extensions: 
-  -l  = large
-*/
-
 @include breakify($breakpoints) {
   #{bp()}bw0 {
     border-width: 0;
   }
-  #{bp()}bw1 {
-    border-width: $border-width-1;
+  @for $i from 1 through $border-width-levels {
+    #{bp()}bw#{$i} {
+      border-width: $border-width-base * pow(2, ($i - 1));
+    }
   }
-  #{bp()}bw2 {
-    border-width: $border-width-2;
-  }
-  #{bp()}bw3 {
-    border-width: $border-width-3;
-  }
-  #{bp()}bw4 {
-    border-width: $border-width-4;
-  }
-  #{bp()}bw5 {
-    border-width: $border-width-5;
-  }
-
-  /* Resets */
-  #{bp()}bt-0 {
+  /* turn off specific sides */
+  #{bp()}bt0 {
     border-top-width: 0;
   }
-  #{bp()}br-0 {
+  #{bp()}br0 {
     border-right-width: 0;
   }
-  #{bp()}bb-0 {
+  #{bp()}bb0 {
     border-bottom-width: 0;
   }
-  #{bp()}bl-0 {
+  #{bp()}bl0 {
     border-left-width: 0;
   }
 }
