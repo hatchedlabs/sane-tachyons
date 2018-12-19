@@ -60,7 +60,7 @@ Future probable changes are:
 
 ---
 
-## [Check out the docs!](./tree/master/docs)
+## [Check out the docs!](docs)
 
 ---
 
