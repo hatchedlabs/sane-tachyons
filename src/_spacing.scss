@@ -26,7 +26,7 @@ Modifiers:
     @for $i from 1 through $spacing-levels {
       #{bp()}p#{$modifier}#{$i} {
         @each $value in $values {
-          padding#{$value}: #{$spacing-base * pow(2, ($i - 1))}rem;
+          padding#{$value}: $spacing-base * pow(2, ($i - 1));
         }
       }
     }
@@ -40,7 +40,7 @@ Modifiers:
     @for $i from 1 through $spacing-levels {
       #{bp()}m#{$modifier}#{$i} {
         @each $value in $values {
-          margin#{$value}: #{$spacing-base * pow(2, ($i - 1))}rem;
+          margin#{$value}: $spacing-base * pow(2, ($i - 1));
         }
       }
     }
