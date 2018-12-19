@@ -41,6 +41,12 @@ and above:
 
 See it live: https://jsfiddle.net/n5u2wwjg/256247/
 
+## The default variables
+
+(with pretty colors)
+
+![](variables.png)
+
 ## The stylesheet
 
 (breakpoint modifier classes omitted for brevity)
