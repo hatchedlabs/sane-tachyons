@@ -1,8 +1,13 @@
 # Sane Tachyons Docs
 
-Here is the full stylesheet in pretty format.
+Here is the full CSS stylesheet in a pretty format. You can Cmd-F / Ctrl-F
+your way from here, for now. This file is generated during each commit, so
+you can trust it.
 
-Every single class below can be prefixed with breakpoint modifiers.
+Unless you're this guy:  
+![](https://i.kym-cdn.com/photos/images/newsfeed/000/885/519/eef.png)
+
+## Some notes and an example
 
 Tachyons is mobile first, so `.black` will be black on all
 viewport widths, until other classes appear that override this behavior
@@ -34,9 +39,9 @@ and above:
 </div>
 ```
 
-Check out this example: https://jsfiddle.net/n5u2wwjg/256247/
+See it live: https://jsfiddle.net/n5u2wwjg/256247/
 
-### All classes
+## The stylesheet
 
 (breakpoint modifier classes omitted for brevity)
 
