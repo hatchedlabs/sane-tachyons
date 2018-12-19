@@ -34,6 +34,8 @@ and above:
 </div>
 ```
 
+Check out this example: https://jsfiddle.net/n5u2wwjg/256247/
+
 ### All classes
 
 (breakpoint modifier classes omitted for brevity)
