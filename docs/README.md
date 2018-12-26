@@ -917,19 +917,19 @@ Modifiers:
   min-height: 1px;
 }
 
-.fx-1-1-0 {
+.fx-110 {
   flex: 1 1 0;
 }
 
-.fx-1-0-0 {
+.fx-100 {
   flex: 1 0 0;
 }
 
-.fx-0-1-0 {
+.fx-010 {
   flex: 0 1 0;
 }
 
-.fx-0-0-0 {
+.fx-000 {
   flex: 0 0 0;
 }
 

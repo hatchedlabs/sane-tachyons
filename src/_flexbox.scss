@@ -38,16 +38,16 @@
     min-width: 1px; // needed to fix chrome 44 bug
     min-height: 1px; // needed to fix chrome 44 bug
   }
-  #{bp()}fx-1-1-0 {
+  #{bp()}fx-110 {
     flex: 1 1 0;
   }
-  #{bp()}fx-1-0-0 {
+  #{bp()}fx-100 {
     flex: 1 0 0;
   }
-  #{bp()}fx-0-1-0 {
+  #{bp()}fx-010 {
     flex: 0 1 0;
   }
-  #{bp()}fx-0-0-0 {
+  #{bp()}fx-000 {
     flex: 0 0 0;
   }
 
