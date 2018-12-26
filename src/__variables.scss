@@ -61,23 +61,23 @@ $colors: (
 // classname: (font-size in px, abs. line-height in px)
 // this gets turnt into rems
 $type-scale: (
-  h1: (
+  header-1: (
     72px,
     80px
   ),
-  h2: (
+  header-2: (
     48px,
     64px
   ),
-  h3: (
+  header-3: (
     32px,
     40px
   ),
-  h4: (
+  header-4: (
     24px,
     32px
   ),
-  h5: (
+  header-5: (
     20px,
     32px
   ),
