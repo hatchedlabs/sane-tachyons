@@ -1297,7 +1297,7 @@ html, body {
 }
 
 /* Max Width Scale */
-.mw0 {
+.mw0, .mw-0 {
   max-width: 0;
 }
 
@@ -1390,13 +1390,17 @@ html, body {
   max-width: 100%;
 }
 
+.mw-100 {
+  max-width: 100%;
+}
+
 /* Max Width String Properties */
 .mw-none {
   max-width: none;
 }
 
 /* Width Scale */
-.w0 {
+.w0, .w-0 {
   width: 0;
 }
 
@@ -1474,6 +1478,10 @@ html, body {
 }
 
 .w-12-12 {
+  width: 100%;
+}
+
+.w-100 {
   width: 100%;
 }
 

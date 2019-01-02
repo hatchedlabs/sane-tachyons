@@ -1,6 +1,6 @@
 @include breakify($breakpoints) {
   /* Max Width Scale */
-  #{bp()}mw0 {
+  #{bp()}mw0, #{bp()}mw-0 {
     max-width: 0;
   }
   @for $i from 1 through $max-width-levels {
@@ -14,6 +14,9 @@
     #{bp()}mw-#{$i}-#{$grid-columns} {
       max-width: #{100% * $i / $grid-columns};
     }
+  }
+  #{bp()}mw-100 {
+    max-width: 100%;
   }
 
   /* Max Width String Properties */
