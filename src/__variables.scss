@@ -56,7 +56,7 @@ $colors: (
   error-faded: #FCEEED,   // if this is a bg, use $error or $black text
   info: #3d70b2,          // if this is a bg, use $white text
   info-faded: #EBF0F7     // if this is a bg, use $info or $black text
-);
+) !default;
 
 // classname: (font-size in px, abs. line-height in px)
 // this gets turnt into rems
