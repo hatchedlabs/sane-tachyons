@@ -1,5 +1,11 @@
 # v3
 
+## Better css reset
+
+inspired by `unset: all`
+
+needs some basic stuff for ie
+
 ## New breakpoint model
 
 `{20, 25, 30, ..., 100}rem`
@@ -46,7 +52,7 @@ $spacing-base: .25rem;
 
 Did some research on these:
 
-- [Scraped CSS data](link)
+- [Scraped CSS transition data](link)
 - [Material recs](https://material.io/design/motion/speed.html#)
 
 Unsurprisingly, devs don't care much for easing-functions and durations.
@@ -57,11 +63,12 @@ We will also use the most common properties from the research.
 
 ## Common transforms
 
-TBA
+Did some research on these:
 
-Mainly transform combos of {-100%, 0, 100%}
+- [Scraped CSS transform data](link)
 
-Maybe scale too
+- Mainly transform combos of {-100%, 0, 100%}
+- Maybe scale too
 
 ### Common CSS states and pseudo-elements
 
