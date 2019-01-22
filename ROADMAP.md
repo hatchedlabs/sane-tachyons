@@ -1,25 +1,78 @@
 # v3
 
-## Realistic breakpoints
+## New breakpoint model
 
-All these breakpoint classes are very inefficient.
+`{20, 25, 30, ..., 100}rem`
 
-In practice, very few of the breakpoint classes are actually used.
+class names in the form `.gt<rem>_<display-class>`
 
-They probably also slow down the sass engine
+`.gt20_db` means:
 
-A better solution also allows space for extra goodies:
+```css
+/* This means if viewport width > 20rem */
+/* Note: greater than BUT not equal to */
+@media not (max-width: 20rem) {
+  .gt20_db {
+    display: block;
+  }
+}
+```
 
-## Missing common use-cases
+## Negative margins
 
-### Extra classes for...
+Power of two scale.
 
-- Negative margins
-- Common transitions
-- Common transforms
+Normal margins:
+
+```scss
+$spacing-base: .25rem;
+
+.mt3 {
+  margin-top: 2 * 2 * $spacing-base; /* 2 * 2 * .25rem = 1rem = 16px */
+}
+```
+
+Negative margins:
+
+```scss
+$spacing-base: .25rem;
+
+.mt-3 {
+  margin-top: -1 * 2 * 2 * $spacing-base; /* -1 * 2 * 2 * .25rem = -1rem = -16px */
+}
+```
+
+## Common transitions
+
+Did some research on these:
+
+- [Scraped CSS data](link)
+- [Material recs](https://material.io/design/motion/speed.html#)
+
+Unsurprisingly, devs don't care much for easing-functions and durations.
+
+We will use Material's recommended durations and easing-functions.
+
+We will also use the most common properties from the research.
+
+## Common transforms
+
+TBA
+
+Mainly transform combos of {-100%, 0, 100%}
+
+Maybe scale too
 
 ### Common CSS states and pseudo-elements
 
-- `:hover`
-- `:active`
-- `::before, ::after` (`attr`?)
+Tachyons chose some weird ones for this.
+
+Probably best I do some research for common patterns.
+
+For now, common hover, focus, active states go in here.
+
+Maybe a show-children class as per latest tachyons?
+
+Maybe overlays as per before and after?
+
+TBA

@@ -10,6 +10,7 @@
   "devDependencies": {
     "abort-controller": "^2.0.2",
     "autoprefixer": "^9.4.3",
+    "css-property-parser": "^1.0.6",
     "cssnano": "^4.1.7",
     "fs-extra": "^7.0.1",
     "husky": "^1.3.0",
