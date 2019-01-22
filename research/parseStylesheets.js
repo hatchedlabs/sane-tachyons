@@ -22,7 +22,11 @@ fs.readFile(join(__dirname, 'allStyles.css'))
         if (match && (match[1][0] !== '-')) {
           if (!propertyMap[match[1]]) propertyMap[match[1]] = { '{length}': 0 };
           propertyMap[match[1]]['{length}'] += 1;
-          propertyMap[match[1]][match[2]] = ~~propertyMap[match[1]][match[2]] + 1;
+
+          let value = match[2];
+          const importantIndex = value.indexOf(' !important');
+          if (~importantIndex) value = value.substring(0, importantIndex);
+          propertyMap[match[1]][value] = ~~propertyMap[match[1]][value] + 1;
         }
 
         pointer = nextNewline + 1;
@@ -31,13 +35,28 @@ fs.readFile(join(__dirname, 'allStyles.css'))
       nextNewline = buffer.indexOf('\n', pointer);
     } while (nextNewline !== -1);
 
-    Object.keys(propertyMap)
+    const propertyValueMap = Object.keys(propertyMap)
       .sort((ka, kb) => (propertyMap[kb]['{length}'] - propertyMap[ka]['{length}']))
-      .forEach(property => {
-        console.log(property, propertyMap[property]['{length}']);
-      });
+      .map(property => ([
+        property,
+        Object.keys(propertyMap[property])
+          .sort((ka, kb) => (propertyMap[property][kb] - propertyMap[property][ka]))
+          .filter(k => {
+            const uniquePropertyValuePair = propertyMap[property][k] < 2;
+            if (uniquePropertyValuePair) return false;
 
-    // console.log(JSON.stringify(propertyMap, null, 2));
+            const isPrefixed = !(k.indexOf('-webkit-') && k.indexOf('-moz-') && k.indexOf('-ms-'));
+            if (isPrefixed) return false;
+
+            return true;
+          })
+          .map(k => [k, propertyMap[property][k]])
+      ]));
+
+    fs.writeFileSync(
+      join(__dirname, 'propertyValueMap.json'),
+      JSON.stringify(propertyValueMap, null, 2)
+    );
   })
   .then(() => {
     const endTime = Date.now();
