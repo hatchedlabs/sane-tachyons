@@ -8,7 +8,9 @@ Done: https://github.com/hatched-tom/sane-reset-css
 
 `{20, 25, 30, ..., 100}rem`
 
-class names in the form `.gt<rem>_<display-class>`
+If `1rem` is `16px`, this means: `{320, 400, 480, ..., 1600}px`
+
+Class names are in the form `.gt<rem>_<display-class>`.
 
 `.gt20_db` means "when the viewport width is greater than 20rem, display block":
 
