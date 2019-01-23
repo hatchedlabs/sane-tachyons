@@ -803,11 +803,11 @@ where you desire for the text and border colors to be different.
 .z-inherit { z-index: inherit; }
 .z-initial { z-index: initial; }
 .z-unset { z-index: unset; }
+
+/* Utilities */
 .h-center { margin-right: auto; margin-left: auto; }
 .mr-auto { margin-right: auto; }
 .ml-auto { margin-left: auto; }
-
-/* e.g. <div className="h4 w4 relative overflow-y-hidden"> <img className="w-100 absolute-center" /> </div> */
 .absolute-center { position: absolute; top: 50%; left: 50%; transform: translate3d(-50%, -50%, 0); transform: translate(-50%, -50%); }
 .absolute-fill { position: absolute; width: auto; height: auto; top: 0; right: 0; bottom: 0; left: 0; }
 ```

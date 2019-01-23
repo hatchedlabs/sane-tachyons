@@ -1,4 +1,4 @@
-// utility functions
+/* Utilities */
 .h-center {
   margin-right: auto;
   margin-left: auto;
@@ -11,12 +11,6 @@
   margin-left: auto;
 }
 
-/*
-e.g.
-  <div className="h4 w4 relative overflow-y-hidden">
-    <img className="w-100 absolute-center" />
-  </div>
-*/
 .absolute-center {
   position: absolute;
   top: 50%;
