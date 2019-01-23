@@ -2,9 +2,7 @@
 
 ## Better css reset
 
-inspired by `unset: all`
-
-needs some basic stuff for ie
+Done: https://github.com/hatched-tom/sane-reset-css
 
 ## New breakpoint model
 
@@ -12,7 +10,7 @@ needs some basic stuff for ie
 
 class names in the form `.gt<rem>_<display-class>`
 
-`.gt20_db` means:
+`.gt20_db` means "when the viewport width is greater than 20rem, display block":
 
 ```css
 /* This means if viewport width > 20rem */
@@ -34,7 +32,8 @@ Normal margins:
 $spacing-base: .25rem;
 
 .mt3 {
-  margin-top: 2 * 2 * $spacing-base; /* 2 * 2 * .25rem = 1rem = 16px */
+  margin-top: 2 * 2 * $spacing-base;
+           /* 2 * 2 * .25rem = 1rem = 16px */
 }
 ```
 
@@ -44,7 +43,8 @@ Negative margins:
 $spacing-base: .25rem;
 
 .mt-3 {
-  margin-top: -1 * 2 * 2 * $spacing-base; /* -1 * 2 * 2 * .25rem = -1rem = -16px */
+  margin-top: -1 * 2 * 2 * $spacing-base;
+           /* -1 * 2 * 2 * .25rem = -1rem = -16px */
 }
 ```
 
@@ -75,7 +75,7 @@ Did some research on these:
 Excellent for when you have ugly children and you don't want ~~custody~~
 to see them sometimes.
 
-(Hide wife)
+(Hide wife  )
 
 - `.hide-kids` hides an element's children
 - `.show-kids` shows an element's children
