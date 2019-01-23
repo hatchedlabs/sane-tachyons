@@ -1,20 +1,5 @@
-/* 
-SPACING (padding + margin)
-
-Base:
- p = padding
- m = margin
-
-Modifiers:
- a = all
- t = top
- r = right
- b = bottom
- l = left
-*/
-
+/* Spacing (MARGINS, PADDING, NEGATIVE MARGINS) */
 @each $modifier, $values in $spacing-modifiers {
-  /* PADDING */
   .p#{$modifier}0 {
     @each $value in $values {
       padding#{$value}: 0;
@@ -28,7 +13,6 @@ Modifiers:
     }
   }
 
-  /* MARGINS */
   .m#{$modifier}0 {
     @each $value in $values {
       margin#{$value}: 0;
@@ -42,8 +26,6 @@ Modifiers:
     }
   }
 
-
-  /* NEGATIVE MARGINS */
   @for $i from 1 through $spacing-levels {
     .m#{$modifier}-#{$i} {
       @each $value in $values {
@@ -53,7 +35,7 @@ Modifiers:
   }
 }
 
-/* COORDINATES */
+/* Coordinates */
 $coords: ('top', 'left', 'bottom', 'right');
 @each $dir in $coords {
   $dir-first-letter: str-slice($dir, 0, 1);

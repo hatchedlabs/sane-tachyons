@@ -514,8 +514,7 @@ where you desire for the text and border colors to be different.
 .grow { transform: scale(1.25, 1.25); transform: scale3d(1.25, 1.25, 1); }
 .shrink { transform: scale(0.8, 0.8); transform: scale3d(0.8, 0.8, 1); }
 
-/*  SPACING (padding + margin) Base: p = padding m = margin Modifiers: a = all t = top r = right b = bottom l = left */
-/* PADDING */
+/* Spacing (MARGINS, PADDING, NEGATIVE MARGINS) */
 .pa0 { padding: 0; }
 .pa1 { padding: 0.25rem; }
 .pa2 { padding: 0.5rem; }
@@ -524,8 +523,6 @@ where you desire for the text and border colors to be different.
 .pa5 { padding: 4rem; }
 .pa6 { padding: 8rem; }
 .pa7 { padding: 16rem; }
-
-/* MARGINS */
 .ma0 { margin: 0; }
 .ma1 { margin: 0.25rem; }
 .ma2 { margin: 0.5rem; }
@@ -534,8 +531,6 @@ where you desire for the text and border colors to be different.
 .ma5 { margin: 4rem; }
 .ma6 { margin: 8rem; }
 .ma7 { margin: 16rem; }
-
-/* NEGATIVE MARGINS */
 .ma-1 { margin: -0.25rem; }
 .ma-2 { margin: -0.5rem; }
 .ma-3 { margin: -1rem; }
@@ -543,8 +538,6 @@ where you desire for the text and border colors to be different.
 .ma-5 { margin: -4rem; }
 .ma-6 { margin: -8rem; }
 .ma-7 { margin: -16rem; }
-
-/* PADDING */
 .pt0 { padding-top: 0; }
 .pt1 { padding-top: 0.25rem; }
 .pt2 { padding-top: 0.5rem; }
@@ -553,8 +546,6 @@ where you desire for the text and border colors to be different.
 .pt5 { padding-top: 4rem; }
 .pt6 { padding-top: 8rem; }
 .pt7 { padding-top: 16rem; }
-
-/* MARGINS */
 .mt0 { margin-top: 0; }
 .mt1 { margin-top: 0.25rem; }
 .mt2 { margin-top: 0.5rem; }
@@ -563,8 +554,6 @@ where you desire for the text and border colors to be different.
 .mt5 { margin-top: 4rem; }
 .mt6 { margin-top: 8rem; }
 .mt7 { margin-top: 16rem; }
-
-/* NEGATIVE MARGINS */
 .mt-1 { margin-top: -0.25rem; }
 .mt-2 { margin-top: -0.5rem; }
 .mt-3 { margin-top: -1rem; }
@@ -572,8 +561,6 @@ where you desire for the text and border colors to be different.
 .mt-5 { margin-top: -4rem; }
 .mt-6 { margin-top: -8rem; }
 .mt-7 { margin-top: -16rem; }
-
-/* PADDING */
 .pr0 { padding-right: 0; }
 .pr1 { padding-right: 0.25rem; }
 .pr2 { padding-right: 0.5rem; }
@@ -582,8 +569,6 @@ where you desire for the text and border colors to be different.
 .pr5 { padding-right: 4rem; }
 .pr6 { padding-right: 8rem; }
 .pr7 { padding-right: 16rem; }
-
-/* MARGINS */
 .mr0 { margin-right: 0; }
 .mr1 { margin-right: 0.25rem; }
 .mr2 { margin-right: 0.5rem; }
@@ -592,8 +577,6 @@ where you desire for the text and border colors to be different.
 .mr5 { margin-right: 4rem; }
 .mr6 { margin-right: 8rem; }
 .mr7 { margin-right: 16rem; }
-
-/* NEGATIVE MARGINS */
 .mr-1 { margin-right: -0.25rem; }
 .mr-2 { margin-right: -0.5rem; }
 .mr-3 { margin-right: -1rem; }
@@ -601,8 +584,6 @@ where you desire for the text and border colors to be different.
 .mr-5 { margin-right: -4rem; }
 .mr-6 { margin-right: -8rem; }
 .mr-7 { margin-right: -16rem; }
-
-/* PADDING */
 .pb0 { padding-bottom: 0; }
 .pb1 { padding-bottom: 0.25rem; }
 .pb2 { padding-bottom: 0.5rem; }
@@ -611,8 +592,6 @@ where you desire for the text and border colors to be different.
 .pb5 { padding-bottom: 4rem; }
 .pb6 { padding-bottom: 8rem; }
 .pb7 { padding-bottom: 16rem; }
-
-/* MARGINS */
 .mb0 { margin-bottom: 0; }
 .mb1 { margin-bottom: 0.25rem; }
 .mb2 { margin-bottom: 0.5rem; }
@@ -621,8 +600,6 @@ where you desire for the text and border colors to be different.
 .mb5 { margin-bottom: 4rem; }
 .mb6 { margin-bottom: 8rem; }
 .mb7 { margin-bottom: 16rem; }
-
-/* NEGATIVE MARGINS */
 .mb-1 { margin-bottom: -0.25rem; }
 .mb-2 { margin-bottom: -0.5rem; }
 .mb-3 { margin-bottom: -1rem; }
@@ -630,8 +607,6 @@ where you desire for the text and border colors to be different.
 .mb-5 { margin-bottom: -4rem; }
 .mb-6 { margin-bottom: -8rem; }
 .mb-7 { margin-bottom: -16rem; }
-
-/* PADDING */
 .pl0 { padding-left: 0; }
 .pl1 { padding-left: 0.25rem; }
 .pl2 { padding-left: 0.5rem; }
@@ -640,8 +615,6 @@ where you desire for the text and border colors to be different.
 .pl5 { padding-left: 4rem; }
 .pl6 { padding-left: 8rem; }
 .pl7 { padding-left: 16rem; }
-
-/* MARGINS */
 .ml0 { margin-left: 0; }
 .ml1 { margin-left: 0.25rem; }
 .ml2 { margin-left: 0.5rem; }
@@ -650,8 +623,6 @@ where you desire for the text and border colors to be different.
 .ml5 { margin-left: 4rem; }
 .ml6 { margin-left: 8rem; }
 .ml7 { margin-left: 16rem; }
-
-/* NEGATIVE MARGINS */
 .ml-1 { margin-left: -0.25rem; }
 .ml-2 { margin-left: -0.5rem; }
 .ml-3 { margin-left: -1rem; }
@@ -660,7 +631,7 @@ where you desire for the text and border colors to be different.
 .ml-6 { margin-left: -8rem; }
 .ml-7 { margin-left: -16rem; }
 
-/* COORDINATES */
+/* Coordinates */
 .t0 { top: 0; }
 .t-50 { top: 50%; }
 .t-100 { top: 100%; }
