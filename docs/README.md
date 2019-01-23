@@ -49,9 +49,6 @@ See it live: https://jsfiddle.net/n5u2wwjg/256247/
 // tachyons is mobile first. build screens in mobile before building
 // them for larger screens <3
 
-// .black => black text on all widths
-// .black.white-l => black text on mobile, white text on everything else
-
 $one-rem: 16px !default;
 
 $breakpoints: (
