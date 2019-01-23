@@ -42,6 +42,13 @@ Modifiers:
         margin#{$value}: $spacing-base * pow(2, ($i - 1));
       }
     }
+    @if $i > 1 {
+      .m#{$modifier}-#{$i - 1} {
+        @each $value in $values {
+          margin#{$value}: $spacing-base * pow(2, ($i - 2));
+        }
+      }
+    }
   }
 }
 

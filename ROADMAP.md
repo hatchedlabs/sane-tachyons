@@ -86,14 +86,11 @@ Did some research on these:
 
 ## CSS show/hide children
 
-Excellent for when you have ugly children and you don't want ~~custody~~
-to see them sometimes.
-
 - `.hide-kids` hides an element's children
 - `.show-kids` shows an element's children
 
-- `.hide-wife` hides an element's adjacent element
-- `.show-wife` shows an element's adjacent element
+- `.hide-next` hides an element's adjacent element
+- `.show-next` shows an element's adjacent element
 
 - `.hide-last` hides an element's (last) child
 - `.show-last` shows an element's (last) child

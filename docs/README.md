@@ -529,11 +529,17 @@ where you desire for the text and border colors to be different.
 .ma0 { margin: 0; }
 .ma1 { margin: 0.25rem; }
 .ma2 { margin: 0.5rem; }
+.ma-1 { margin: 0.25rem; }
 .ma3 { margin: 1rem; }
+.ma-2 { margin: 0.5rem; }
 .ma4 { margin: 2rem; }
+.ma-3 { margin: 1rem; }
 .ma5 { margin: 4rem; }
+.ma-4 { margin: 2rem; }
 .ma6 { margin: 8rem; }
+.ma-5 { margin: 4rem; }
 .ma7 { margin: 16rem; }
+.ma-6 { margin: 8rem; }
 
 /* PADDING */
 .ph0 { padding-left: 0; padding-right: 0; }
@@ -549,11 +555,17 @@ where you desire for the text and border colors to be different.
 .mh0 { margin-left: 0; margin-right: 0; }
 .mh1 { margin-left: 0.25rem; margin-right: 0.25rem; }
 .mh2 { margin-left: 0.5rem; margin-right: 0.5rem; }
+.mh-1 { margin-left: 0.25rem; margin-right: 0.25rem; }
 .mh3 { margin-left: 1rem; margin-right: 1rem; }
+.mh-2 { margin-left: 0.5rem; margin-right: 0.5rem; }
 .mh4 { margin-left: 2rem; margin-right: 2rem; }
+.mh-3 { margin-left: 1rem; margin-right: 1rem; }
 .mh5 { margin-left: 4rem; margin-right: 4rem; }
+.mh-4 { margin-left: 2rem; margin-right: 2rem; }
 .mh6 { margin-left: 8rem; margin-right: 8rem; }
+.mh-5 { margin-left: 4rem; margin-right: 4rem; }
 .mh7 { margin-left: 16rem; margin-right: 16rem; }
+.mh-6 { margin-left: 8rem; margin-right: 8rem; }
 
 /* PADDING */
 .pv0 { padding-top: 0; padding-bottom: 0; }
@@ -569,11 +581,17 @@ where you desire for the text and border colors to be different.
 .mv0 { margin-top: 0; margin-bottom: 0; }
 .mv1 { margin-top: 0.25rem; margin-bottom: 0.25rem; }
 .mv2 { margin-top: 0.5rem; margin-bottom: 0.5rem; }
+.mv-1 { margin-top: 0.25rem; margin-bottom: 0.25rem; }
 .mv3 { margin-top: 1rem; margin-bottom: 1rem; }
+.mv-2 { margin-top: 0.5rem; margin-bottom: 0.5rem; }
 .mv4 { margin-top: 2rem; margin-bottom: 2rem; }
+.mv-3 { margin-top: 1rem; margin-bottom: 1rem; }
 .mv5 { margin-top: 4rem; margin-bottom: 4rem; }
+.mv-4 { margin-top: 2rem; margin-bottom: 2rem; }
 .mv6 { margin-top: 8rem; margin-bottom: 8rem; }
+.mv-5 { margin-top: 4rem; margin-bottom: 4rem; }
 .mv7 { margin-top: 16rem; margin-bottom: 16rem; }
+.mv-6 { margin-top: 8rem; margin-bottom: 8rem; }
 
 /* PADDING */
 .pt0 { padding-top: 0; }
@@ -589,11 +607,17 @@ where you desire for the text and border colors to be different.
 .mt0 { margin-top: 0; }
 .mt1 { margin-top: 0.25rem; }
 .mt2 { margin-top: 0.5rem; }
+.mt-1 { margin-top: 0.25rem; }
 .mt3 { margin-top: 1rem; }
+.mt-2 { margin-top: 0.5rem; }
 .mt4 { margin-top: 2rem; }
+.mt-3 { margin-top: 1rem; }
 .mt5 { margin-top: 4rem; }
+.mt-4 { margin-top: 2rem; }
 .mt6 { margin-top: 8rem; }
+.mt-5 { margin-top: 4rem; }
 .mt7 { margin-top: 16rem; }
+.mt-6 { margin-top: 8rem; }
 
 /* PADDING */
 .pr0 { padding-right: 0; }
@@ -609,11 +633,17 @@ where you desire for the text and border colors to be different.
 .mr0 { margin-right: 0; }
 .mr1 { margin-right: 0.25rem; }
 .mr2 { margin-right: 0.5rem; }
+.mr-1 { margin-right: 0.25rem; }
 .mr3 { margin-right: 1rem; }
+.mr-2 { margin-right: 0.5rem; }
 .mr4 { margin-right: 2rem; }
+.mr-3 { margin-right: 1rem; }
 .mr5 { margin-right: 4rem; }
+.mr-4 { margin-right: 2rem; }
 .mr6 { margin-right: 8rem; }
+.mr-5 { margin-right: 4rem; }
 .mr7 { margin-right: 16rem; }
+.mr-6 { margin-right: 8rem; }
 
 /* PADDING */
 .pb0 { padding-bottom: 0; }
@@ -629,11 +659,17 @@ where you desire for the text and border colors to be different.
 .mb0 { margin-bottom: 0; }
 .mb1 { margin-bottom: 0.25rem; }
 .mb2 { margin-bottom: 0.5rem; }
+.mb-1 { margin-bottom: 0.25rem; }
 .mb3 { margin-bottom: 1rem; }
+.mb-2 { margin-bottom: 0.5rem; }
 .mb4 { margin-bottom: 2rem; }
+.mb-3 { margin-bottom: 1rem; }
 .mb5 { margin-bottom: 4rem; }
+.mb-4 { margin-bottom: 2rem; }
 .mb6 { margin-bottom: 8rem; }
+.mb-5 { margin-bottom: 4rem; }
 .mb7 { margin-bottom: 16rem; }
+.mb-6 { margin-bottom: 8rem; }
 
 /* PADDING */
 .pl0 { padding-left: 0; }
@@ -649,11 +685,17 @@ where you desire for the text and border colors to be different.
 .ml0 { margin-left: 0; }
 .ml1 { margin-left: 0.25rem; }
 .ml2 { margin-left: 0.5rem; }
+.ml-1 { margin-left: 0.25rem; }
 .ml3 { margin-left: 1rem; }
+.ml-2 { margin-left: 0.5rem; }
 .ml4 { margin-left: 2rem; }
+.ml-3 { margin-left: 1rem; }
 .ml5 { margin-left: 4rem; }
+.ml-4 { margin-left: 2rem; }
 .ml6 { margin-left: 8rem; }
+.ml-5 { margin-left: 4rem; }
 .ml7 { margin-left: 16rem; }
+.ml-6 { margin-left: 8rem; }
 
 /* COORDINATES */
 .t0 { top: 0; }
