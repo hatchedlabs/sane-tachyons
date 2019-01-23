@@ -1,14 +1,12 @@
-@include breakify($breakpoints) {
-  #{bp()}ttc {
-    text-transform: capitalize;
-  }
-  #{bp()}ttl {
-    text-transform: lowercase;
-  }
-  #{bp()}ttu {
-    text-transform: uppercase;
-  }
-  #{bp()}ttn {
-    text-transform: none;
-  }
+.ttc {
+  text-transform: capitalize;
+}
+.ttl {
+  text-transform: lowercase;
+}
+.ttu {
+  text-transform: uppercase;
+}
+.ttn {
+  text-transform: none;
 }

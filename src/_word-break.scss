@@ -1,11 +1,9 @@
-@include breakify($breakpoints) {
-  #{bp()}word-normal {
-    word-break: normal;
-  }
-  #{bp()}word-wrap {
-    word-break: break-all;
-  }
-  #{bp()}word-nowrap {
-    word-break: keep-all;
-  }
+.word-normal {
+  word-break: normal;
+}
+.word-wrap {
+  word-break: break-all;
+}
+.word-nowrap {
+  word-break: keep-all;
 }

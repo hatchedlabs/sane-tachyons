@@ -1,15 +1,9 @@
-html, body {
-  line-height: $line-height-copy;
+.lh-solid {
+  line-height: $line-height-solid;
 }
-
-@include breakify($breakpoints) {
-  #{bp()}lh-solid {
-    line-height: $line-height-solid;
-  }
-  #{bp()}lh-title {
-    line-height: $line-height-title;
-  }
-  #{bp()}lh-copy {
-    line-height: $line-height-copy;
-  }
+.lh-title {
+  line-height: $line-height-title;
+}
+.lh-copy {
+  line-height: $line-height-copy;
 }

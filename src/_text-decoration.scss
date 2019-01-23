@@ -1,11 +1,9 @@
-@include breakify($breakpoints) {
-  #{bp()}strikethrough {
-    text-decoration: line-through;
-  }
-  #{bp()}underline {
-    text-decoration: underline;
-  }
-  #{bp()}no-underline {
-    text-decoration: none;
-  }
+.strikethrough {
+  text-decoration: line-through;
+}
+.underline {
+  text-decoration: underline;
+}
+.no-underline {
+  text-decoration: none;
 }

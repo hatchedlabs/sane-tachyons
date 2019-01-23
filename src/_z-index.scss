@@ -1,48 +1,46 @@
-@include breakify($breakpoints) {
-  #{bp()}z-0 {
-    z-index: 0;
-  }
-  #{bp()}z-1 {
-    z-index: 1;
-  }
-  #{bp()}z-2 {
-    z-index: 2;
-  }
-  #{bp()}z-3 {
-    z-index: 3;
-  }
-  #{bp()}z-4 {
-    z-index: 4;
-  }
-  #{bp()}z-5 {
-    z-index: 5;
-  }
+.z-0 {
+  z-index: 0;
+}
+.z-1 {
+  z-index: 1;
+}
+.z-2 {
+  z-index: 2;
+}
+.z-3 {
+  z-index: 3;
+}
+.z-4 {
+  z-index: 4;
+}
+.z-5 {
+  z-index: 5;
+}
 
-  #{bp()}z-999 {
-    z-index: 999;
-  }
-  #{bp()}z-9999 {
-    z-index: 9999;
-  }
+.z-999 {
+  z-index: 999;
+}
+.z-9999 {
+  z-index: 9999;
+}
 
-  #{bp()}z-max {
-    z-index: 2147483647;
-  }
+.z-max {
+  z-index: 2147483647;
+}
 
-  #{bp()}z--1 {
-    z-index: -1;
-  }
-  #{bp()}z--2 {
-    z-index: -2;
-  }
+.z--1 {
+  z-index: -1;
+}
+.z--2 {
+  z-index: -2;
+}
 
-  #{bp()}z-inherit {
-    z-index: inherit;
-  }
-  #{bp()}z-initial {
-    z-index: initial;
-  }
-  #{bp()}z-unset {
-    z-index: unset;
-  }
+.z-inherit {
+  z-index: inherit;
+}
+.z-initial {
+  z-index: initial;
+}
+.z-unset {
+  z-index: unset;
 }

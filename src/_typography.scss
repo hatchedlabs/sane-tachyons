@@ -1,19 +1,16 @@
 // you may also be looking for _type-scale
+.indent {
+  text-indent: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
-@include breakify($breakpoints) {
-  #{bp()}indent {
-    text-indent: 1em;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
+.small-caps {
+  font-variant: small-caps;
+}
 
-  #{bp()}small-caps {
-    font-variant: small-caps;
-  }
-
-  #{bp()}truncate {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

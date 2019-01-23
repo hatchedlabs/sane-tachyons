@@ -1,27 +1,25 @@
-@include breakify($breakpoints) {
-  // center
-  #{bp()}bgp-c {
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-  // top
-  #{bp()}bgp-t {
-    background-repeat: no-repeat;
-    background-position: top center;
-  }
-  // right
-  #{bp()}bgp-r {
-    background-repeat: no-repeat;
-    background-position: center right;
-  }
-  // bottom
-  #{bp()}bgp-b {
-    background-repeat: no-repeat;
-    background-position: bottom center;
-  }
-  // left
-  #{bp()}bgp-l {
-    background-repeat: no-repeat;
-    background-position: center left;
-  }
+// center
+.bgp-c {
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+// top
+.bgp-t {
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+// right
+.bgp-r {
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+// bottom
+.bgp-b {
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+// left
+.bgp-l {
+  background-repeat: no-repeat;
+  background-position: center left;
 }

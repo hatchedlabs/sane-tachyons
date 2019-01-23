@@ -882,17 +882,17 @@ Modifiers:
 }
 
 /*
-    .fx-abc {
-      flex: a b c;
-      // a = flex-grow
-      // b = flex-shrink
-      // c = flex-basis
-    }
+  .fx-abc {
+    flex: a b c;
+    // a = flex-grow
+    // b = flex-shrink
+    // c = flex-basis
+  }
 
-    a: {0, 1}
-    b: {0, 1}
-    c: {0, a} (where a is short for auto)
-  */
+  a: {0, 1}
+  b: {0, 1}
+  c: {0, a} (where a is short for auto)
+*/
 .fx-11a {
   flex: 1 1 auto;
   min-width: 1px;
@@ -1155,9 +1155,9 @@ FLEXBOX is in separate file (_flexbox.scss)
 }
 
 /* 
-  This will set table to full width and then 
-  all cells will be equal width 
-  */
+This will set table to full width and then 
+all cells will be equal width 
+*/
 .dt--fixed {
   table-layout: fixed;
   width: 100%;
@@ -1249,10 +1249,6 @@ FLEXBOX is in separate file (_flexbox.scss)
   letter-spacing: 0.25em;
 }
 
-html, body {
-  line-height: 1.5;
-}
-
 .lh-solid {
   line-height: 1;
 }
@@ -1263,29 +1259,6 @@ html, body {
 
 .lh-copy {
   line-height: 1.5;
-}
-
-.link {
-  text-decoration: none;
-  transition: color 0.15s ease-in;
-}
-
-.link:link,
-.link:visited {
-  transition: color 0.15s ease-in;
-}
-
-.link:hover {
-  transition: color 0.15s ease-in;
-}
-
-.link:active {
-  transition: color 0.15s ease-in;
-}
-
-.link:focus {
-  transition: color 0.15s ease-in;
-  outline: 1px dotted currentColor;
 }
 
 .bullets {
@@ -2102,10 +2075,6 @@ Modifiers:
   margin-left: 16rem;
 }
 
-.striped:nth-child(odd) {
-  background-color: #F7F9FA;
-}
-
 .strikethrough {
   text-decoration: line-through;
 }
@@ -2180,15 +2149,15 @@ Modifiers:
   white-space: normal;
 }
 
-.nowrap {
+.ws-nowrap {
   white-space: nowrap;
 }
 
-.pre {
+.ws-pre {
   white-space: pre;
 }
 
-.pre-wrap {
+.ws-pre-wrap {
   white-space: pre-wrap;
 }
 
@@ -2290,11 +2259,11 @@ Modifiers:
 }
 
 /*
-  e.g.
-    <div className="h4 w4 relative overflow-y-hidden">
-      <img className="w-100 absolute-center" />
-    </div>
-  */
+e.g.
+  <div className="h4 w4 relative overflow-y-hidden">
+    <img className="w-100 absolute-center" />
+  </div>
+*/
 .absolute-center {
   position: absolute;
   top: 50%;

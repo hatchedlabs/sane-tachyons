@@ -3,35 +3,33 @@
 .br-pill = rounded rectangle
 */
 
-@include breakify($breakpoints) {
-  #{bp()}br-0 {
-    border-radius: 0;
+.br-0 {
+  border-radius: 0;
+}
+@for $i from 1 through $border-radius-levels {
+  .br-#{$i} {
+    border-radius: $border-radius-base * pow(2, ($i - 1));
   }
-  @for $i from 1 through $border-radius-levels {
-    #{bp()}br-#{$i} {
-      border-radius: $border-radius-base * pow(2, ($i - 1));
-    }
-  }
-  #{bp()}br-100 {
-    border-radius: 100%;
-  }
-  #{bp()}br-pill {
-    border-radius: 9999px;
-  }
-  #{bp()}br-b {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-  }
-  #{bp()}br-t {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-  #{bp()}br-r {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-  #{bp()}br-l {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
+}
+.br-100 {
+  border-radius: 100%;
+}
+.br-pill {
+  border-radius: 9999px;
+}
+.br-b {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.br-t {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.br-r {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.br-l {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }

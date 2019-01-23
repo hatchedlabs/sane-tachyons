@@ -1,20 +1,18 @@
-@include breakify($breakpoints) {
-  #{bp()}o-100 {
-    opacity: 1;
-  }
-  #{bp()}o-80 {
-    opacity: 0.8;
-  }
-  #{bp()}o-40 {
-    opacity: 0.4;
-  }
-  #{bp()}o-20 {
-    opacity: 0.2;
-  }
-  #{bp()}o-10 {
-    opacity: 0.1;
-  }
-  #{bp()}o-0 {
-    opacity: 0;
-  }
+.o-100 {
+  opacity: 1;
+}
+.o-80 {
+  opacity: 0.8;
+}
+.o-40 {
+  opacity: 0.4;
+}
+.o-20 {
+  opacity: 0.2;
+}
+.o-10 {
+  opacity: 0.1;
+}
+.o-0 {
+  opacity: 0;
 }

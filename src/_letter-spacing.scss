@@ -1,11 +1,9 @@
-@include breakify($breakpoints) {
-  #{bp()}ls-narrow {
-    letter-spacing: $letter-spacing-narrow;
-  }
-  #{bp()}ls-normal {
-    letter-spacing: $letter-spacing-normal;
-  }
-  #{bp()}ls-wide {
-    letter-spacing: $letter-spacing-wide;
-  }
+.ls-narrow {
+  letter-spacing: $letter-spacing-narrow;
+}
+.ls-normal {
+  letter-spacing: $letter-spacing-normal;
+}
+.ls-wide {
+  letter-spacing: $letter-spacing-wide;
 }

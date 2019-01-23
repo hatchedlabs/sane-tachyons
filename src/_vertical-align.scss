@@ -1,14 +1,12 @@
-@include breakify($breakpoints) {
-  #{bp()}va-t {
-    vertical-align: top;
-  }
-  #{bp()}va-m {
-    vertical-align: middle;
-  }
-  #{bp()}va-base {
-    vertical-align: baseline;
-  }
-  #{bp()}va-b {
-    vertical-align: bottom;
-  }
+.va-t {
+  vertical-align: top;
+}
+.va-m {
+  vertical-align: middle;
+}
+.va-base {
+  vertical-align: baseline;
+}
+.va-b {
+  vertical-align: bottom;
 }

@@ -1,26 +1,24 @@
-@include breakify($breakpoints) {
-  /* Max Width Scale */
-  #{bp()}mw0, #{bp()}mw-0 {
-    max-width: 0;
+/* Max Width Scale */
+.mw0, .mw-0 {
+  max-width: 0;
+}
+@for $i from 1 through $max-width-levels {
+  .mw#{$i} {
+    max-width: $max-width-base * pow(2, ($i - 1));
   }
-  @for $i from 1 through $max-width-levels {
-    #{bp()}mw#{$i} {
-      max-width: $max-width-base * pow(2, ($i - 1));
-    }
-  }
+}
 
-  /* Percentage Max Widths */
-  @for $i from 1 through $grid-columns {
-    #{bp()}mw-#{$i}-#{$grid-columns} {
-      max-width: #{100% * $i / $grid-columns};
-    }
+/* Percentage Max Widths */
+@for $i from 1 through $grid-columns {
+  .mw-#{$i}-#{$grid-columns} {
+    max-width: #{100% * $i / $grid-columns};
   }
-  #{bp()}mw-100 {
-    max-width: 100%;
-  }
+}
+.mw-100 {
+  max-width: 100%;
+}
 
-  /* Max Width String Properties */
-  #{bp()}mw-none {
-    max-width: none;
-  }
+/* Max Width String Properties */
+.mw-none {
+  max-width: none;
 }

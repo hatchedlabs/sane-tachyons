@@ -1,15 +1,11 @@
-// probably will add some sweet stuff here soon
+.cursor-pointer {
+  cursor: pointer;
+}
 
-@include breakify($breakpoints) {
-  #{bp()}cursor-pointer {
-    cursor: pointer;
-  }
+.cursor-default {
+  cursor: default;
+}
 
-  #{bp()}cursor-default {
-    cursor: default;
-  }
-
-  #{bp()}underline-hover:hover {
-    text-decoration: underline;
-  }
+.underline-hover:hover {
+  text-decoration: underline;
 }
