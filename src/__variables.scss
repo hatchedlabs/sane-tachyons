@@ -4,11 +4,22 @@
 // .black => black text on all widths
 // .black.white-l => black text on mobile, white text on everything else
 
-$breakpoints: (
-  l: "screen and (min-width: 481px)"
-) !default;
-
 $one-rem: 16px !default;
+
+$breakpoints: (
+  gt20: "not (max-width: 20rem)",  // > 320
+  gt25: "not (max-width: 25rem)",  // > 400
+  gt30: "not (max-width: 30rem)",  // > 480
+  gt35: "not (max-width: 35rem)",  // > 560
+  gt40: "not (max-width: 40rem)",  // > 640
+  gt45: "not (max-width: 45rem)",  // > 720
+  gt50: "not (max-width: 50rem)",  // > 800
+  gt60: "not (max-width: 60rem)",  // > 960
+  gt70: "not (max-width: 70rem)",  // > 1120
+  gt80: "not (max-width: 80rem)",  // > 1280
+  gt90: "not (max-width: 90rem)",  // > 1440
+  gt100: "not (max-width: 100rem)" // > 1600
+) !default;
 
 $grid-columns: 12 !default;
 
@@ -43,10 +54,10 @@ $colors: (
   primary-pressed: #69156b,
   primary-disabled: #c68ec7,
 
-  // secondary: #b7de58,
-  // secondary-hover: #c1e270,
-  // secondary-pressed: #89a641,
-  // secondary-disabled: #dbeeab,
+  secondary: #b7de58,
+  secondary-hover: #c1e270,
+  secondary-pressed: #89a641,
+  secondary-disabled: #dbeeab,
 
   success: #3bb273,       // if this is a bg, use $white text
   success-faded: #EBF7F1, // if this is a bg, use $success or $black text

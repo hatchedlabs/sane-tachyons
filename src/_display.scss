@@ -13,48 +13,49 @@ Modifiers:
  tcol  = table-column 
  tcolg = table-column-group 
 
-FLEXBOX is in separate file (_flexbox.scss)
+FLEXBOX is in separate file (_flexbox#{bp()}scss)
 */
 
-.dn {
-  display: none;
-}
-.di {
-  display: inline;
-}
-.db {
-  display: block;
-}
-.dib {
-  display: inline-block;
-}
-.dit {
-  display: inline-table;
-}
-.dt {
-  display: table;
-}
-.dtc {
-  display: table-cell;
-}
-.dt-row {
-  display: table-row;
-}
-.dt-row-group {
-  display: table-row-group;
-}
-.dt-column {
-  display: table-column;
-}
-.dt-column-group {
-  display: table-column-group;
-}
+@include breakify($breakpoints) {
+  #{bp()}di {
+    display: inline;
+  }
+  #{bp()}db {
+    display: block;
+  }
+  #{bp()}dib {
+    display: inline-block;
+  }
+  #{bp()}dit {
+    display: inline-table;
+  }
+  #{bp()}dt {
+    display: table;
+  }
+  #{bp()}dtc {
+    display: table-cell;
+  }
+  #{bp()}dt-row {
+    display: table-row;
+  }
+  #{bp()}dt-row-group {
+    display: table-row-group;
+  }
+  #{bp()}dt-column {
+    display: table-column;
+  }
+  #{bp()}dt-column-group {
+    display: table-column-group;
+  }
+  #{bp()}dfx {
+    display: flex;
+  }
+  #{bp()}difx {
+    display: inline-flex;
+  }
 
-/* 
-This will set table to full width and then 
-all cells will be equal width 
-*/
-.dt--fixed {
-  table-layout: fixed;
-  width: 100%;
+  // make sure this is last, so it can override others
+  #{bp()}dn {
+    display: none;
+  }
 }

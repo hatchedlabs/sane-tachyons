@@ -205,6 +205,22 @@ Tip:
   color: #c68ec7;
 }
 
+.secondary {
+  color: #b7de58;
+}
+
+.secondary-hover {
+  color: #c1e270;
+}
+
+.secondary-pressed {
+  color: #89a641;
+}
+
+.secondary-disabled {
+  color: #dbeeab;
+}
+
 .success {
   color: #3bb273;
 }
@@ -336,6 +352,22 @@ Tip:
 
 .bg-primary-disabled {
   background-color: #c68ec7;
+}
+
+.bg-secondary {
+  background-color: #b7de58;
+}
+
+.bg-secondary-hover {
+  background-color: #c1e270;
+}
+
+.bg-secondary-pressed {
+  background-color: #89a641;
+}
+
+.bg-secondary-disabled {
+  background-color: #dbeeab;
 }
 
 .bg-success {
@@ -609,6 +641,22 @@ where you desire for the text and border colors to be different.
   border-color: #c68ec7;
 }
 
+.b--secondary {
+  border-color: #b7de58;
+}
+
+.b--secondary-hover {
+  border-color: #c1e270;
+}
+
+.b--secondary-pressed {
+  border-color: #89a641;
+}
+
+.b--secondary-disabled {
+  border-color: #dbeeab;
+}
+
 .b--success {
   border-color: #3bb273;
 }
@@ -873,15 +921,11 @@ Modifiers:
   left: 0;
 }
 
-.dfx {
-  display: flex;
-}
-
-.difx {
-  display: inline-flex;
-}
-
 /*
+  .dfx => display: flex;
+  .difx => display: inline-flex;
+   (they are in _display.scss)
+
   .fx-abc {
     flex: a b c;
     // a = flex-grow
@@ -1110,10 +1154,6 @@ Modifiers:
 
 FLEXBOX is in separate file (_flexbox.scss)
 */
-.dn {
-  display: none;
-}
-
 .di {
   display: inline;
 }
@@ -1154,13 +1194,16 @@ FLEXBOX is in separate file (_flexbox.scss)
   display: table-column-group;
 }
 
-/* 
-This will set table to full width and then 
-all cells will be equal width 
-*/
-.dt--fixed {
-  table-layout: fixed;
-  width: 100%;
+.dfx {
+  display: flex;
+}
+
+.difx {
+  display: inline-flex;
+}
+
+.dn {
+  display: none;
 }
 
 .fs-i {

@@ -1,11 +1,8 @@
-.dfx {
-  display: flex;
-}
-.difx {
-  display: inline-flex;
-}
-
 /*
+  .dfx => display: flex;
+  .difx => display: inline-flex;
+   (they are in _display.scss)
+
   .fx-abc {
     flex: a b c;
     // a = flex-grow
