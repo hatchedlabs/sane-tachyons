@@ -11,6 +11,13 @@
         padding#{$value}: $spacing-base * pow(2, ($i - 1));
       }
     }
+    @if $i != $spacing-levels {
+      .p#{$modifier}#{$i}-5 {
+        @each $value in $values {
+          padding#{$value}: 1.5 * $spacing-base * pow(2, ($i - 1));
+        }
+      }
+    }
   }
 
   .m#{$modifier}0 {
@@ -22,6 +29,13 @@
     .m#{$modifier}#{$i} {
       @each $value in $values {
         margin#{$value}: $spacing-base * pow(2, ($i - 1));
+      }
+    }
+    @if $i != $spacing-levels {
+      .m#{$modifier}#{$i}-5 {
+        @each $value in $values {
+          margin#{$value}: 1.5 * $spacing-base * pow(2, ($i - 1));
+        }
       }
     }
   }
