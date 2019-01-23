@@ -1,0 +1,50 @@
+/* Background repeat */
+[class^="bg-"], [class*=" bg-"] {
+  background-repeat: no-repeat;
+}
+
+.bg-repeat {
+  background-repeat: repeat;
+}
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+/* Background positions */
+.bg-tl {
+  background-position: top left;
+}
+.bg-tc, .bg-t {
+  background-position: top center;
+}
+.bg-tr {
+  background-position: top right;
+}
+
+.bg-cl, .bg-l {
+  background-position: center left;
+}
+.bg-cc, .bg-c {
+  background-position: center center;
+}
+.bg-cr, .bg-r {
+  background-position: center right;
+}
+
+.bg-bl {
+  background-position: bottom left;
+}
+.bg-bc, .bg-b {
+  background-position: bottom center;
+}
+.bg-br {
+  background-position: bottom right;
+}
+
+/* Background size */
+.bg-cover {
+  background-size: cover;
+}
+.bg-contain {
+  background-size: contain;
+}

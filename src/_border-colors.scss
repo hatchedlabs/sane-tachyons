@@ -1,20 +1,10 @@
-/*
-Border colors can be used to extend the base 
-border classes ba,bt,bb,br,bl found in the _borders.css file. 
-
-The base border class by default will set the color of the border 
-to that of the current text color. These classes are for the cases 
-where you desire for the text and border colors to be different.
-*/
-
-// e.g. .b--primary => border-color: map-get($colors, primary);
-
+/* Border colors */
 @each $name, $value in $colors {
-  .b--#{$name} {
+  .b-#{$name} {
     border-color: $value;
   }
 }
 
-.b--inherit {
+.b-inherit {
   border-color: inherit;
 }

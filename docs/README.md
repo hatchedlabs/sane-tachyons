@@ -264,13 +264,26 @@ $border-width-levels: 5 !default;
 .ratio-7x5 { padding-bottom: 71.42%; }
 .ratio-5x7 { padding-bottom: 140%; }
 .ratio-1x1 { padding-bottom: 100%; }
-.cover { background-size: cover !important; }
-.contain { background-size: contain !important; }
-.bgp-c { background-repeat: no-repeat; background-position: center center; }
-.bgp-t { background-repeat: no-repeat; background-position: top center; }
-.bgp-r { background-repeat: no-repeat; background-position: center right; }
-.bgp-b { background-repeat: no-repeat; background-position: bottom center; }
-.bgp-l { background-repeat: no-repeat; background-position: center left; }
+
+/* Background repeat */
+[class^="bg-"], [class*=" bg-"] { background-repeat: no-repeat; }
+.bg-repeat { background-repeat: repeat; }
+.bg-no-repeat { background-repeat: no-repeat; }
+
+/* Background positions */
+.bg-tl { background-position: top left; }
+.bg-tc, .bg-t { background-position: top center; }
+.bg-tr { background-position: top right; }
+.bg-cl, .bg-l { background-position: center left; }
+.bg-cc, .bg-c { background-position: center center; }
+.bg-cr, .bg-r { background-position: center right; }
+.bg-bl { background-position: bottom left; }
+.bg-bc, .bg-b { background-position: bottom center; }
+.bg-br { background-position: bottom right; }
+
+/* Background size */
+.bg-cover { background-size: cover; }
+.bg-contain { background-size: contain; }
 
 /* Base:  b = border  Modifiers:  a = all  t = top  r = right  b = bottom  l = left  n = none  */
 .ba { border-style: solid; border-width: 1px; }
@@ -280,53 +293,46 @@ $border-width-levels: 5 !default;
 .bl { border-left-style: solid; border-left-width: 1px; }
 .bn { border-style: none; border-width: 0; }
 
-/*
-Border colors can be used to extend the base 
-border classes ba,bt,bb,br,bl found in the _borders.css file. 
+/* Border colors */
+.b-white { border-color: #fff; }
+.b-gray-98 { border-color: #F7F9FA; }
+.b-gray-94 { border-color: #E9ECF0; }
+.b-gray-88 { border-color: #D7DCE0; }
+.b-gray-80 { border-color: #C0C6CC; }
+.b-gray-30 { border-color: #3C444D; }
+.b-gray-20 { border-color: #272D33; }
+.b-gray-10 { border-color: #14171A; }
+.b-black { border-color: #000; }
+.b-transparent { border-color: transparent; }
+.b-black-05 { border-color: rgba(0, 0, 0, 0.05); }
+.b-black-10 { border-color: rgba(0, 0, 0, 0.1); }
+.b-black-20 { border-color: rgba(0, 0, 0, 0.2); }
+.b-black-40 { border-color: rgba(0, 0, 0, 0.4); }
+.b-black-80 { border-color: rgba(0, 0, 0, 0.8); }
+.b-white-05 { border-color: rgba(255, 255, 255, 0.05); }
+.b-white-10 { border-color: rgba(255, 255, 255, 0.1); }
+.b-white-20 { border-color: rgba(255, 255, 255, 0.2); }
+.b-white-40 { border-color: rgba(255, 255, 255, 0.4); }
+.b-white-80 { border-color: rgba(255, 255, 255, 0.8); }
+.b-primary { border-color: #8d1d90; }
+.b-primary-hover { border-color: #9d3ea0; }
+.b-primary-pressed { border-color: #69156b; }
+.b-primary-disabled { border-color: #c68ec7; }
+.b-secondary { border-color: #b7de58; }
+.b-secondary-hover { border-color: #c1e270; }
+.b-secondary-pressed { border-color: #89a641; }
+.b-secondary-disabled { border-color: #dbeeab; }
+.b-success { border-color: #3bb273; }
+.b-success-faded { border-color: #EBF7F1; }
+.b-warning { border-color: #e1bc29; }
+.b-warning-faded { border-color: #FCF8E9; }
+.b-error { border-color: #e15554; }
+.b-error-faded { border-color: #FCEEED; }
+.b-info { border-color: #3d70b2; }
+.b-info-faded { border-color: #EBF0F7; }
+.b-inherit { border-color: inherit; }
 
-The base border class by default will set the color of the border 
-to that of the current text color. These classes are for the cases 
-where you desire for the text and border colors to be different.
-*/
-.b--white { border-color: #fff; }
-.b--gray-98 { border-color: #F7F9FA; }
-.b--gray-94 { border-color: #E9ECF0; }
-.b--gray-88 { border-color: #D7DCE0; }
-.b--gray-80 { border-color: #C0C6CC; }
-.b--gray-30 { border-color: #3C444D; }
-.b--gray-20 { border-color: #272D33; }
-.b--gray-10 { border-color: #14171A; }
-.b--black { border-color: #000; }
-.b--transparent { border-color: transparent; }
-.b--black-05 { border-color: rgba(0, 0, 0, 0.05); }
-.b--black-10 { border-color: rgba(0, 0, 0, 0.1); }
-.b--black-20 { border-color: rgba(0, 0, 0, 0.2); }
-.b--black-40 { border-color: rgba(0, 0, 0, 0.4); }
-.b--black-80 { border-color: rgba(0, 0, 0, 0.8); }
-.b--white-05 { border-color: rgba(255, 255, 255, 0.05); }
-.b--white-10 { border-color: rgba(255, 255, 255, 0.1); }
-.b--white-20 { border-color: rgba(255, 255, 255, 0.2); }
-.b--white-40 { border-color: rgba(255, 255, 255, 0.4); }
-.b--white-80 { border-color: rgba(255, 255, 255, 0.8); }
-.b--primary { border-color: #8d1d90; }
-.b--primary-hover { border-color: #9d3ea0; }
-.b--primary-pressed { border-color: #69156b; }
-.b--primary-disabled { border-color: #c68ec7; }
-.b--secondary { border-color: #b7de58; }
-.b--secondary-hover { border-color: #c1e270; }
-.b--secondary-pressed { border-color: #89a641; }
-.b--secondary-disabled { border-color: #dbeeab; }
-.b--success { border-color: #3bb273; }
-.b--success-faded { border-color: #EBF7F1; }
-.b--warning { border-color: #e1bc29; }
-.b--warning-faded { border-color: #FCF8E9; }
-.b--error { border-color: #e15554; }
-.b--error-faded { border-color: #FCEEED; }
-.b--info { border-color: #3d70b2; }
-.b--info-faded { border-color: #EBF0F7; }
-.b--inherit { border-color: inherit; }
-
-/*
+/* Border-radius:
 .br-100 = oval
 .br-pill = rounded rectangle
 */
@@ -344,7 +350,7 @@ where you desire for the text and border colors to be different.
 .br-r { border-top-left-radius: 0; border-bottom-left-radius: 0; }
 .br-l { border-top-right-radius: 0; border-bottom-right-radius: 0; }
 
-/* Modifiers: -none   = none  -dotted = dotted -dashed = dashed -solid  = solid */
+/* Border style */
 .b-dotted { border-style: dotted; }
 .b-dashed { border-style: dashed; }
 .b-solid { border-style: solid; }
