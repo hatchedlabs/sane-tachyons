@@ -70,16 +70,43 @@ Did some research on these:
 - Mainly transform combos of {-100%, 0, 100%}
 - Maybe scale too
 
-### Common CSS states and pseudo-elements
+## CSS show/hide children
 
-Tachyons chose some weird ones for this.
+Excellent for when you have ugly child nodes and you don't want ~~custody~~
+to see them sometimes.
 
-Probably best I do some research for common patterns.
+- `.hide-kids` hides an element's children
+- `.show-kids` shows an element's children
 
-For now, common hover, focus, active states go in here.
+- `.hide-last` hides (last) child
+- `.show-last` shows (last) child
 
-Maybe a show-children class as per latest tachyons?
+## CSS states
 
-Maybe overlays as per before and after?
+Tachyons chose some weird ones for this:
 
-TBA
+- `.dim` => (on hover) `opacity: .5`
+- `.hide-child` => (on hover) shows children
+- `.grow` => (on hover) `transform: scale(1.05)`
+
+Let's use the classes we already know, with simple modifiers:
+
+- `.hover_<class>`
+- `.active_<class>`
+- `.focus_<class>`
+
+Adding this to every class would be wasteful, so let's restrict it to the
+classes we have for:
+
+- `opacity`
+- `display`
+- `overflow`
+- `background-color`\*
+- `color`\*
+- `transform`
+- `font-weight`
+- `text-decoration`
+- `border-width`
+- `\.(hide|show)-(kids|last)`
+
+\* (some clever scss variable magic would improve this in future)
