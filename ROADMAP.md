@@ -30,6 +30,17 @@ root element.
 
 ## Spacing overhaul
 
+## Remove v and h modifiers (by default)
+
+Removed vertical (`v`) and horizontal (`h`) modifiers on padding and margin.
+
+They are admittedly very useful but they use up a lot of space.
+
+The same effect can be achieved by using two classes:
+
+- `ml2 mr2` is the same as `mh2`
+- `pt3 pb3` is the same as `pv3`
+
 ### { 2^n } => { 2^n, 2^n * 1.5 }
 
 Introduce half sizes.

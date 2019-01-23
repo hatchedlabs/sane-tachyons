@@ -120,8 +120,8 @@ $spacing-base: 0.25rem !default;
 $spacing-levels: 7 !default;
 $spacing-modifiers: (
   'a': (''),
-  'h': ('-left', '-right'),
-  'v': ('-top', '-bottom'),
+// 'h': ('-left', '-right'),
+// 'v': ('-top', '-bottom'),
   't': ('-top'),
   'r': ('-right'),
   'b': ('-bottom'),

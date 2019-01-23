@@ -7,8 +7,6 @@ Base:
 
 Modifiers:
  a = all
- h = horizontal
- v = vertical
  t = top
  r = right
  b = bottom
@@ -42,11 +40,11 @@ Modifiers:
         margin#{$value}: $spacing-base * pow(2, ($i - 1));
       }
     }
-    @if $i > 1 {
-      .m#{$modifier}-#{$i - 1} {
-        @each $value in $values {
-          margin#{$value}: $spacing-base * pow(2, ($i - 2));
-        }
+  }
+  @for $i from 1 through $spacing-levels {
+    .m#{$modifier}#{$i} {
+      @each $value in $values {
+        margin#{$value}: $spacing-base * pow(2, ($i - 1));
       }
     }
   }
@@ -59,6 +57,12 @@ $coords: ('top', 'left', 'bottom', 'right');
 
   .#{$dir-first-letter}0 {
     #{$dir}: 0;
+  }
+  .#{$dir-first-letter}-50 {
+    #{$dir}: 50%;
+  }
+  .#{$dir-first-letter}-100 {
+    #{$dir}: 100%;
   }
   @for $i from 1 through $spacing-levels {
     .#{$dir-first-letter}#{$i} {

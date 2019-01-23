@@ -14,6 +14,7 @@
 html { font-size: $one-rem; }
 
 /*!TACHYONS-START*/
+@import "src/_display";
 @import "src/_colors";
 @import "src/_aspect-ratios";
 @import "src/_background-size";
@@ -24,7 +25,6 @@ html { font-size: $one-rem; }
 @import "src/_border-style";
 @import "src/_border-widths";
 @import "src/_flexbox";
-@import "src/_display";
 @import "src/_heights";
 @import "src/_lists";
 @import "src/_max-widths";
