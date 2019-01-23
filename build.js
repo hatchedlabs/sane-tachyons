@@ -2,7 +2,7 @@
 
 const sass = require('node-sass');
 const fs = require('fs-extra');
-const { join, sep } = require('path');
+const { join } = require('path');
 const autoprefixer = require('autoprefixer');
 const postcss = require('postcss');
 const cssnano = require('cssnano');
@@ -11,8 +11,8 @@ const DIR = __dirname;
 const tachyonsStartString = `/*!TACHYONS-START*/`;
 const tachyonsEndString = `/*!TACHYONS-END*/`;
 const inputSCSSPath = join(DIR, 'sane-tachyons.scss');
-const outputCSSPath = join(DIR, 'sane-tachyons.css');
-const outputCSSMapPath = join(DIR, 'sane-tachyons.css.map');
+const outputCSSPath = join(DIR, 'sane-tachyons.min.css');
+const outputCSSMapPath = join(DIR, 'sane-tachyons.min.css.map');
 
 postcss([autoprefixer, cssnano])
   .process(
@@ -32,7 +32,7 @@ postcss([autoprefixer, cssnano])
 
 const css = sass.renderSync({
   data: `$breakpoints: ();\n${fs.readFileSync(inputSCSSPath).toString()}`,
-  outputStyle: 'expanded'
+  outputStyle: 'compact'
 }).css.toString();
 
 const tachyonsStartIndex = css.indexOf(tachyonsStartString);
