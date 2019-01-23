@@ -52,7 +52,7 @@ $spacing-base: .25rem;
 
 Did some research on these:
 
-- [Scraped CSS transition data](link)
+- [Scraped CSS transition data](research/properties/transitions.md)
 - [Material recs](https://material.io/design/motion/speed.html#)
 
 Unsurprisingly, devs don't care much for easing-functions and durations.
@@ -65,7 +65,7 @@ We will also use the most common properties from the research.
 
 Did some research on these:
 
-- [Scraped CSS transform data](link)
+- [Scraped CSS transform data](research/properties/transforms.md)
 
 - Mainly transform combos of {-100%, 0, 100%}
 - Maybe scale too
