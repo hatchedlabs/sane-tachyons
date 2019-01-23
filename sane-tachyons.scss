@@ -14,7 +14,6 @@
 html { font-size: $one-rem; }
 
 /*!TACHYONS-START*/
-@import "src/_type-scale";
 @import "src/_colors";
 @import "src/_aspect-ratios";
 @import "src/_background-size";
@@ -27,11 +26,7 @@ html { font-size: $one-rem; }
 @import "src/_coordinates";
 @import "src/_flexbox";
 @import "src/_display";
-@import "src/_font-style";
-@import "src/_font-weight";
 @import "src/_heights";
-@import "src/_letter-spacing";
-@import "src/_line-height";
 @import "src/_lists";
 @import "src/_max-widths";
 @import "src/_widths";
@@ -40,12 +35,9 @@ html { font-size: $one-rem; }
 @import "src/_opacity";
 @import "src/_transforms";
 @import "src/_spacing";
-@import "src/_text-decoration";
 @import "src/_text-align";
-@import "src/_text-transform";
 @import "src/_typography";
 @import "src/_visibility";
-@import "src/_white-space";
 @import "src/_vertical-align";
 @import "src/_hovers";
 @import "src/_z-index";

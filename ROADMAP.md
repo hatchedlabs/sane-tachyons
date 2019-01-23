@@ -117,10 +117,11 @@ classes we have for:
 
 ## Smaller changes
 
-Typography merged.
+Typography files merged into one, `_typography.scss`. The order of the
+typography classes should make more sense and allow for overriding.
+
+Note that (text) `color` is still separated from `typography`.
 
 Tables removed.
-
-
 
 `.sup`, `.sub`, `.hr`, `.ol`, `.ul`, `.li`

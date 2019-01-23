@@ -1,4 +1,15 @@
-// you may also be looking for _type-scale
+// you may also be looking for _typography
+@each $name, $value in $type-scale {
+  .#{$name} {
+    font-size: #{nth($value, 1) / $one-rem}rem;
+    line-height: (nth($value, 2) / nth($value, 1));
+  }
+}
+
+.font-inherit {
+  font: inherit;
+}
+
 .indent {
   text-indent: 1em;
   margin-top: 0;
@@ -14,3 +25,84 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.strikethrough {
+  text-decoration: line-through;
+}
+.underline {
+  text-decoration: underline;
+}
+.no-underline {
+  text-decoration: none;
+}
+
+.ttc {
+  text-transform: capitalize;
+}
+.ttl {
+  text-transform: lowercase;
+}
+.ttu {
+  text-transform: uppercase;
+}
+.ttn {
+  text-transform: none;
+}
+
+.fs-i {
+  font-style: italic;
+}
+.fs-n {
+  font-style: normal;
+}
+
+.fw-n {
+  font-weight: 400;
+}
+.fw-b {
+  font-weight: 600;
+}
+
+.ls-narrow {
+  letter-spacing: $letter-spacing-narrow;
+}
+.ls-normal {
+  letter-spacing: $letter-spacing-normal;
+}
+.ls-wide {
+  letter-spacing: $letter-spacing-wide;
+}
+
+.lh-solid {
+  line-height: $line-height-solid;
+}
+.lh-title {
+  line-height: $line-height-title;
+}
+.lh-copy {
+  line-height: $line-height-copy;
+}
+
+.ws-normal {
+  white-space: normal;
+}
+.ws-nowrap {
+  white-space: nowrap;
+}
+.ws-pre {
+  white-space: pre;
+}
+.ws-pre-wrap {
+  white-space: pre-wrap;
+}
+
+.word-normal {
+  word-break: normal;
+}
+.word-wrap {
+  word-break: break-all;
+}
+.word-nowrap {
+  word-break: keep-all;
+}
+
