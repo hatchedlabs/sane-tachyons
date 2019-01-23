@@ -63,5 +63,5 @@ fs.writeFileSync(
   `${docsAutoVariablesStart}\n\n\`\`\`scss\n${variablesScss.trim()}\n\`\`\`\n\n` +
   docsMd.substring(docsAutoVariablesEndIndex, docsAutoContentsStartIndex) +
   docsAutoContentsStart + '\n\n```scss\n' +
-  tachyons.trim() + '\n```\n\n'
+  tachyons.trim().replace(/\n\n\./g, '\n.') + '\n```\n\n'
 );
