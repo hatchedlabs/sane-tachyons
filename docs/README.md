@@ -243,14 +243,14 @@ $border-width-levels: 5 !default;
 .bg-info-faded { background-color: #EBF0F7; }
 .bg-inherit { background-color: inherit; }
 
-/* Example: <div class="ratio ratio-16x9">  <img class="absolute--fill" src="your-mum.png"> </div>  */
+/* Ratios <div class="ratio ratio-16x9"> <img class="absolute-fill" src="your-mum.png"> </div>  */
 .ratio { height: 0; position: relative; }
 .ratio-16x9 { padding-bottom: 56.25%; }
 .ratio-9x16 { padding-bottom: 177.77%; }
 .ratio-4x3 { padding-bottom: 75%; }
 .ratio-3x4 { padding-bottom: 133.33%; }
-.ratio-6x4 { padding-bottom: 66.6%; }
-.ratio-4x6 { padding-bottom: 150%; }
+.ratio-3x2 { padding-bottom: 66.6%; }
+.ratio-2x3 { padding-bottom: 150%; }
 .ratio-8x5 { padding-bottom: 62.5%; }
 .ratio-5x8 { padding-bottom: 160%; }
 .ratio-7x5 { padding-bottom: 71.42%; }
@@ -404,33 +404,10 @@ where you desire for the text and border colors to be different.
 .o-8 { order: 8; }
 .o-last { order: 99999; }
 
-/*
-Base: 
- d = display 
-
-Modifiers: 
- n     = none 
- b     = block 
- ib    = inline-block 
- it    = inline-table 
- t     = table 
- tc    = table-cell 
- tr    = table-row 
- tcol  = table-column 
- tcolg = table-column-group 
-
-FLEXBOX is in separate file (_flexbox.scss)
-*/
+/* Display */
 .di { display: inline; }
 .db { display: block; }
 .dib { display: inline-block; }
-.dit { display: inline-table; }
-.dt { display: table; }
-.dtc { display: table-cell; }
-.dt-row { display: table-row; }
-.dt-row-group { display: table-row-group; }
-.dt-column { display: table-column; }
-.dt-column-group { display: table-column-group; }
 .dfx { display: flex; }
 .difx { display: inline-flex; }
 .dn { display: none; }
@@ -711,10 +688,6 @@ FLEXBOX is in separate file (_flexbox.scss)
 .r5 { right: 4rem; }
 .r6 { right: 8rem; }
 .r7 { right: 16rem; }
-.tl { text-align: left; }
-.tr { text-align: right; }
-.tc { text-align: center; }
-.tj { text-align: justify; }
 .header-1 { font-size: 4.5rem; line-height: 1.11111; }
 .header-2 { font-size: 3rem; line-height: 1.33333; }
 .header-3 { font-size: 2rem; line-height: 1.25; }
@@ -752,25 +725,37 @@ FLEXBOX is in separate file (_flexbox.scss)
 .word-normal { word-break: normal; }
 .word-wrap { word-break: break-all; }
 .word-nowrap { word-break: keep-all; }
-.sr-only { position: absolute !important; height: 1px; width: 1px; opacity: 0; overflow: hidden; pointer-events: none; clip: rect(1px, 1px, 1px, 1px); }
+
+/* Align text, or inline-block children */
+.tl { text-align: left; }
+.tr { text-align: right; }
+.tc { text-align: center; }
+.tj { text-align: justify; }
+
+/* Vertically align inline elements with respect to the line */
 .va-t { vertical-align: top; }
 .va-m { vertical-align: middle; }
 .va-base { vertical-align: baseline; }
 .va-b { vertical-align: bottom; }
+.sr-only { position: absolute !important; height: 1px; width: 1px; opacity: 0; overflow: hidden; pointer-events: none; clip: rect(1px, 1px, 1px, 1px); }
 .cursor-pointer { cursor: pointer; }
 .cursor-default { cursor: default; }
 .underline-hover:hover { text-decoration: underline; }
+
+/* Z-Index */
+.z--2 { z-index: -2; }
+.z--1 { z-index: -1; }
 .z-0 { z-index: 0; }
 .z-1 { z-index: 1; }
 .z-2 { z-index: 2; }
 .z-3 { z-index: 3; }
 .z-4 { z-index: 4; }
 .z-5 { z-index: 5; }
+.z-9 { z-index: 9; }
+.z-99 { z-index: 99; }
 .z-999 { z-index: 999; }
 .z-9999 { z-index: 9999; }
-.z-max { z-index: 2147483647; }
-.z--1 { z-index: -1; }
-.z--2 { z-index: -2; }
+.z-99999 { z-index: 99999; }
 .z-inherit { z-index: inherit; }
 .z-initial { z-index: initial; }
 .z-unset { z-index: unset; }

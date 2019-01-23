@@ -1,10 +1,8 @@
-/*
- * Example:
- * 
- * <div class="ratio ratio-16x9"> 
- *   <img class="absolute--fill" src="your-mum.png">
- * </div> 
- * */
+/* Ratios
+<div class="ratio ratio-16x9">
+  <img class="absolute-fill" src="your-mum.png">
+</div> 
+*/
 
 .ratio {
   height: 0;
@@ -25,10 +23,10 @@
   padding-bottom: 133.33%;
 }
 
-.ratio-6x4 {
+.ratio-3x2 {
   padding-bottom: 66.6%;
 }
-.ratio-4x6 {
+.ratio-2x3 {
   padding-bottom: 150%;
 }
 

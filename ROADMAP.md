@@ -24,6 +24,10 @@ Class names are in the form `.gt<rem>_<display-class>`.
 }
 ```
 
+This means we can create separate components for different sizes and turn them
+on and off at different viewpoints by conditionally displaying the component's
+root element.
+
 ## Spacing overhaul
 
 ### { 2^n } => { 2^n, 2^n * 1.5 }
@@ -39,20 +43,16 @@ Normal margins:
 ```scss
 $spacing-base: .25rem;
 
-.mt3 {
-  margin-top: 2 * 2 * $spacing-base;
-           /* 2 * 2 * .25rem = 1rem = 16px */
+/* normal margin */
+.mt1 {
+  margin-top: $spacing-base;
+           /* .25rem = 4px */
 }
-```
 
-Negative margins:
-
-```scss
-$spacing-base: .25rem;
-
-.mt-3 {
-  margin-top: -1 * 2 * 2 * $spacing-base;
-           /* -1 * 2 * 2 * .25rem = -1rem = -16px */
+/* negative margin */
+.mt-1 {
+  margin-top: -$spacing-base;
+           /* -.25rem = -4px */
 }
 ```
 
@@ -60,7 +60,7 @@ $spacing-base: .25rem;
 
 Coordinates classes (`.top-1` => `top: 1rem`) were
 too restrictive to be useful. They now follow the same pattern
-as the power of two scale.
+as the power of two spacing scale. (`.t1` => `top: .25rem`)
 
 ## Common transitions
 
@@ -89,10 +89,11 @@ Did some research on these:
 Excellent for when you have ugly children and you don't want ~~custody~~
 to see them sometimes.
 
-(Hide wife class :S)
-
 - `.hide-kids` hides an element's children
 - `.show-kids` shows an element's children
+
+- `.hide-wife` hides an element's adjacent element
+- `.show-wife` shows an element's adjacent element
 
 - `.hide-last` hides an element's (last) child
 - `.show-last` shows an element's (last) child
@@ -123,7 +124,7 @@ classes we have for:
 - `font-weight`
 - `text-decoration`
 - `border-width`
-- `\.(hide|show)-(kids|last)`
+- `\.(hide|show)-(kids|wife|last)`
 
 \* (some clever scss variable magic would improve this in future)
 
@@ -136,6 +137,10 @@ Note that (text) `color` is still separated from `typography`.
 
 Tables removed. With flexbox, there's always a better way.
 
-`.sup`, `.sub`, `.hr`, `.ol`, `.ul`, `.li`
+`.sup`, `.sub`
 
 `.absolute--fill` became `.absolute-fill`
+
+More z-index values (9, 99, 99999).
+
+Aspect ratios to lowest forms. `.ratio-6x4` => `.ratio-3x2`

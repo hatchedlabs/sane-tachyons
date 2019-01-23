@@ -1,5 +1,4 @@
-// invisible, but still readable for a screen reader
-
+// Invisible for sighted folk, but there for screen-readers
 .sr-only {
   position: absolute !important;
   height: 1px;
@@ -9,5 +8,3 @@
   pointer-events: none;
   clip: rect(1px, 1px, 1px, 1px);
 }
-
-// invisible for all users? use .dn (display: none)

@@ -1,21 +1,4 @@
-/*
-Base: 
- d = display 
-
-Modifiers: 
- n     = none 
- b     = block 
- ib    = inline-block 
- it    = inline-table 
- t     = table 
- tc    = table-cell 
- tr    = table-row 
- tcol  = table-column 
- tcolg = table-column-group 
-
-FLEXBOX is in separate file (_flexbox#{bp()}scss)
-*/
-
+/* Display */
 @include breakify($breakpoints) {
   #{bp()}di {
     display: inline;
@@ -25,27 +8,6 @@ FLEXBOX is in separate file (_flexbox#{bp()}scss)
   }
   #{bp()}dib {
     display: inline-block;
-  }
-  #{bp()}dit {
-    display: inline-table;
-  }
-  #{bp()}dt {
-    display: table;
-  }
-  #{bp()}dtc {
-    display: table-cell;
-  }
-  #{bp()}dt-row {
-    display: table-row;
-  }
-  #{bp()}dt-row-group {
-    display: table-row-group;
-  }
-  #{bp()}dt-column {
-    display: table-column;
-  }
-  #{bp()}dt-column-group {
-    display: table-column-group;
   }
   #{bp()}dfx {
     display: flex;
