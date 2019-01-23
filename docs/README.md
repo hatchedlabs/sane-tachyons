@@ -69,14 +69,14 @@ $colors: (
   secondary-pressed: #89a641,
   secondary-disabled: #dbeeab,
 
-  success: #3bb273,       // if this is a bg, use $white text
-  success-faded: #EBF7F1, // if this is a bg, use $success or $black text
-  warning: #e1bc29,       // if this is a bg, use $white text
-  warning-faded: #FCF8E9, // if this is a bg, use $warning or $black text
-  error: #e15554,         // if this is a bg, use $white text
-  error-faded: #FCEEED,   // if this is a bg, use $error or $black text
-  info: #3d70b2,          // if this is a bg, use $white text
-  info-faded: #EBF0F7     // if this is a bg, use $info or $black text
+  success: #3bb273,
+  success-faded: #EBF7F1,
+  warning: #e1bc29,
+  warning-faded: #FCF8E9,
+  error: #e15554,
+  error-faded: #FCEEED,
+  info: #3d70b2,
+  info-faded: #EBF0F7
 ) !default;
 
 // classname: (font-size in px, abs. line-height in px)
