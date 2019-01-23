@@ -72,14 +72,14 @@ Did some research on these:
 
 ## CSS show/hide children
 
-Excellent for when you have ugly child nodes and you don't want ~~custody~~
+Excellent for when you have ugly children and you don't want ~~custody~~
 to see them sometimes.
 
 - `.hide-kids` hides an element's children
 - `.show-kids` shows an element's children
 
-- `.hide-last` hides (last) child
-- `.show-last` shows (last) child
+- `.hide-last` hides an element's (last) child
+- `.show-last` shows an element's (last) child
 
 ## CSS states
 
