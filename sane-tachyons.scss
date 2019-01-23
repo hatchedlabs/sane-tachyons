@@ -7,8 +7,8 @@
 // Mixins
 @import "src/__mixins";
 
-// Custom reset for tachyons
-@import "src/_tachyons-reset";
+// Reset
+@import "~sane-reset-css/sane-reset.css";
 
 /*!TACHYONS-START*/
 @import "src/_type-scale";
