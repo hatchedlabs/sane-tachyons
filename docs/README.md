@@ -525,7 +525,7 @@ where you desire for the text and border colors to be different.
 .pa6 { padding: 8rem; }
 .pa7 { padding: 16rem; }
 
-/* MARGIN */
+/* MARGINS */
 .ma0 { margin: 0; }
 .ma1 { margin: 0.25rem; }
 .ma2 { margin: 0.5rem; }
@@ -534,13 +534,15 @@ where you desire for the text and border colors to be different.
 .ma5 { margin: 4rem; }
 .ma6 { margin: 8rem; }
 .ma7 { margin: 16rem; }
-.ma1 { margin: 0.25rem; }
-.ma2 { margin: 0.5rem; }
-.ma3 { margin: 1rem; }
-.ma4 { margin: 2rem; }
-.ma5 { margin: 4rem; }
-.ma6 { margin: 8rem; }
-.ma7 { margin: 16rem; }
+
+/* NEGATIVE MARGINS */
+.ma-1 { margin: -0.25rem; }
+.ma-2 { margin: -0.5rem; }
+.ma-3 { margin: -1rem; }
+.ma-4 { margin: -2rem; }
+.ma-5 { margin: -4rem; }
+.ma-6 { margin: -8rem; }
+.ma-7 { margin: -16rem; }
 
 /* PADDING */
 .pt0 { padding-top: 0; }
@@ -552,7 +554,7 @@ where you desire for the text and border colors to be different.
 .pt6 { padding-top: 8rem; }
 .pt7 { padding-top: 16rem; }
 
-/* MARGIN */
+/* MARGINS */
 .mt0 { margin-top: 0; }
 .mt1 { margin-top: 0.25rem; }
 .mt2 { margin-top: 0.5rem; }
@@ -561,13 +563,15 @@ where you desire for the text and border colors to be different.
 .mt5 { margin-top: 4rem; }
 .mt6 { margin-top: 8rem; }
 .mt7 { margin-top: 16rem; }
-.mt1 { margin-top: 0.25rem; }
-.mt2 { margin-top: 0.5rem; }
-.mt3 { margin-top: 1rem; }
-.mt4 { margin-top: 2rem; }
-.mt5 { margin-top: 4rem; }
-.mt6 { margin-top: 8rem; }
-.mt7 { margin-top: 16rem; }
+
+/* NEGATIVE MARGINS */
+.mt-1 { margin-top: -0.25rem; }
+.mt-2 { margin-top: -0.5rem; }
+.mt-3 { margin-top: -1rem; }
+.mt-4 { margin-top: -2rem; }
+.mt-5 { margin-top: -4rem; }
+.mt-6 { margin-top: -8rem; }
+.mt-7 { margin-top: -16rem; }
 
 /* PADDING */
 .pr0 { padding-right: 0; }
@@ -579,7 +583,7 @@ where you desire for the text and border colors to be different.
 .pr6 { padding-right: 8rem; }
 .pr7 { padding-right: 16rem; }
 
-/* MARGIN */
+/* MARGINS */
 .mr0 { margin-right: 0; }
 .mr1 { margin-right: 0.25rem; }
 .mr2 { margin-right: 0.5rem; }
@@ -588,13 +592,15 @@ where you desire for the text and border colors to be different.
 .mr5 { margin-right: 4rem; }
 .mr6 { margin-right: 8rem; }
 .mr7 { margin-right: 16rem; }
-.mr1 { margin-right: 0.25rem; }
-.mr2 { margin-right: 0.5rem; }
-.mr3 { margin-right: 1rem; }
-.mr4 { margin-right: 2rem; }
-.mr5 { margin-right: 4rem; }
-.mr6 { margin-right: 8rem; }
-.mr7 { margin-right: 16rem; }
+
+/* NEGATIVE MARGINS */
+.mr-1 { margin-right: -0.25rem; }
+.mr-2 { margin-right: -0.5rem; }
+.mr-3 { margin-right: -1rem; }
+.mr-4 { margin-right: -2rem; }
+.mr-5 { margin-right: -4rem; }
+.mr-6 { margin-right: -8rem; }
+.mr-7 { margin-right: -16rem; }
 
 /* PADDING */
 .pb0 { padding-bottom: 0; }
@@ -606,7 +612,7 @@ where you desire for the text and border colors to be different.
 .pb6 { padding-bottom: 8rem; }
 .pb7 { padding-bottom: 16rem; }
 
-/* MARGIN */
+/* MARGINS */
 .mb0 { margin-bottom: 0; }
 .mb1 { margin-bottom: 0.25rem; }
 .mb2 { margin-bottom: 0.5rem; }
@@ -615,13 +621,15 @@ where you desire for the text and border colors to be different.
 .mb5 { margin-bottom: 4rem; }
 .mb6 { margin-bottom: 8rem; }
 .mb7 { margin-bottom: 16rem; }
-.mb1 { margin-bottom: 0.25rem; }
-.mb2 { margin-bottom: 0.5rem; }
-.mb3 { margin-bottom: 1rem; }
-.mb4 { margin-bottom: 2rem; }
-.mb5 { margin-bottom: 4rem; }
-.mb6 { margin-bottom: 8rem; }
-.mb7 { margin-bottom: 16rem; }
+
+/* NEGATIVE MARGINS */
+.mb-1 { margin-bottom: -0.25rem; }
+.mb-2 { margin-bottom: -0.5rem; }
+.mb-3 { margin-bottom: -1rem; }
+.mb-4 { margin-bottom: -2rem; }
+.mb-5 { margin-bottom: -4rem; }
+.mb-6 { margin-bottom: -8rem; }
+.mb-7 { margin-bottom: -16rem; }
 
 /* PADDING */
 .pl0 { padding-left: 0; }
@@ -633,7 +641,7 @@ where you desire for the text and border colors to be different.
 .pl6 { padding-left: 8rem; }
 .pl7 { padding-left: 16rem; }
 
-/* MARGIN */
+/* MARGINS */
 .ml0 { margin-left: 0; }
 .ml1 { margin-left: 0.25rem; }
 .ml2 { margin-left: 0.5rem; }
@@ -642,13 +650,15 @@ where you desire for the text and border colors to be different.
 .ml5 { margin-left: 4rem; }
 .ml6 { margin-left: 8rem; }
 .ml7 { margin-left: 16rem; }
-.ml1 { margin-left: 0.25rem; }
-.ml2 { margin-left: 0.5rem; }
-.ml3 { margin-left: 1rem; }
-.ml4 { margin-left: 2rem; }
-.ml5 { margin-left: 4rem; }
-.ml6 { margin-left: 8rem; }
-.ml7 { margin-left: 16rem; }
+
+/* NEGATIVE MARGINS */
+.ml-1 { margin-left: -0.25rem; }
+.ml-2 { margin-left: -0.5rem; }
+.ml-3 { margin-left: -1rem; }
+.ml-4 { margin-left: -2rem; }
+.ml-5 { margin-left: -4rem; }
+.ml-6 { margin-left: -8rem; }
+.ml-7 { margin-left: -16rem; }
 
 /* COORDINATES */
 .t0 { top: 0; }
