@@ -8,7 +8,10 @@
 @import "src/__mixins";
 
 // Reset
-@import "~sane-reset-css/sane-reset.css";
+@import "src/__reset";
+
+// Establish rem base
+html { font-size: $one-rem; }
 
 /*!TACHYONS-START*/
 @import "src/_type-scale";

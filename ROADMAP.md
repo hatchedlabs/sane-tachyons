@@ -77,7 +77,7 @@ Did some research on these:
 Excellent for when you have ugly children and you don't want ~~custody~~
 to see them sometimes.
 
-(Hide wife  )
+(Hide wife class :S)
 
 - `.hide-kids` hides an element's children
 - `.show-kids` shows an element's children
@@ -116,5 +116,11 @@ classes we have for:
 \* (some clever scss variable magic would improve this in future)
 
 ## Smaller changes
+
+Typography merged.
+
+Tables removed.
+
+
 
 `.sup`, `.sub`, `.hr`, `.ol`, `.ul`, `.li`

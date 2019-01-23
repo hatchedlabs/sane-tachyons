@@ -1,0 +1,97 @@
+/** if IE, import full css reset */
+@import "https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" screen and (-ms-high-contrast: active), (-ms-high-contrast: none);
+
+/** remove user agent styles */
+:not(input), *::before, *::after {
+  all: unset;
+}
+
+/** add back in the basic ones */
+html, address,
+blockquote,
+body, dd, div,
+dl, dt, fieldset, form,
+h1, h2, h3, h4, h5, h6,
+ol, p, ul, dir, br,
+hr, menu, pre,
+table, center                   { display: block; }
+button, textarea, input, select { display: inline-block }
+li                              { display: list-item }
+head, [hidden]                  { display: none }
+caption                         { display: table-caption }
+kbd, samp                       { font-family: monospace }
+pre                             { white-space: pre }
+
+/** shame people for using deprecated tags */
+acronym, applet, basefont, big, center, dir, font,
+frame, frameset, isindex, noframes, s, strike, tt, u,
+.do-not-use-deprecated-tags {
+  outline: 8px dashed red;
+}
+
+/** shame people for using tables */
+table           { display: block }
+table::after    { content: 'Do not use <table>'; color: red; font: 900 1.5em monospace }
+table *         { display: none }
+
+/** sensible browser things used in chrome and firefox */
+slot { display: contents }
+
+/** useful 99% of the time, and overrideable */
+*, *::before, *::after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+  outline-offset: 0;
+}
+
+html {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  overflow-y: scroll;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+  border-style: solid;
+  border-width: 1px 0 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/** Normalize input elements manually */
+
+/* Remove the default vertical scrollbar in IE 11. */
+textarea {
+  overflow: auto;
+}
+
+/* Correct the cursor style of increment and decrement buttons in Chrome. */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* Correct the odd appearance in Chrome and Safari. */
+[type="search"] {
+  -webkit-appearance: textfield;
+}
+
+/* Remove the inner padding in Chrome and Safari on macOS. */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* Correct the inability to style clickable types in iOS and Safari. */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+}
+
