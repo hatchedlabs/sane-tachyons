@@ -24,3 +24,13 @@ e.g.
   transform: translate3d(-50%, -50%, 0); // gpu accel if possible
   transform: translate(-50%, -50%);
 }
+
+.absolute-fill {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

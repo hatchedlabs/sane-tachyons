@@ -24,7 +24,13 @@ Class names are in the form `.gt<rem>_<display-class>`.
 }
 ```
 
-## Negative margins
+## Spacing overhaul
+
+### { 2^n } => { 2^n, 2^n * 1.5 }
+
+Introduce half sizes.
+
+### Negative margins
 
 Power of two scale.
 
@@ -49,6 +55,12 @@ $spacing-base: .25rem;
            /* -1 * 2 * 2 * .25rem = -1rem = -16px */
 }
 ```
+
+### Coordinates
+
+Coordinates classes (`.top-1` => `top: 1rem`) were
+too restrictive to be useful. They now follow the same pattern
+as the power of two scale.
 
 ## Common transitions
 
@@ -122,6 +134,8 @@ typography classes should make more sense and allow for overriding.
 
 Note that (text) `color` is still separated from `typography`.
 
-Tables removed.
+Tables removed. With flexbox, there's always a better way.
 
 `.sup`, `.sub`, `.hr`, `.ol`, `.ul`, `.li`
+
+`.absolute--fill` became `.absolute-fill`

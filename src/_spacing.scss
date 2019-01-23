@@ -43,4 +43,21 @@ Modifiers:
       }
     }
   }
+
+  /* COORDINATES */
+  $coords: ('top', 'left', 'bottom', 'right');
+  @each $dir in $coords {
+    $dir-first-letter: str-slice($dir, 0, 1);
+
+    .#{$dir-first-letter}0 {
+      #{$dir}: 0;
+    }
+    @for $i from 1 through $spacing-levels {
+      .#{$dir-first-letter}#{$i} {
+        @each $value in $values {
+          #{$dir}: $spacing-base * pow(2, ($i - 1));
+        }
+      }
+    }
+  }
 }
