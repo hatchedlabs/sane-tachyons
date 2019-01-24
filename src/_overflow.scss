@@ -1,41 +1,44 @@
-@include breakify($breakpoints) {
-  #{bp()}overflow-visible {
+/* Overflow */
+@each $pseudo-class in $pseudo-classes {
+  $prefix: nth($pseudo-class, 1);
+  $suffix: nth($pseudo-class, 2);
+
+  #{$prefix}overflow-visible#{$suffix} {
     overflow: visible;
   }
-  #{bp()}overflow-hidden {
+  #{$prefix}overflow-hidden#{$suffix} {
     overflow: hidden;
   }
-  #{bp()}overflow-scroll {
+  #{$prefix}overflow-scroll#{$suffix} {
     overflow: scroll;
   }
-  #{bp()}overflow-auto {
+  #{$prefix}overflow-auto#{$suffix} {
     overflow: auto;
   }
 
-  #{bp()}overflow-x-visible {
+  #{$prefix}overflow-x-visible#{$suffix} {
     overflow-x: visible;
   }
-  #{bp()}overflow-x-hidden {
+  #{$prefix}overflow-x-hidden#{$suffix} {
     overflow-x: hidden;
   }
-  #{bp()}overflow-x-scroll {
+  #{$prefix}overflow-x-scroll#{$suffix} {
     overflow-x: scroll;
   }
-  #{bp()}overflow-x-auto {
+  #{$prefix}overflow-x-auto#{$suffix} {
     overflow-x: auto;
   }
 
-  #{bp()}overflow-y-visible {
+  #{$prefix}overflow-y-visible#{$suffix} {
     overflow-y: visible;
   }
-  #{bp()}overflow-y-hidden {
+  #{$prefix}overflow-y-hidden#{$suffix} {
     overflow-y: hidden;
   }
-  #{bp()}overflow-y-scroll {
+  #{$prefix}overflow-y-scroll#{$suffix} {
     overflow-y: scroll;
   }
-  #{bp()}overflow-y-auto {
+  #{$prefix}overflow-y-auto#{$suffix} {
     overflow-y: auto;
   }
 }
-

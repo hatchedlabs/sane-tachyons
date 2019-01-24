@@ -1,0 +1,31 @@
+/* Show/Hide classes */
+@each $pseudo-class in $pseudo-classes {
+  $prefix: nth($pseudo-class, 1);
+  $suffix: nth($pseudo-class, 2);
+
+  #{$prefix}hide-kids#{$suffix} > * {
+    opacity: 0;
+    pointer-events: none;
+  }
+  #{$prefix}hide-last#{$suffix} > :last-child {
+    opacity: 0;
+    pointer-events: none;
+  }
+  #{$prefix}hide-next#{$suffix} + * {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  #{$prefix}show-kids#{$suffix} > * {
+    opacity: 1;
+    pointer-events: all;
+  }
+  #{$prefix}show-last#{$suffix} > :last-child {
+    opacity: 1;
+    pointer-events: all;
+  }
+  #{$prefix}show-next#{$suffix} + * {
+    opacity: 1;
+    pointer-events: all;
+  }
+}

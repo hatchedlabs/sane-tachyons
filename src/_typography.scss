@@ -1,19 +1,112 @@
-// you may also be looking for _type-scale
+// you may also be looking for _typography
+@each $name, $value in $type-scale {
+  .#{$name} {
+    font-size: #{nth($value, 1) / $one-rem}rem;
+    line-height: (nth($value, 2) / nth($value, 1));
+  }
+}
 
-@include breakify($breakpoints) {
-  #{bp()}indent {
-    text-indent: 1em;
-    margin-top: 0;
-    margin-bottom: 0;
+.font-inherit {
+  font: inherit;
+}
+
+@each $pseudo-class in $pseudo-classes {
+  $prefix: nth($pseudo-class, 1);
+  $suffix: nth($pseudo-class, 2);
+
+  #{$prefix}strikethrough#{$suffix} {
+    text-decoration: line-through;
+  }
+  #{$prefix}underline#{$suffix} {
+    text-decoration: underline;
+  }
+  #{$prefix}td-n#{$suffix} {
+    text-decoration: none;
   }
 
-  #{bp()}small-caps {
-    font-variant: small-caps;
+  #{$prefix}fs-i#{$suffix} {
+    font-style: italic;
+  }
+  #{$prefix}fs-n#{$suffix} {
+    font-style: normal;
   }
 
-  #{bp()}truncate {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  #{$prefix}fw-n#{$suffix} {
+    font-weight: 400;
   }
+  #{$prefix}fw-b#{$suffix} {
+    font-weight: 600;
+  }
+}
+
+.indent {
+  text-indent: 1.5em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+.lower {
+  text-transform: lowercase;
+}
+.upper {
+  text-transform: uppercase;
+}
+.tt-n {
+  text-transform: none;
+}
+
+.ls-narrow {
+  letter-spacing: $letter-spacing-narrow;
+}
+.ls-normal {
+  letter-spacing: $letter-spacing-normal;
+}
+.ls-wide {
+  letter-spacing: $letter-spacing-wide;
+}
+
+.lh-solid {
+  line-height: $line-height-solid;
+}
+.lh-title {
+  line-height: $line-height-title;
+}
+.lh-copy {
+  line-height: $line-height-copy;
+}
+
+.ws-normal,
+.ws-collapse-wrap {
+  white-space: normal;
+}
+.ws-collapse-nowrap {
+  white-space: nowrap;
+}
+.ws-wrap {
+  white-space: pre-wrap;
+}
+.ws-nowrap {
+  white-space: pre;
+}
+
+.hyphenate {
+  hyphens: auto;
+}
+.do-not-hyphenate {
+  hyphens: none;
+}
+
+.wrap-long-words {
+  overflow-wrap: break-word;
+}
+.do-not-wrap-long-words {
+  overflow-wrap: normal;
+}
+.line-clamp {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

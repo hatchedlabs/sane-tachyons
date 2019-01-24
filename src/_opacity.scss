@@ -1,20 +1,24 @@
-@include breakify($breakpoints) {
-  #{bp()}o-100 {
+/* Opacity */
+@each $pseudo-class in $pseudo-classes {
+  $prefix: nth($pseudo-class, 1);
+  $suffix: nth($pseudo-class, 2);
+
+  #{$prefix}o-100#{$suffix} {
     opacity: 1;
   }
-  #{bp()}o-80 {
+  #{$prefix}o-80#{$suffix} {
     opacity: 0.8;
   }
-  #{bp()}o-40 {
+  #{$prefix}o-40#{$suffix} {
     opacity: 0.4;
   }
-  #{bp()}o-20 {
+  #{$prefix}o-20#{$suffix} {
     opacity: 0.2;
   }
-  #{bp()}o-10 {
+  #{$prefix}o-10#{$suffix} {
     opacity: 0.1;
   }
-  #{bp()}o-0 {
+  #{$prefix}o-0#{$suffix} {
     opacity: 0;
   }
 }

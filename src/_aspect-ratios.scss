@@ -1,53 +1,49 @@
-/*
- * Example:
- * 
- * <div class="ratio ratio-16x9"> 
- *   <img class="absolute--fill" src="your-mum.png">
- * </div> 
- * */
+/* Ratios
+<div class="ratio ratio-16x9">
+  <img class="absolute-fill" src="your-mum.png">
+</div> 
+*/
 
-@include breakify($breakpoints) {
-  #{bp()}ratio {
-    height: 0;
-    position: relative;
-  }
+.ratio {
+  height: 0;
+  position: relative;
+}
 
-  #{bp()}ratio-16x9 {
-    padding-bottom: 56.25%;
-  }
-  #{bp()}ratio-9x16 {
-    padding-bottom: 177.77%;
-  }
+.ratio-16x9 {
+  padding-bottom: 56.25%;
+}
+.ratio-9x16 {
+  padding-bottom: 177.77%;
+}
 
-  #{bp()}ratio-4x3 {
-    padding-bottom: 75%;
-  }
-  #{bp()}ratio-3x4 {
-    padding-bottom: 133.33%;
-  }
+.ratio-4x3 {
+  padding-bottom: 75%;
+}
+.ratio-3x4 {
+  padding-bottom: 133.33%;
+}
 
-  #{bp()}ratio-6x4 {
-    padding-bottom: 66.6%;
-  }
-  #{bp()}ratio-4x6 {
-    padding-bottom: 150%;
-  }
+.ratio-3x2 {
+  padding-bottom: 66.6%;
+}
+.ratio-2x3 {
+  padding-bottom: 150%;
+}
 
-  #{bp()}ratio-8x5 {
-    padding-bottom: 62.5%;
-  }
-  #{bp()}ratio-5x8 {
-    padding-bottom: 160%;
-  }
+.ratio-8x5 {
+  padding-bottom: 62.5%;
+}
+.ratio-5x8 {
+  padding-bottom: 160%;
+}
 
-  #{bp()}ratio-7x5 {
-    padding-bottom: 71.42%;
-  }
-  #{bp()}ratio-5x7 {
-    padding-bottom: 140%;
-  }
+.ratio-7x5 {
+  padding-bottom: 71.42%;
+}
+.ratio-5x7 {
+  padding-bottom: 140%;
+}
 
-  #{bp()}ratio-1x1 {
-    padding-bottom: 100%;
-  }
+.ratio-1x1 {
+  padding-bottom: 100%;
 }

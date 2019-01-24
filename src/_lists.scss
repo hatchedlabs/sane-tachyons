@@ -1,10 +1,8 @@
-@include breakify($breakpoints) {
-  #{bp()}bullets {
-    list-style: disc outside none;
-  }
+.bullets {
+  list-style: disc outside none;
+}
 
-  // (default, only needed to override .bullets)
-  #{bp()}no-bullets {
-    list-style: disc outside none;
-  }
+// (default, only needed to override .bullets)
+.no-bullets {
+  list-style: disc outside none;
 }

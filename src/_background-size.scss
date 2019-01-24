@@ -1,8 +1,0 @@
-@include breakify($breakpoints) {
-  #{bp()}cover {
-    background-size: cover !important;
-  }
-  #{bp()}contain {
-    background-size: contain !important;
-  }
-}

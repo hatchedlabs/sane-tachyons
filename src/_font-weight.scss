@@ -1,9 +1,0 @@
-@include breakify($breakpoints) {
-  // no font weights < 400, poor accessibility
-  #{bp()}fw-n {
-    font-weight: 400;
-  }
-  #{bp()}fw-b {
-    font-weight: 600; // <- intentionally 600 and not 700
-  }
-}

@@ -1,14 +1,12 @@
-@include breakify($breakpoints) {
-  #{bp()}static {
-    position: static;
-  }
-  #{bp()}relative {
-    position: relative;
-  }
-  #{bp()}absolute {
-    position: absolute;
-  }
-  #{bp()}fixed {
-    position: fixed;
-  }
+.static {
+  position: static;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.fixed {
+  position: fixed;
 }

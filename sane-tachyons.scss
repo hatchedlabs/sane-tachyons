@@ -7,29 +7,24 @@
 // Mixins
 @import "src/__mixins";
 
-// Custom reset for tachyons
-@import "src/_tachyons-reset";
+// Reset
+@import "src/__reset";
+
+// Establish rem base
+html { font-size: $one-rem; }
 
 /*!TACHYONS-START*/
-@import "src/_type-scale";
 @import "src/_colors";
+@import "src/_typography";
 @import "src/_aspect-ratios";
-@import "src/_background-size";
-@import "src/_background-position";
+@import "src/_background";
 @import "src/_borders";
 @import "src/_border-colors";
 @import "src/_border-radius";
 @import "src/_border-style";
 @import "src/_border-widths";
-@import "src/_coordinates";
 @import "src/_flexbox";
-@import "src/_display";
-@import "src/_font-style";
-@import "src/_font-weight";
 @import "src/_heights";
-@import "src/_letter-spacing";
-@import "src/_line-height";
-@import "src/_links";
 @import "src/_lists";
 @import "src/_max-widths";
 @import "src/_widths";
@@ -38,15 +33,11 @@
 @import "src/_opacity";
 @import "src/_transforms";
 @import "src/_spacing";
-@import "src/_tables";
-@import "src/_text-decoration";
-@import "src/_text-align";
-@import "src/_text-transform";
-@import "src/_typography";
+@import "src/_align";
 @import "src/_visibility";
-@import "src/_white-space";
-@import "src/_vertical-align";
 @import "src/_hovers";
 @import "src/_z-index";
+@import "src/_display";
+@import "src/_show-hide";
 @import "src/_utilities";
 /*!TACHYONS-END*/

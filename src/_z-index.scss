@@ -1,48 +1,7 @@
-@include breakify($breakpoints) {
-  #{bp()}z-0 {
-    z-index: 0;
-  }
-  #{bp()}z-1 {
-    z-index: 1;
-  }
-  #{bp()}z-2 {
-    z-index: 2;
-  }
-  #{bp()}z-3 {
-    z-index: 3;
-  }
-  #{bp()}z-4 {
-    z-index: 4;
-  }
-  #{bp()}z-5 {
-    z-index: 5;
-  }
-
-  #{bp()}z-999 {
-    z-index: 999;
-  }
-  #{bp()}z-9999 {
-    z-index: 9999;
-  }
-
-  #{bp()}z-max {
-    z-index: 2147483647;
-  }
-
-  #{bp()}z--1 {
-    z-index: -1;
-  }
-  #{bp()}z--2 {
-    z-index: -2;
-  }
-
-  #{bp()}z-inherit {
-    z-index: inherit;
-  }
-  #{bp()}z-initial {
-    z-index: initial;
-  }
-  #{bp()}z-unset {
-    z-index: unset;
+/* Z-Index */
+$z-vals: -2, -1, 0, 1, 2, 3, 4, 5, 9, 99, 999, 9999, 99999, inherit, initial, unset;
+@each $z-val in $z-vals {
+  .z-#{$z-val} {
+    z-index: #{$z-val};
   }
 }

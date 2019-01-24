@@ -1,22 +1,14 @@
-/*
-Modifiers:
--none   = none 
--dotted = dotted
--dashed = dashed
--solid  = solid
- */
+/* Border style */
 
-@include breakify($breakpoints) {
-  #{bp()}b-dotted {
-    border-style: dotted;
-  }
-  #{bp()}b-dashed {
-    border-style: dashed;
-  }
-  #{bp()}b-solid {
-    border-style: solid;
-  }
-  #{bp()}b-none {
-    border-style: none;
-  }
+.b-dotted {
+  border-style: dotted;
+}
+.b-dashed {
+  border-style: dashed;
+}
+.b-solid {
+  border-style: solid;
+}
+.b-none {
+  border-style: none;
 }

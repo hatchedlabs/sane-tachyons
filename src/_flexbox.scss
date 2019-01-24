@@ -1,180 +1,166 @@
-@include breakify($breakpoints) {
-  #{bp()}dfx {
-    display: flex;
-  }
-  #{bp()}difx {
-    display: inline-flex;
+/*
+  .dfx => display: flex;
+  .difx => display: inline-flex;
+   (they are in _display.scss)
+
+  .fx-abc {
+    flex: a b c;
+    // a = flex-grow
+    // b = flex-shrink
+    // c = flex-basis
   }
 
-  /*
-    .fx-abc {
-      flex: a b c;
-      // a = flex-grow
-      // b = flex-shrink
-      // c = flex-basis
-    }
+  a: {0, 1}
+  b: {0, 1}
+  c: {0, a} (where a is short for auto)
+*/
+.fx-11a {
+  flex: 1 1 auto;
+  min-width: 1px; // needed to fix chrome 44 bug
+  min-height: 1px; // needed to fix chrome 44 bug
+}
+.fx-10a {
+  flex: 1 0 auto;
+  min-width: 1px; // needed to fix chrome 44 bug
+  min-height: 1px; // needed to fix chrome 44 bug
+}
+.fx-01a {
+  flex: 0 1 auto;
+  min-width: 1px; // needed to fix chrome 44 bug
+  min-height: 1px; // needed to fix chrome 44 bug
+}
+.fx-00a {
+  flex: 0 0 auto;
+  min-width: 1px; // needed to fix chrome 44 bug
+  min-height: 1px; // needed to fix chrome 44 bug
+}
+.fx-110 {
+  flex: 1 1 0;
+}
+.fx-100 {
+  flex: 1 0 0;
+}
+.fx-010 {
+  flex: 0 1 0;
+}
+.fx-000 {
+  flex: 0 0 0;
+}
 
-    a: {0, 1}
-    b: {0, 1}
-    c: {0, a} (where a is short for auto)
-  */
-  #{bp()}fx-11a {
-    flex: 1 1 auto;
-    min-width: 1px; // needed to fix chrome 44 bug
-    min-height: 1px; // needed to fix chrome 44 bug
-  }
-  #{bp()}fx-10a {
-    flex: 1 0 auto;
-    min-width: 1px; // needed to fix chrome 44 bug
-    min-height: 1px; // needed to fix chrome 44 bug
-  }
-  #{bp()}fx-01a {
-    flex: 0 1 auto;
-    min-width: 1px; // needed to fix chrome 44 bug
-    min-height: 1px; // needed to fix chrome 44 bug
-  }
-  #{bp()}fx-00a {
-    flex: 0 0 auto;
-    min-width: 1px; // needed to fix chrome 44 bug
-    min-height: 1px; // needed to fix chrome 44 bug
-  }
-  #{bp()}fx-110 {
-    flex: 1 1 0;
-  }
-  #{bp()}fx-100 {
-    flex: 1 0 0;
-  }
-  #{bp()}fx-010 {
-    flex: 0 1 0;
-  }
-  #{bp()}fx-000 {
-    flex: 0 0 0;
-  }
+.fx-grow-max {
+  flex-grow: 2147483647;
+}
+.fx-shrink-max {
+  flex-shrink: 2147483647;
+}
 
-  #{bp()}fx-grow-max {
-    flex-grow: 2147483647;
-  }
-  #{bp()}fx-shrink-max {
-    flex-shrink: 2147483647;
-  }
+.fx-column {
+  flex-direction: column;
+}
+.fx-row {
+  flex-direction: row;
+}
+.fx-wrap {
+  flex-wrap: wrap;
+}
+.fx-nowrap {
+  flex-wrap: nowrap;
+}
+.fx-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+.fx-column-reverse {
+  flex-direction: column-reverse;
+}
+.fx-row-reverse {
+  flex-direction: row-reverse;
+}
 
-  #{bp()}fx-column {
-    flex-direction: column;
-  }
-  #{bp()}fx-row {
-    flex-direction: row;
-  }
-  #{bp()}fx-wrap {
-    flex-wrap: wrap;
-  }
-  #{bp()}fx-nowrap {
-    flex-wrap: nowrap;
-  }
-  #{bp()}fx-wrap-reverse {
-    flex-wrap: wrap-reverse;
-  }
-  #{bp()}fx-column-reverse {
-    flex-direction: column-reverse;
-  }
-  #{bp()}fx-row-reverse {
-    flex-direction: row-reverse;
-  }
+.items-start {
+  align-items: flex-start;
+}
+.items-end {
+  align-items: flex-end;
+}
+.items-center {
+  align-items: center;
+}
+.items-baseline {
+  align-items: baseline;
+}
+.items-stretch {
+  align-items: stretch;
+}
 
-  #{bp()}items-start {
-    align-items: flex-start;
-  }
-  #{bp()}items-end {
-    align-items: flex-end;
-  }
-  #{bp()}items-center {
-    align-items: center;
-  }
-  #{bp()}items-baseline {
-    align-items: baseline;
-  }
-  #{bp()}items-stretch {
-    align-items: stretch;
-  }
+.self-start {
+  align-self: flex-start;
+}
+.self-end {
+  align-self: flex-end;
+}
+.self-center {
+  align-self: center;
+}
+.self-baseline {
+  align-self: baseline;
+}
+.self-stretch {
+  align-self: stretch;
+}
 
-  #{bp()}self-start {
-    align-self: flex-start;
-  }
-  #{bp()}self-end {
-    align-self: flex-end;
-  }
-  #{bp()}self-center {
-    align-self: center;
-  }
-  #{bp()}self-baseline {
-    align-self: baseline;
-  }
-  #{bp()}self-stretch {
-    align-self: stretch;
-  }
+.justify-start {
+  justify-content: flex-start;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-around {
+  justify-content: space-around;
+}
 
-  #{bp()}justify-start {
-    justify-content: flex-start;
-  }
-  #{bp()}justify-end {
-    justify-content: flex-end;
-  }
-  #{bp()}justify-center {
-    justify-content: center;
-  }
-  #{bp()}justify-between {
-    justify-content: space-between;
-  }
-  #{bp()}justify-around {
-    justify-content: space-around;
-  }
+.content-start {
+  align-content: flex-start;
+}
+.content-end {
+  align-content: flex-end;
+}
+.content-center {
+  align-content: center;
+}
+.content-between {
+  align-content: space-between;
+}
+.content-around {
+  align-content: space-around;
+}
+.content-stretch {
+  align-content: stretch;
+}
 
-  #{bp()}content-start {
-    align-content: flex-start;
-  }
-  #{bp()}content-end {
-    align-content: flex-end;
-  }
-  #{bp()}content-center {
-    align-content: center;
-  }
-  #{bp()}content-between {
-    align-content: space-between;
-  }
-  #{bp()}content-around {
-    align-content: space-around;
-  }
-  #{bp()}content-stretch {
-    align-content: stretch;
-  }
-
-  #{bp()}o-0 {
-    order: 0;
-  }
-  #{bp()}o-1 {
-    order: 1;
-  }
-  #{bp()}o-2 {
-    order: 2;
-  }
-  #{bp()}o-3 {
-    order: 3;
-  }
-  #{bp()}o-4 {
-    order: 4;
-  }
-  #{bp()}o-5 {
-    order: 5;
-  }
-  #{bp()}o-6 {
-    order: 6;
-  }
-  #{bp()}o-7 {
-    order: 7;
-  }
-  #{bp()}o-8 {
-    order: 8;
-  }
-  #{bp()}o-last {
-    order: 99999;
-  }
+.order-first {
+  order: -1;
+}
+.order-0 {
+  order: 0;
+}
+.order-1 {
+  order: 1;
+}
+.order-2 {
+  order: 2;
+}
+.order-3 {
+  order: 3;
+}
+.order-4 {
+  order: 4;
+}
+.order-last {
+  order: 99999;
 }

@@ -1,8 +1,0 @@
-@include breakify($breakpoints) {
-  #{bp()}fs-i {
-    font-style: italic;
-  }
-  #{bp()}fs-n {
-    font-style: normal;
-  }
-}

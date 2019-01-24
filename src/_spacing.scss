@@ -1,48 +1,71 @@
-/* 
-SPACING (padding + margin)
-
-Base:
- p = padding
- m = margin
-
-Modifiers:
- a = all
- h = horizontal
- v = vertical
- t = top
- r = right
- b = bottom
- l = left
-*/
-
-@include breakify($breakpoints) {
-  @each $modifier, $values in $spacing-modifiers {
-    /* PADDING */
-    #{bp()}p#{$modifier}0 {
+/* Spacing (MARGINS, PADDING, NEGATIVE MARGINS) */
+@each $modifier, $values in $spacing-modifiers {
+  .p#{$modifier}0 {
+    @each $value in $values {
+      padding#{$value}: 0;
+    }
+  }
+  @for $i from 1 through $spacing-levels {
+    .p#{$modifier}#{$i} {
       @each $value in $values {
-        padding#{$value}: 0;
+        padding#{$value}: $spacing-base * pow(2, ($i - 1));
       }
     }
-    @for $i from 1 through $spacing-levels {
-      #{bp()}p#{$modifier}#{$i} {
+    @if $i != $spacing-levels {
+      .p#{$modifier}#{$i}-5 {
         @each $value in $values {
-          padding#{$value}: $spacing-base * pow(2, ($i - 1));
+          padding#{$value}: 1.5 * $spacing-base * pow(2, ($i - 1));
         }
       }
     }
+  }
 
-    /* MARGIN */
-    #{bp()}m#{$modifier}0 {
+  .m#{$modifier}0 {
+    @each $value in $values {
+      margin#{$value}: 0;
+    }
+  }
+  @for $i from 1 through $spacing-levels {
+    .m#{$modifier}#{$i} {
       @each $value in $values {
-        margin#{$value}: 0;
+        margin#{$value}: $spacing-base * pow(2, ($i - 1));
       }
     }
-    @for $i from 1 through $spacing-levels {
-      #{bp()}m#{$modifier}#{$i} {
+    @if $i != $spacing-levels {
+      .m#{$modifier}#{$i}-5 {
         @each $value in $values {
-          margin#{$value}: $spacing-base * pow(2, ($i - 1));
+          margin#{$value}: 1.5 * $spacing-base * pow(2, ($i - 1));
         }
       }
+    }
+  }
+
+  @for $i from 1 through $spacing-levels {
+    .m#{$modifier}-#{$i} {
+      @each $value in $values {
+        margin#{$value}: -$spacing-base * pow(2, ($i - 1));
+      }
+    }
+  }
+}
+
+/* Coordinates */
+$coords: ('top', 'left', 'bottom', 'right');
+@each $dir in $coords {
+  $dir-first-letter: str-slice($dir, 0, 1);
+
+  .#{$dir-first-letter}0 {
+    #{$dir}: 0;
+  }
+  .#{$dir-first-letter}-50 {
+    #{$dir}: 50%;
+  }
+  .#{$dir-first-letter}-100 {
+    #{$dir}: 100%;
+  }
+  @for $i from 1 through $spacing-levels {
+    .#{$dir-first-letter}#{$i} {
+      #{$dir}: $spacing-base * pow(2, ($i - 1));
     }
   }
 }

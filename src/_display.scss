@@ -1,63 +1,21 @@
-/*
-Base: 
- d = display 
-
-Modifiers: 
- n     = none 
- b     = block 
- ib    = inline-block 
- it    = inline-table 
- t     = table 
- tc    = table-cell 
- tr    = table-row 
- tcol  = table-column 
- tcolg = table-column-group 
-
-FLEXBOX is in separate file (_flexbox#{bp()}scss)
-*/
-
+/* Display */
 @include breakify($breakpoints) {
-  #{bp()}dn {
-    display: none;
-  }
-  #{bp()}di {
+  #{extend()}di {
     display: inline;
   }
-  #{bp()}db {
+  #{extend()}db {
     display: block;
   }
-  #{bp()}dib {
+  #{extend()}dib {
     display: inline-block;
   }
-  #{bp()}dit {
-    display: inline-table;
+  #{extend()}dfx {
+    display: flex;
   }
-  #{bp()}dt {
-    display: table;
+  #{extend()}difx {
+    display: inline-flex;
   }
-  #{bp()}dtc {
-    display: table-cell;
-  }
-  #{bp()}dt-row {
-    display: table-row;
-  }
-  #{bp()}dt-row-group {
-    display: table-row-group;
-  }
-  #{bp()}dt-column {
-    display: table-column;
-  }
-  #{bp()}dt-column-group {
-    display: table-column-group;
-  }
-
-  /* 
-  This will set table to full width and then 
-  all cells will be equal width 
-  */
-  #{bp()}dt--fixed {
-    table-layout: fixed;
-    width: 100%;
+  #{extend()}dn {
+    display: none;
   }
 }
-

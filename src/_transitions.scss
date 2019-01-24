@@ -1,0 +1,110 @@
+/* Transitions
+for a transition, you will need the
+property, duration and timing-function
+e.g. .transition-top.duration-250.on-on
+*/
+
+@each $pseudo-class in $pseudo-classes {
+  $prefix: nth($pseudo-class, 1);
+  $suffix: nth($pseudo-class, 2);
+
+  #{$prefix}transition-opacity#{$suffix} {
+    transition-property: opacity;
+  }
+  #{$prefix}transition-transform#{$suffix} {
+    transition-property: transform;
+  }
+  #{$prefix}transition-color#{$suffix} {
+    transition-property: color;
+  }
+  #{$prefix}transition-background#{$suffix} {
+    transition-property: background;
+  }
+  #{$prefix}transition-border#{$suffix} {
+    transition-property: border;
+  }
+  #{$prefix}transition-width#{$suffix} {
+    transition-property: width;
+  }
+  #{$prefix}transition-top#{$suffix} {
+    transition-property: top;
+  }
+  #{$prefix}transition-left#{$suffix} {
+    transition-property: left;
+  }
+  #{$prefix}transition-right#{$suffix} {
+    transition-property: right;
+  }
+  #{$prefix}transition-bottom#{$suffix} {
+    transition-property: bottom;
+  }
+  /* Do not use `all` unless there's no alternative */
+  #{$prefix}transition-all#{$suffix} {
+    transition-property: all;
+  }
+  #{$prefix}transition-none#{$suffix} {
+    transition-property: none;
+  }
+
+  /* transition-duration - refer to: https://material.io/design/motion/speed.html#duration */
+  #{$prefix}duration-75#{$suffix} {
+    transition-duration: 75ms;
+  }
+  #{$prefix}duration-100#{$suffix} {
+    transition-duration: 100ms;
+  }
+  #{$prefix}duration-150#{$suffix} {
+    transition-duration: 150ms;
+  }
+  #{$prefix}duration-200#{$suffix} {
+    transition-duration: 200ms;
+  }
+  #{$prefix}duration-250#{$suffix} {
+    transition-duration: 250ms;
+  }
+  #{$prefix}duration-300#{$suffix} {
+    transition-duration: 300ms;
+  }
+  #{$prefix}duration-0#{$suffix} {
+    transition-duration: 0;
+  }
+
+  /* transition-timing-function
+  #{$prefix}on-off means that the element was ON the page at the start
+  of the transition, and OFF it at the end */
+  #{$prefix}on-on#{$suffix} {
+    transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+  }
+  #{$prefix}off-on#{$suffix} {
+    transition-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+  }
+  #{$prefix}on-off#{$suffix} {
+    transition-timing-function: cubic-bezier(0.4, 0.0, 1, 1);
+  }
+  #{$prefix}linear#{$suffix} {
+    transition-timing-function: linear;
+  }
+
+  /* transition-delay */
+  #{$prefix}delay-75#{$suffix} {
+    transition-delay: 75ms;
+  }
+  #{$prefix}delay-100#{$suffix} {
+    transition-delay: 100ms;
+  }
+  #{$prefix}delay-150#{$suffix} {
+    transition-delay: 150ms;
+  }
+  #{$prefix}delay-200#{$suffix} {
+    transition-delay: 200ms;
+  }
+  #{$prefix}delay-250#{$suffix} {
+    transition-delay: 250ms;
+  }
+  #{$prefix}delay-300#{$suffix} {
+    transition-delay: 300ms;
+  }
+  #{$prefix}delay-0#{$suffix} {
+    transition-delay: 0;
+  }
+}

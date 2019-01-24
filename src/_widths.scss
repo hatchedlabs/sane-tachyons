@@ -1,25 +1,23 @@
-@include breakify($breakpoints) {
-  /* Width Scale */
-  #{bp()}w0, #{bp()}w-0 {
-    width: 0;
+/* Width Scale */
+.w0, .w-0 {
+  width: 0;
+}
+@for $i from 1 through $width-levels {
+  .w#{$i} {
+    width: pow(2, ($i - 1)) * $width-base;
   }
-  @for $i from 1 through $width-levels {
-    #{bp()}w#{$i} {
-      width: pow(2, ($i - 1)) * $width-base;
-    }
-  }
+}
 
-  /* Percentage Widths */
-  @for $i from 1 through $grid-columns {
-    #{bp()}w-#{$i}-#{$grid-columns} {
-      width: #{100% * $i / $grid-columns};
-    }
+/* Percentage Widths */
+@for $i from 1 through $grid-columns {
+  .w-#{$i}-#{$grid-columns} {
+    width: #{100% * $i / $grid-columns};
   }
-  #{bp()}w-100 {
-    width: 100%;
-  }
+}
+.w-100 {
+  width: 100%;
+}
 
-  #{bp()}w-auto {
-    width: auto;
-  }
+.w-auto {
+  width: auto;
 }

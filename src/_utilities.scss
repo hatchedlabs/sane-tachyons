@@ -1,28 +1,30 @@
-// utility functions
-@include breakify($breakpoints) {
-  #{bp()}h-center {
-    margin-right: auto;
-    margin-left: auto;
-  }
+/* Utilities */
+.h-center {
+  margin-right: auto;
+  margin-left: auto;
+}
 
-  #{bp()}mr-auto {
-    margin-right: auto;
-  }
-  #{bp()}ml-auto {
-    margin-left: auto;
-  }
+.mr-auto {
+  margin-right: auto;
+}
+.ml-auto {
+  margin-left: auto;
+}
 
-  /*
-  e.g.
-    <div className="h4 w4 relative overflow-y-hidden">
-      <img className="w-100 absolute-center" />
-    </div>
-  */
-  #{bp()}absolute-center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate3d(-50%, -50%, 0); // gpu accel if possible
-    transform: translate(-50%, -50%);
-  }
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0); // gpu accel if possible
+  transform: translate(-50%, -50%);
+}
+
+.absolute-fill {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
