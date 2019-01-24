@@ -28,3 +28,11 @@
   bottom: 0;
   left: 0;
 }
+
+.pointer-none {
+  pointer-events: none;
+}
+
+.pointer-all {
+  pointer-events: all;
+}

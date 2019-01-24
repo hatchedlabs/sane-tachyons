@@ -1467,5 +1467,7 @@ wrapping inline text around something */
 .ml-auto { margin-left: auto; }
 .absolute-center { position: absolute; top: 50%; left: 50%; transform: translate3d(-50%, -50%, 0); transform: translate(-50%, -50%); }
 .absolute-fill { position: absolute; width: auto; height: auto; top: 0; right: 0; bottom: 0; left: 0; }
+.pointer-none { pointer-events: none; }
+.pointer-all { pointer-events: all; }
 ```
 
