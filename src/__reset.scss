@@ -1,5 +1,4 @@
-/** if IE, import full css reset */
-@import "https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" screen and (-ms-high-contrast: active), (-ms-high-contrast: none);
+/** if supporting IE, import full css reset before this with [if IE] html comment */
 
 /** remove user agent styles */
 :not(input), *::before, *::after {
