@@ -143,33 +143,24 @@
   align-content: stretch;
 }
 
-.o-0 {
+.order-first {
+  order: -1;
+}
+.order-0 {
   order: 0;
 }
-.o-1 {
+.order-1 {
   order: 1;
 }
-.o-2 {
+.order-2 {
   order: 2;
 }
-.o-3 {
+.order-3 {
   order: 3;
 }
-.o-4 {
+.order-4 {
   order: 4;
 }
-.o-5 {
-  order: 5;
-}
-.o-6 {
-  order: 6;
-}
-.o-7 {
-  order: 7;
-}
-.o-8 {
-  order: 8;
-}
-.o-last {
+.order-last {
   order: 99999;
 }

@@ -1,15 +1,62 @@
-.gpu-accel {
-  // avoid nesting these: https://wesleyhales.com/blog/2013/10/26/Jank-Busting-Apples-Home-Page/
-  -webkit-transform: rotateZ(360deg);
-  transform: rotateZ(360deg);
-}
+/* Transforms - 3d used to enable hardware acceleration where possible */
 
-// some translates to come here
-.grow {
-  transform: scale(1.25, 1.25);
-  transform: scale3d(1.25, 1.25, 1);
-}
-.shrink {
-  transform: scale(0.8, 0.8);
-  transform: scale3d(0.8, 0.8, 1);
+@each $pseudo-class in $pseudo-classes {
+  $prefix: nth($pseudo-class, 1);
+  $suffix: nth($pseudo-class, 2);
+
+  #{$prefix}origin-tl#{$suffix} {
+    transform-origin: top left 0;
+  }
+  #{$prefix}origin-tc#{$suffix} {
+    transform-origin: top center 0;
+  }
+  #{$prefix}origin-tr#{$suffix} {
+    transform-origin: top right 0;
+  }
+  #{$prefix}origin-cl#{$suffix} {
+    transform-origin: center left 0;
+  }
+  #{$prefix}origin-cr#{$suffix} {
+    transform-origin: center right 0;
+  }
+  #{$prefix}origin-bl#{$suffix} {
+    transform-origin: bottom left 0;
+  }
+  #{$prefix}origin-bc#{$suffix} {
+    transform-origin: bottom center 0;
+  }
+  #{$prefix}origin-br#{$suffix} {
+    transform-origin: bottom right 0;
+  }
+  #{$prefix}origin-cc#{$suffix},
+  #{$prefix}origin-i#{$suffix} {
+    transform-origin: initial;
+  }
+
+  #{$prefix}scale-up#{$suffix} {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+  #{$prefix}scale-down#{$suffix} {
+    transform: scale3d(0.9, 0.9, 1);
+  }
+
+  #{$prefix}move-up-100#{$suffix} {
+    transform: translate3d(-100%, 0, 0);
+  }
+  #{$prefix}move-right-100#{$suffix} {
+    transform: translate3d(0, 100%, 0);
+  }
+  #{$prefix}move-down-100#{$suffix} {
+    transform: translate3d(100%, 0, 0);
+  }
+  #{$prefix}move-left-100#{$suffix} {
+    transform: translate3d(0, -100%, 0);
+  }
+
+  #{$prefix}transform-none#{$suffix},
+  #{$prefix}accelerated#{$suffix} {
+    // avoid nesting these: https://wesleyhales.com/blog/2013/10/26/Jank-Busting-Apples-Home-Page/
+    transform: rotateZ(360deg);
+    -webkit-transform: rotateZ(360deg); // blink/webkit loves this
+  }
 }

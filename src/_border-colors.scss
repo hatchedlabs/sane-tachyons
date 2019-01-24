@@ -1,10 +1,15 @@
 /* Border colors */
-@each $name, $value in $colors {
-  .b-#{$name} {
-    border-color: $value;
-  }
-}
+@each $pseudo-class in $pseudo-classes {
+  $prefix: nth($pseudo-class, 1);
+  $suffix: nth($pseudo-class, 2);
 
-.b-inherit {
-  border-color: inherit;
+  @each $name, $value in $colors {
+    #{$prefix}b-#{$name}#{$suffix} {
+      border-color: $value;
+    }
+  }
+
+  #{$prefix}b-inherit#{$suffix} {
+    border-color: inherit;
+  }
 }

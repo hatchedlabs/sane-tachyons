@@ -18,6 +18,13 @@ $breakpoints: (
   gt100: "not (max-width: 100rem)" // > 1600
 ) !default;
 
+$pseudo-classes: (
+  ('.', ''),
+  ('.hover_', ':hover'),
+  ('.active_', ':active'),
+  ('.focus_', ':focus')
+) !default;
+
 $grid-columns: 12 !default;
 
 $colors: (

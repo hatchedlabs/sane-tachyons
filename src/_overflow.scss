@@ -1,39 +1,44 @@
-.overflow-visible {
-  overflow: visible;
-}
-.overflow-hidden {
-  overflow: hidden;
-}
-.overflow-scroll {
-  overflow: scroll;
-}
-.overflow-auto {
-  overflow: auto;
-}
+/* Overflow */
+@each $pseudo-class in $pseudo-classes {
+  $prefix: nth($pseudo-class, 1);
+  $suffix: nth($pseudo-class, 2);
 
-.overflow-x-visible {
-  overflow-x: visible;
-}
-.overflow-x-hidden {
-  overflow-x: hidden;
-}
-.overflow-x-scroll {
-  overflow-x: scroll;
-}
-.overflow-x-auto {
-  overflow-x: auto;
-}
+  #{$prefix}overflow-visible#{$suffix} {
+    overflow: visible;
+  }
+  #{$prefix}overflow-hidden#{$suffix} {
+    overflow: hidden;
+  }
+  #{$prefix}overflow-scroll#{$suffix} {
+    overflow: scroll;
+  }
+  #{$prefix}overflow-auto#{$suffix} {
+    overflow: auto;
+  }
 
-.overflow-y-visible {
-  overflow-y: visible;
-}
-.overflow-y-hidden {
-  overflow-y: hidden;
-}
-.overflow-y-scroll {
-  overflow-y: scroll;
-}
-.overflow-y-auto {
-  overflow-y: auto;
-}
+  #{$prefix}overflow-x-visible#{$suffix} {
+    overflow-x: visible;
+  }
+  #{$prefix}overflow-x-hidden#{$suffix} {
+    overflow-x: hidden;
+  }
+  #{$prefix}overflow-x-scroll#{$suffix} {
+    overflow-x: scroll;
+  }
+  #{$prefix}overflow-x-auto#{$suffix} {
+    overflow-x: auto;
+  }
 
+  #{$prefix}overflow-y-visible#{$suffix} {
+    overflow-y: visible;
+  }
+  #{$prefix}overflow-y-hidden#{$suffix} {
+    overflow-y: hidden;
+  }
+  #{$prefix}overflow-y-scroll#{$suffix} {
+    overflow-y: scroll;
+  }
+  #{$prefix}overflow-y-auto#{$suffix} {
+    overflow-y: auto;
+  }
+}

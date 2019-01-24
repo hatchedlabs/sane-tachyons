@@ -1,18 +1,24 @@
-.o-100 {
-  opacity: 1;
-}
-.o-80 {
-  opacity: 0.8;
-}
-.o-40 {
-  opacity: 0.4;
-}
-.o-20 {
-  opacity: 0.2;
-}
-.o-10 {
-  opacity: 0.1;
-}
-.o-0 {
-  opacity: 0;
+/* Opacity */
+@each $pseudo-class in $pseudo-classes {
+  $prefix: nth($pseudo-class, 1);
+  $suffix: nth($pseudo-class, 2);
+
+  #{$prefix}o-100#{$suffix} {
+    opacity: 1;
+  }
+  #{$prefix}o-80#{$suffix} {
+    opacity: 0.8;
+  }
+  #{$prefix}o-40#{$suffix} {
+    opacity: 0.4;
+  }
+  #{$prefix}o-20#{$suffix} {
+    opacity: 0.2;
+  }
+  #{$prefix}o-10#{$suffix} {
+    opacity: 0.1;
+  }
+  #{$prefix}o-0#{$suffix} {
+    opacity: 0;
+  }
 }

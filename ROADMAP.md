@@ -127,11 +127,12 @@ Adding this to every class would be wasteful, so let's restrict it to the
 classes we have for:
 
 - `opacity`
-- `display`
 - `overflow`
 - `background-color`\*
 - `color`\*
+- `border-color`
 - `transform`
+- `transitions`
 - `font-weight`
 - `text-decoration`
 - `border-width`
@@ -146,6 +147,8 @@ typography classes should make more sense and allow for overriding. Note
 that (text-)`color` is still separated from `typography`
 
 Tables removed (with flexbox, there's always a better way)
+
+Border colors: `.b--color` => `.b-color`
 
 `.sup`, `.sub`
 

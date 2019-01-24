@@ -14,8 +14,8 @@
 html { font-size: $one-rem; }
 
 /*!TACHYONS-START*/
-@import "src/_display";
 @import "src/_colors";
+@import "src/_typography";
 @import "src/_aspect-ratios";
 @import "src/_background";
 @import "src/_borders";
@@ -33,10 +33,11 @@ html { font-size: $one-rem; }
 @import "src/_opacity";
 @import "src/_transforms";
 @import "src/_spacing";
-@import "src/_typography";
 @import "src/_align";
 @import "src/_visibility";
 @import "src/_hovers";
 @import "src/_z-index";
+@import "src/_display";
+@import "src/_show-hide";
 @import "src/_utilities";
 /*!TACHYONS-END*/

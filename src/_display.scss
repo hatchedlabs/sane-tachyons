@@ -1,23 +1,21 @@
 /* Display */
 @include breakify($breakpoints) {
-  #{bp()}di {
+  #{extend()}di {
     display: inline;
   }
-  #{bp()}db {
+  #{extend()}db {
     display: block;
   }
-  #{bp()}dib {
+  #{extend()}dib {
     display: inline-block;
   }
-  #{bp()}dfx {
+  #{extend()}dfx {
     display: flex;
   }
-  #{bp()}difx {
+  #{extend()}difx {
     display: inline-flex;
   }
-
-  // make sure this is last, so it can override others
-  #{bp()}dn {
+  #{extend()}dn {
     display: none;
   }
 }

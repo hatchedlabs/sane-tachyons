@@ -25,3 +25,24 @@
 .va-i {
   vertical-align: initial;
 }
+
+/* Floats - please use flexbox for layout - this is here for
+wrapping inline text around something */
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.fn {
+  float: none;
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}

@@ -31,7 +31,7 @@ postcss([autoprefixer, cssnano])
   });
 
 const css = sass.renderSync({
-  data: `$breakpoints: ();\n${fs.readFileSync(inputSCSSPath).toString()}`,
+  data: `${fs.readFileSync(inputSCSSPath).toString()}`,
   outputStyle: 'compact'
 }).css.toString();
 

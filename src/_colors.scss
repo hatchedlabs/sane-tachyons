@@ -1,29 +1,23 @@
-/*
-Tip:
-  If you haven't declared a border color, but set border on an element,
-  it will be set to the current text color.
-*/
+/* Colors (text + background) */
+@each $pseudo-class in $pseudo-classes {
+  $prefix: nth($pseudo-class, 1);
+  $suffix: nth($pseudo-class, 2);
 
-/* Text colors */
-// e.g. .black   => color: map-get($colors, black);
-//      .primary => color: map-get($colors, primary);
-@each $name, $value in $colors {
-  .#{$name} {
-    color: $value;
+  @each $name, $value in $colors {
+    #{$prefix}#{$name}#{$suffix} {
+      color: $value;
+    }
   }
-}
-.color-inherit {
-  color: inherit;
-}
+  #{$prefix}color-inherit#{$suffix} {
+    color: inherit;
+  }
 
-/* Background colors */
-// e.g. .bg-black   => background-color: map-get($colors, black);
-//.     .bg-primary => background-color: map-get($colors, primary);
-@each $name, $value in $colors {
-  .bg-#{$name} {
-    background-color: $value;
+  @each $name, $value in $colors {
+    #{$prefix}bg-#{$name}#{$suffix} {
+      background-color: $value;
+    }
   }
-}
-.bg-inherit {
-  background-color: inherit;
+  #{$prefix}bg-inherit#{$suffix} {
+    background-color: inherit;
+  }
 }

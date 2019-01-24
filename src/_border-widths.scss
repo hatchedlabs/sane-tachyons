@@ -1,21 +1,26 @@
-.bw0 {
-  border-width: 0;
-}
-@for $i from 1 through $border-width-levels {
-  .bw#{$i} {
-    border-width: $border-width-base * pow(2, ($i - 1));
+@each $pseudo-class in $pseudo-classes {
+  $prefix: nth($pseudo-class, 1);
+  $suffix: nth($pseudo-class, 2);
+
+  #{$prefix}bw0#{$suffix} {
+    border-width: 0;
   }
-}
-/* turn off specific sides */
-.bt0 {
-  border-top-width: 0;
-}
-.br0 {
-  border-right-width: 0;
-}
-.bb0 {
-  border-bottom-width: 0;
-}
-.bl0 {
-  border-left-width: 0;
+  @for $i from 1 through $border-width-levels {
+    #{$prefix}bw#{$i}#{$suffix} {
+      border-width: $border-width-base * pow(2, ($i - 1));
+    }
+  }
+  /* turn off specific sides */
+  #{$prefix}bt0#{$suffix} {
+    border-top-width: 0;
+  }
+  #{$prefix}br0#{$suffix} {
+    border-right-width: 0;
+  }
+  #{$prefix}bb0#{$suffix} {
+    border-bottom-width: 0;
+  }
+  #{$prefix}bl0#{$suffix} {
+    border-left-width: 0;
+  }
 }
