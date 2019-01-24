@@ -1,5 +1,7 @@
 # Sane Tachyons
 
+[![npm version](https://badge.fury.io/js/sane-tachyons.svg)](https://badge.fury.io/js/sane-tachyons)
+
 This is a fork of Tachyons. It is sane.
 
 Therefore, it is called `sane-tachyons`.
