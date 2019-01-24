@@ -4,8 +4,8 @@ This is a fork of Tachyons. It is sane.
 
 Therefore, it is called `sane-tachyons`.
 
-It is small and mighty. The minified CSS file is just 5,416 bytes when gzipped.
-For comparisons sake, the latest Bootstrap is 22,990 bytes; over 4 times larger.
+It is small and mighty. The minified CSS file is just 9,267 bytes when gzipped.
+For comparisons sake, the latest Bootstrap is 22,990 bytes, and does much less.
 
 ## Getting started
 
