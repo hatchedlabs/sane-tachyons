@@ -17,18 +17,18 @@ which can be used to find specific properties, values and classes.
 $one-rem: 16px !default;
 
 $breakpoints: (
-  gt20:  "(min-width: #{20 * $one-rem + 1}px)", /*  > 320 */
-  gt25:  "(min-width: #{25 * $one-rem + 1}px)", /*  > 400 */
-  gt30:  "(min-width: #{30 * $one-rem + 1}px)", /*  > 480 */
-  gt35:  "(min-width: #{35 * $one-rem + 1}px)", /*  > 560 */
-  gt40:  "(min-width: #{40 * $one-rem + 1}px)", /*  > 640 */
-  gt45:  "(min-width: #{45 * $one-rem + 1}px)", /*  > 720 */
-  gt50:  "(min-width: #{50 * $one-rem + 1}px)", /*  > 800 */
-  gt60:  "(min-width: #{60 * $one-rem + 1}px)", /*  > 960 */
-  gt70:  "(min-width: #{70 * $one-rem + 1}px)", /* > 1120 */
-  gt80:  "(min-width: #{80 * $one-rem + 1}px)", /* > 1280 */
-  gt90:  "(min-width: #{90 * $one-rem + 1}px)", /* > 1440 */
-  gt100: "(min-width: #{10 * $one-rem + 1}px)"  /* > 1600 */
+  gt20:  "(min-width: #{20 * $one-rem + 1})", /*  > 320 */
+  gt25:  "(min-width: #{25 * $one-rem + 1})", /*  > 400 */
+  gt30:  "(min-width: #{30 * $one-rem + 1})", /*  > 480 */
+  gt35:  "(min-width: #{35 * $one-rem + 1})", /*  > 560 */
+  gt40:  "(min-width: #{40 * $one-rem + 1})", /*  > 640 */
+  gt45:  "(min-width: #{45 * $one-rem + 1})", /*  > 720 */
+  gt50:  "(min-width: #{50 * $one-rem + 1})", /*  > 800 */
+  gt60:  "(min-width: #{60 * $one-rem + 1})", /*  > 960 */
+  gt70:  "(min-width: #{70 * $one-rem + 1})", /* > 1120 */
+  gt80:  "(min-width: #{80 * $one-rem + 1})", /* > 1280 */
+  gt90:  "(min-width: #{90 * $one-rem + 1})", /* > 1440 */
+  gt100: "(min-width: #{10 * $one-rem + 1})"  /* > 1600 */
 ) !default;
 
 $pseudo-classes: (
@@ -1351,84 +1351,84 @@ wrapping inline text around something */
 .difx { display: inline-flex; }
 .dn { display: none; }
 
-@media (min-width: 321pxpx) { .gt20_di { display: inline; }
+@media (min-width: 321px) { .gt20_di { display: inline; }
   .gt20_db { display: block; }
   .gt20_dib { display: inline-block; }
   .gt20_dfx { display: flex; }
   .gt20_difx { display: inline-flex; }
   .gt20_dn { display: none; } }
 
-@media (min-width: 401pxpx) { .gt25_di { display: inline; }
+@media (min-width: 401px) { .gt25_di { display: inline; }
   .gt25_db { display: block; }
   .gt25_dib { display: inline-block; }
   .gt25_dfx { display: flex; }
   .gt25_difx { display: inline-flex; }
   .gt25_dn { display: none; } }
 
-@media (min-width: 481pxpx) { .gt30_di { display: inline; }
+@media (min-width: 481px) { .gt30_di { display: inline; }
   .gt30_db { display: block; }
   .gt30_dib { display: inline-block; }
   .gt30_dfx { display: flex; }
   .gt30_difx { display: inline-flex; }
   .gt30_dn { display: none; } }
 
-@media (min-width: 561pxpx) { .gt35_di { display: inline; }
+@media (min-width: 561px) { .gt35_di { display: inline; }
   .gt35_db { display: block; }
   .gt35_dib { display: inline-block; }
   .gt35_dfx { display: flex; }
   .gt35_difx { display: inline-flex; }
   .gt35_dn { display: none; } }
 
-@media (min-width: 641pxpx) { .gt40_di { display: inline; }
+@media (min-width: 641px) { .gt40_di { display: inline; }
   .gt40_db { display: block; }
   .gt40_dib { display: inline-block; }
   .gt40_dfx { display: flex; }
   .gt40_difx { display: inline-flex; }
   .gt40_dn { display: none; } }
 
-@media (min-width: 721pxpx) { .gt45_di { display: inline; }
+@media (min-width: 721px) { .gt45_di { display: inline; }
   .gt45_db { display: block; }
   .gt45_dib { display: inline-block; }
   .gt45_dfx { display: flex; }
   .gt45_difx { display: inline-flex; }
   .gt45_dn { display: none; } }
 
-@media (min-width: 801pxpx) { .gt50_di { display: inline; }
+@media (min-width: 801px) { .gt50_di { display: inline; }
   .gt50_db { display: block; }
   .gt50_dib { display: inline-block; }
   .gt50_dfx { display: flex; }
   .gt50_difx { display: inline-flex; }
   .gt50_dn { display: none; } }
 
-@media (min-width: 961pxpx) { .gt60_di { display: inline; }
+@media (min-width: 961px) { .gt60_di { display: inline; }
   .gt60_db { display: block; }
   .gt60_dib { display: inline-block; }
   .gt60_dfx { display: flex; }
   .gt60_difx { display: inline-flex; }
   .gt60_dn { display: none; } }
 
-@media (min-width: 1121pxpx) { .gt70_di { display: inline; }
+@media (min-width: 1121px) { .gt70_di { display: inline; }
   .gt70_db { display: block; }
   .gt70_dib { display: inline-block; }
   .gt70_dfx { display: flex; }
   .gt70_difx { display: inline-flex; }
   .gt70_dn { display: none; } }
 
-@media (min-width: 1281pxpx) { .gt80_di { display: inline; }
+@media (min-width: 1281px) { .gt80_di { display: inline; }
   .gt80_db { display: block; }
   .gt80_dib { display: inline-block; }
   .gt80_dfx { display: flex; }
   .gt80_difx { display: inline-flex; }
   .gt80_dn { display: none; } }
 
-@media (min-width: 1441pxpx) { .gt90_di { display: inline; }
+@media (min-width: 1441px) { .gt90_di { display: inline; }
   .gt90_db { display: block; }
   .gt90_dib { display: inline-block; }
   .gt90_dfx { display: flex; }
   .gt90_difx { display: inline-flex; }
   .gt90_dn { display: none; } }
 
-@media (min-width: 161pxpx) { .gt100_di { display: inline; }
+@media (min-width: 161px) { .gt100_di { display: inline; }
   .gt100_db { display: block; }
   .gt100_dib { display: inline-block; }
   .gt100_dfx { display: flex; }
