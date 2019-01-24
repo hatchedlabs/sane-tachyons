@@ -1,14 +1,14 @@
 /* Align text, or inline-block children */
-.tl {
+.ta-l {
   text-align: left;
 }
-.tr {
+.ta-r {
   text-align: right;
 }
-.tc {
+.ta-c {
   text-align: center;
 }
-.tj {
+.ta-j {
   text-align: justify;
 }
 
@@ -19,9 +19,9 @@
 .va-m {
   vertical-align: middle;
 }
-.va-base {
-  vertical-align: baseline;
-}
 .va-b {
   vertical-align: bottom;
+}
+.va-i {
+  vertical-align: initial;
 }

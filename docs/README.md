@@ -777,16 +777,16 @@ $border-width-levels: 5 !default;
 .word-nowrap { word-break: keep-all; }
 
 /* Align text, or inline-block children */
-.tl { text-align: left; }
-.tr { text-align: right; }
-.tc { text-align: center; }
-.tj { text-align: justify; }
+.ta-l { text-align: left; }
+.ta-r { text-align: right; }
+.ta-c { text-align: center; }
+.ta-j { text-align: justify; }
 
 /* Vertically align inline elements with respect to the line */
 .va-t { vertical-align: top; }
 .va-m { vertical-align: middle; }
-.va-base { vertical-align: baseline; }
 .va-b { vertical-align: bottom; }
+.va-i { vertical-align: initial; }
 .sr-only { position: absolute !important; height: 1px; width: 1px; opacity: 0; overflow: hidden; pointer-events: none; clip: rect(1px, 1px, 1px, 1px); }
 .cursor-pointer { cursor: pointer; }
 .cursor-default { cursor: default; }

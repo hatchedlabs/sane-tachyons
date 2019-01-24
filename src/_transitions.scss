@@ -1,0 +1,107 @@
+/* Transitions
+for a transition, you will need the
+property, duration and timing-function
+e.g. .transition-top.duration-250.on-on
+*/
+
+/* transition-property */
+.transition-opacity {
+  transition-property: opacity;
+}
+.transition-transform {
+  transition-property: transform;
+}
+.transition-color {
+  transition-property: color;
+}
+.transition-background {
+  transition-property: background;
+}
+.transition-border {
+  transition-property: border;
+}
+.transition-width {
+  transition-property: width;
+}
+.transition-top {
+  transition-property: top;
+}
+.transition-left {
+  transition-property: left;
+}
+.transition-right {
+  transition-property: right;
+}
+.transition-bottom {
+  transition-property: bottom;
+}
+/* Do not use `all` unless there's no alternative */
+.transition-all {
+  transition-property: all;
+}
+.transition-none {
+  transition-property: none;
+}
+
+/* transition-duration
+refer to: https://material.io/design/motion/speed.html#duration */
+.duration-75 {
+  transition-duration: 75ms;
+}
+.duration-100 {
+  transition-duration: 100ms;
+}
+.duration-150 {
+  transition-duration: 150ms;
+}
+.duration-200 {
+  transition-duration: 200ms;
+}
+.duration-250 {
+  transition-duration: 250ms;
+}
+.duration-300 {
+  transition-duration: 300ms;
+}
+.duration-0 {
+  transition-duration: 0;
+}
+
+/* transition-timing-function
+.on-off means that the element was ON the page at the start
+of the transition, and OFF it at the end */
+.on-on {
+  transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+.off-on {
+  transition-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+.on-off {
+  transition-timing-function: cubic-bezier(0.4, 0.0, 1, 1);
+}
+.linear {
+  transition-timing-function: linear;
+}
+
+/* transition-delay */
+.delay-75 {
+  transition-delay: 75ms;
+}
+.delay-100 {
+  transition-delay: 100ms;
+}
+.delay-150 {
+  transition-delay: 150ms;
+}
+.delay-200 {
+  transition-delay: 200ms;
+}
+.delay-250 {
+  transition-delay: 250ms;
+}
+.delay-300 {
+  transition-delay: 300ms;
+}
+.delay-0 {
+  transition-delay: 0;
+}

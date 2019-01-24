@@ -38,12 +38,16 @@ They are admittedly very useful but they use up a lot of space.
 
 The same effect can be achieved by using two classes:
 
-- `ml2 mr2` is the same as `mh2`
+- `mr2 ml2` is the same as `mh2`
 - `pt3 pb3` is the same as `pv3`
+
+Try to follow the convention of top right bottom left, like the css short-hand.
 
 ### { 2^n } => { 2^n, 2^n * 1.5 }
 
-Introduce half sizes.
+Introduce half sizes. `mr2-5` (mr2.5) = halfway between mr2 and mr3.
+
+Only available with padding and non-negative margins.
 
 ### Negative margins
 
@@ -91,7 +95,6 @@ We will also use the most common properties from the research.
 Did some research on these:
 
 - [Scraped CSS transform data](research/properties/transforms.md)
-
 - Mainly transform combos of {-100%, 0, 100%}
 - Maybe scale too
 
@@ -139,16 +142,17 @@ classes we have for:
 ## Smaller changes
 
 Typography files merged into one, `_typography.scss`. The order of the
-typography classes should make more sense and allow for overriding.
+typography classes should make more sense and allow for overriding. Note
+that (text-)`color` is still separated from `typography`
 
-Note that (text) `color` is still separated from `typography`.
-
-Tables removed. With flexbox, there's always a better way.
+Tables removed (with flexbox, there's always a better way)
 
 `.sup`, `.sub`
 
 `.absolute--fill` became `.absolute-fill`
 
-More z-index values (9, 99, 99999).
+text align from `.tc` to `.ta-c` to match vertical align
+
+More z-index values (9, 99, 99999)
 
 Aspect ratios to lowest forms. `.ratio-6x4` => `.ratio-3x2`
