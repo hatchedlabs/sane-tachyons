@@ -6,6 +6,11 @@
   .mw#{$i} {
     max-width: $max-width-base * pow(2, ($i - 1));
   }
+  @if $i != $max-width-levels {
+    .mw#{$i}-5 {
+      max-width: 1.5 * $max-width-base * pow(2, ($i - 1));
+    }
+  }
 }
 
 /* Percentage Max Widths */

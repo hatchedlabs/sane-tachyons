@@ -6,6 +6,11 @@
   .w#{$i} {
     width: pow(2, ($i - 1)) * $width-base;
   }
+  @if $i != $width-levels {
+    .w#{$i}-5 {
+      width: pow(2, ($i - 1)) * $width-base * 1.5;
+    }
+  }
 }
 
 /* Percentage Widths */
