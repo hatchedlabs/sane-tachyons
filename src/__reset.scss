@@ -1,7 +1,7 @@
 /** if supporting IE, import full css reset before this with [if IE] html comment */
 
 /** remove user agent styles */
-:not(input), *::before, *::after {
+:not(input):not(svg):not(svg *), *::before, *::after {
   all: unset;
 }
 
