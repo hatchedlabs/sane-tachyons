@@ -1,6 +1,6 @@
 # Sane Tachyons
 
-[![npm version](https://badge.fury.io/js/sane-tachyons.svg)](https://badge.fury.io/js/sane-tachyons)
+[![npm version](https://badge.fury.io/js/sane-tachyons.svg)](https://www.npmjs.com/package/sane-tachyons)
 
 This is a fork of Tachyons. It is sane.
 
