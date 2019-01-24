@@ -41,16 +41,16 @@
   }
 
   #{$prefix}move-up-100#{$suffix} {
-    transform: translate3d(-100%, 0, 0);
+    transform: translate3d(0, -100%, 0);
   }
   #{$prefix}move-right-100#{$suffix} {
-    transform: translate3d(0, 100%, 0);
-  }
-  #{$prefix}move-down-100#{$suffix} {
     transform: translate3d(100%, 0, 0);
   }
+  #{$prefix}move-down-100#{$suffix} {
+    transform: translate3d(0, 100%, 0);
+  }
   #{$prefix}move-left-100#{$suffix} {
-    transform: translate3d(0, -100%, 0);
+    transform: translate3d(-100%, 0, 0);
   }
 
   #{$prefix}transform-none#{$suffix},
