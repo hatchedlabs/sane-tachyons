@@ -1461,6 +1461,164 @@ wrapping inline text around something */
 .focus_show-last:focus > :last-child { opacity: 1; pointer-events: all; }
 .focus_show-next:focus + * { opacity: 1; pointer-events: all; }
 
+/* Transitions
+for a transition, you will need the
+property, duration and timing-function
+e.g. .transition-top.duration-250.on-on
+*/
+.transition-opacity { transition-property: opacity; }
+.transition-transform { transition-property: transform; }
+.transition-color { transition-property: color; }
+.transition-background { transition-property: background; }
+.transition-border { transition-property: border; }
+.transition-width { transition-property: width; }
+.transition-top { transition-property: top; }
+.transition-left { transition-property: left; }
+.transition-right { transition-property: right; }
+.transition-bottom { transition-property: bottom; }
+
+/* Do not use `all` unless there's no alternative */
+.transition-all { transition-property: all; }
+.transition-none { transition-property: none; }
+
+/* transition-duration - refer to: https://material.io/design/motion/speed.html#duration */
+.duration-75 { transition-duration: 75ms; }
+.duration-100 { transition-duration: 100ms; }
+.duration-150 { transition-duration: 150ms; }
+.duration-200 { transition-duration: 200ms; }
+.duration-250 { transition-duration: 250ms; }
+.duration-300 { transition-duration: 300ms; }
+.duration-0 { transition-duration: 0; }
+
+/* transition-timing-function .on-off means that the element was ON the page at the start of the transition, and OFF it at the end */
+.on-on { transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+.off-on { transition-timing-function: cubic-bezier(0, 0, 0.2, 1); }
+.on-off { transition-timing-function: cubic-bezier(0.4, 0, 1, 1); }
+.linear { transition-timing-function: linear; }
+
+/* transition-delay */
+.delay-75 { transition-delay: 75ms; }
+.delay-100 { transition-delay: 100ms; }
+.delay-150 { transition-delay: 150ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-250 { transition-delay: 250ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-0 { transition-delay: 0; }
+.hover_transition-opacity:hover { transition-property: opacity; }
+.hover_transition-transform:hover { transition-property: transform; }
+.hover_transition-color:hover { transition-property: color; }
+.hover_transition-background:hover { transition-property: background; }
+.hover_transition-border:hover { transition-property: border; }
+.hover_transition-width:hover { transition-property: width; }
+.hover_transition-top:hover { transition-property: top; }
+.hover_transition-left:hover { transition-property: left; }
+.hover_transition-right:hover { transition-property: right; }
+.hover_transition-bottom:hover { transition-property: bottom; }
+
+/* Do not use `all` unless there's no alternative */
+.hover_transition-all:hover { transition-property: all; }
+.hover_transition-none:hover { transition-property: none; }
+
+/* transition-duration - refer to: https://material.io/design/motion/speed.html#duration */
+.hover_duration-75:hover { transition-duration: 75ms; }
+.hover_duration-100:hover { transition-duration: 100ms; }
+.hover_duration-150:hover { transition-duration: 150ms; }
+.hover_duration-200:hover { transition-duration: 200ms; }
+.hover_duration-250:hover { transition-duration: 250ms; }
+.hover_duration-300:hover { transition-duration: 300ms; }
+.hover_duration-0:hover { transition-duration: 0; }
+
+/* transition-timing-function .hover_on-off means that the element was ON the page at the start of the transition, and OFF it at the end */
+.hover_on-on:hover { transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+.hover_off-on:hover { transition-timing-function: cubic-bezier(0, 0, 0.2, 1); }
+.hover_on-off:hover { transition-timing-function: cubic-bezier(0.4, 0, 1, 1); }
+.hover_linear:hover { transition-timing-function: linear; }
+
+/* transition-delay */
+.hover_delay-75:hover { transition-delay: 75ms; }
+.hover_delay-100:hover { transition-delay: 100ms; }
+.hover_delay-150:hover { transition-delay: 150ms; }
+.hover_delay-200:hover { transition-delay: 200ms; }
+.hover_delay-250:hover { transition-delay: 250ms; }
+.hover_delay-300:hover { transition-delay: 300ms; }
+.hover_delay-0:hover { transition-delay: 0; }
+.active_transition-opacity:active { transition-property: opacity; }
+.active_transition-transform:active { transition-property: transform; }
+.active_transition-color:active { transition-property: color; }
+.active_transition-background:active { transition-property: background; }
+.active_transition-border:active { transition-property: border; }
+.active_transition-width:active { transition-property: width; }
+.active_transition-top:active { transition-property: top; }
+.active_transition-left:active { transition-property: left; }
+.active_transition-right:active { transition-property: right; }
+.active_transition-bottom:active { transition-property: bottom; }
+
+/* Do not use `all` unless there's no alternative */
+.active_transition-all:active { transition-property: all; }
+.active_transition-none:active { transition-property: none; }
+
+/* transition-duration - refer to: https://material.io/design/motion/speed.html#duration */
+.active_duration-75:active { transition-duration: 75ms; }
+.active_duration-100:active { transition-duration: 100ms; }
+.active_duration-150:active { transition-duration: 150ms; }
+.active_duration-200:active { transition-duration: 200ms; }
+.active_duration-250:active { transition-duration: 250ms; }
+.active_duration-300:active { transition-duration: 300ms; }
+.active_duration-0:active { transition-duration: 0; }
+
+/* transition-timing-function .active_on-off means that the element was ON the page at the start of the transition, and OFF it at the end */
+.active_on-on:active { transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+.active_off-on:active { transition-timing-function: cubic-bezier(0, 0, 0.2, 1); }
+.active_on-off:active { transition-timing-function: cubic-bezier(0.4, 0, 1, 1); }
+.active_linear:active { transition-timing-function: linear; }
+
+/* transition-delay */
+.active_delay-75:active { transition-delay: 75ms; }
+.active_delay-100:active { transition-delay: 100ms; }
+.active_delay-150:active { transition-delay: 150ms; }
+.active_delay-200:active { transition-delay: 200ms; }
+.active_delay-250:active { transition-delay: 250ms; }
+.active_delay-300:active { transition-delay: 300ms; }
+.active_delay-0:active { transition-delay: 0; }
+.focus_transition-opacity:focus { transition-property: opacity; }
+.focus_transition-transform:focus { transition-property: transform; }
+.focus_transition-color:focus { transition-property: color; }
+.focus_transition-background:focus { transition-property: background; }
+.focus_transition-border:focus { transition-property: border; }
+.focus_transition-width:focus { transition-property: width; }
+.focus_transition-top:focus { transition-property: top; }
+.focus_transition-left:focus { transition-property: left; }
+.focus_transition-right:focus { transition-property: right; }
+.focus_transition-bottom:focus { transition-property: bottom; }
+
+/* Do not use `all` unless there's no alternative */
+.focus_transition-all:focus { transition-property: all; }
+.focus_transition-none:focus { transition-property: none; }
+
+/* transition-duration - refer to: https://material.io/design/motion/speed.html#duration */
+.focus_duration-75:focus { transition-duration: 75ms; }
+.focus_duration-100:focus { transition-duration: 100ms; }
+.focus_duration-150:focus { transition-duration: 150ms; }
+.focus_duration-200:focus { transition-duration: 200ms; }
+.focus_duration-250:focus { transition-duration: 250ms; }
+.focus_duration-300:focus { transition-duration: 300ms; }
+.focus_duration-0:focus { transition-duration: 0; }
+
+/* transition-timing-function .focus_on-off means that the element was ON the page at the start of the transition, and OFF it at the end */
+.focus_on-on:focus { transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+.focus_off-on:focus { transition-timing-function: cubic-bezier(0, 0, 0.2, 1); }
+.focus_on-off:focus { transition-timing-function: cubic-bezier(0.4, 0, 1, 1); }
+.focus_linear:focus { transition-timing-function: linear; }
+
+/* transition-delay */
+.focus_delay-75:focus { transition-delay: 75ms; }
+.focus_delay-100:focus { transition-delay: 100ms; }
+.focus_delay-150:focus { transition-delay: 150ms; }
+.focus_delay-200:focus { transition-delay: 200ms; }
+.focus_delay-250:focus { transition-delay: 250ms; }
+.focus_delay-300:focus { transition-delay: 300ms; }
+.focus_delay-0:focus { transition-delay: 0; }
+
 /* Utilities */
 .h-center { margin-right: auto; margin-left: auto; }
 .mr-auto { margin-right: auto; }
