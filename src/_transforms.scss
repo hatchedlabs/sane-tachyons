@@ -40,6 +40,18 @@
     transform: scale3d(0.9, 0.9, 1);
   }
 
+  #{$prefix}move-up-50#{$suffix} {
+    transform: translate3d(0, -50%, 0);
+  }
+  #{$prefix}move-right-50#{$suffix} {
+    transform: translate3d(50%, 0, 0);
+  }
+  #{$prefix}move-down-50#{$suffix} {
+    transform: translate3d(0, 50%, 0);
+  }
+  #{$prefix}move-left-50#{$suffix} {
+    transform: translate3d(-50%, 0, 0);
+  }
   #{$prefix}move-up-100#{$suffix} {
     transform: translate3d(0, -100%, 0);
   }

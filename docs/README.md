@@ -1028,6 +1028,10 @@ $border-width-levels: 5 !default;
 .origin-cc, .origin-i { transform-origin: initial; }
 .scale-up { transform: scale3d(1.1, 1.1, 1); }
 .scale-down { transform: scale3d(0.9, 0.9, 1); }
+.move-up-50 { transform: translate3d(0, -50%, 0); }
+.move-right-50 { transform: translate3d(50%, 0, 0); }
+.move-down-50 { transform: translate3d(0, 50%, 0); }
+.move-left-50 { transform: translate3d(-50%, 0, 0); }
 .move-up-100 { transform: translate3d(0, -100%, 0); }
 .move-right-100 { transform: translate3d(100%, 0, 0); }
 .move-down-100 { transform: translate3d(0, 100%, 0); }
@@ -1044,6 +1048,10 @@ $border-width-levels: 5 !default;
 .hover_origin-cc:hover, .hover_origin-i:hover { transform-origin: initial; }
 .hover_scale-up:hover { transform: scale3d(1.1, 1.1, 1); }
 .hover_scale-down:hover { transform: scale3d(0.9, 0.9, 1); }
+.hover_move-up-50:hover { transform: translate3d(0, -50%, 0); }
+.hover_move-right-50:hover { transform: translate3d(50%, 0, 0); }
+.hover_move-down-50:hover { transform: translate3d(0, 50%, 0); }
+.hover_move-left-50:hover { transform: translate3d(-50%, 0, 0); }
 .hover_move-up-100:hover { transform: translate3d(0, -100%, 0); }
 .hover_move-right-100:hover { transform: translate3d(100%, 0, 0); }
 .hover_move-down-100:hover { transform: translate3d(0, 100%, 0); }
@@ -1060,6 +1068,10 @@ $border-width-levels: 5 !default;
 .active_origin-cc:active, .active_origin-i:active { transform-origin: initial; }
 .active_scale-up:active { transform: scale3d(1.1, 1.1, 1); }
 .active_scale-down:active { transform: scale3d(0.9, 0.9, 1); }
+.active_move-up-50:active { transform: translate3d(0, -50%, 0); }
+.active_move-right-50:active { transform: translate3d(50%, 0, 0); }
+.active_move-down-50:active { transform: translate3d(0, 50%, 0); }
+.active_move-left-50:active { transform: translate3d(-50%, 0, 0); }
 .active_move-up-100:active { transform: translate3d(0, -100%, 0); }
 .active_move-right-100:active { transform: translate3d(100%, 0, 0); }
 .active_move-down-100:active { transform: translate3d(0, 100%, 0); }
@@ -1076,6 +1088,10 @@ $border-width-levels: 5 !default;
 .focus_origin-cc:focus, .focus_origin-i:focus { transform-origin: initial; }
 .focus_scale-up:focus { transform: scale3d(1.1, 1.1, 1); }
 .focus_scale-down:focus { transform: scale3d(0.9, 0.9, 1); }
+.focus_move-up-50:focus { transform: translate3d(0, -50%, 0); }
+.focus_move-right-50:focus { transform: translate3d(50%, 0, 0); }
+.focus_move-down-50:focus { transform: translate3d(0, 50%, 0); }
+.focus_move-left-50:focus { transform: translate3d(-50%, 0, 0); }
 .focus_move-up-100:focus { transform: translate3d(0, -100%, 0); }
 .focus_move-right-100:focus { transform: translate3d(100%, 0, 0); }
 .focus_move-down-100:focus { transform: translate3d(0, 100%, 0); }
@@ -1627,5 +1643,8 @@ e.g. .transition-top.duration-250.on-on
 .absolute-fill { position: absolute; width: auto; height: auto; top: 0; right: 0; bottom: 0; left: 0; }
 .pointer-none { pointer-events: none; }
 .pointer-all { pointer-events: all; }
+
+/* for creating custom focus states */
+.focus_no-outline:focus { outline: 0; }
 ```
 
