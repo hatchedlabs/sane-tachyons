@@ -132,6 +132,10 @@ $letter-spacing-narrow: -0.1ex !default;
 $letter-spacing-normal: 0 !default;
 $letter-spacing-wide: 0.5ex !default;
 
+$normal-font-weight: 400 !default;
+$semibold-font-weight: 600 !default;
+$bold-font-weight: 700 !default;
+
 $line-height-solid: 1 !default;
 $line-height-title: 1.25 !default;
 $line-height-copy: 1.5 !default;
@@ -484,28 +488,32 @@ $border-width-levels: 5 !default;
 .fs-i { font-style: italic; }
 .fs-n { font-style: normal; }
 .fw-n { font-weight: 400; }
-.fw-b { font-weight: 600; }
+.fw-sb { font-weight: 600; }
+.fw-b { font-weight: 700; }
 .hover_strikethrough:hover { text-decoration: line-through; }
 .hover_underline:hover { text-decoration: underline; }
 .hover_td-n:hover { text-decoration: none; }
 .hover_fs-i:hover { font-style: italic; }
 .hover_fs-n:hover { font-style: normal; }
 .hover_fw-n:hover { font-weight: 400; }
-.hover_fw-b:hover { font-weight: 600; }
+.hover_fw-sb:hover { font-weight: 600; }
+.hover_fw-b:hover { font-weight: 700; }
 .active_strikethrough:active { text-decoration: line-through; }
 .active_underline:active { text-decoration: underline; }
 .active_td-n:active { text-decoration: none; }
 .active_fs-i:active { font-style: italic; }
 .active_fs-n:active { font-style: normal; }
 .active_fw-n:active { font-weight: 400; }
-.active_fw-b:active { font-weight: 600; }
+.active_fw-sb:active { font-weight: 600; }
+.active_fw-b:active { font-weight: 700; }
 .focus_strikethrough:focus { text-decoration: line-through; }
 .focus_underline:focus { text-decoration: underline; }
 .focus_td-n:focus { text-decoration: none; }
 .focus_fs-i:focus { font-style: italic; }
 .focus_fs-n:focus { font-style: normal; }
 .focus_fw-n:focus { font-weight: 400; }
-.focus_fw-b:focus { font-weight: 600; }
+.focus_fw-sb:focus { font-weight: 600; }
+.focus_fw-b:focus { font-weight: 700; }
 .indent { text-indent: 1.5em; margin-top: 0; margin-bottom: 0; }
 .capitalize { text-transform: capitalize; }
 .lower { text-transform: lowercase; }
