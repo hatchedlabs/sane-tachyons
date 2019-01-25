@@ -12,10 +12,9 @@ body, dd, div,
 dl, dt, fieldset, form,
 h1, h2, h3, h4, h5, h6,
 ol, p, ul, dir, br,
-hr, menu, pre,
+hr, menu, pre, li
 table, center                   { display: block; }
 button, textarea, input, select { display: inline-block }
-li                              { display: list-item }
 head, [hidden]                  { display: none }
 caption                         { display: table-caption }
 kbd, samp                       { font-family: monospace }
