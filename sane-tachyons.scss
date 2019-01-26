@@ -11,7 +11,10 @@
 @import "src/__reset";
 
 // Establish rem base
-html { font-size: $one-rem; }
+html {
+  font-size: $one-rem;
+  font-weight: $normal-font-weight;
+}
 
 /*!TACHYONS-START*/
 @import "src/_colors";
