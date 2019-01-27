@@ -1044,6 +1044,10 @@ $border-width-levels: 5 !default;
 .move-right-100 { transform: translate3d(100%, 0, 0); }
 .move-down-100 { transform: translate3d(0, 100%, 0); }
 .move-left-100 { transform: translate3d(-100%, 0, 0); }
+.move-up-150 { transform: translate3d(0, -150%, 0); }
+.move-right-150 { transform: translate3d(150%, 0, 0); }
+.move-down-150 { transform: translate3d(0, 150%, 0); }
+.move-left-150 { transform: translate3d(-150%, 0, 0); }
 .transform-none, .accelerated { transform: rotateZ(360deg); -webkit-transform: rotateZ(360deg); }
 .hover_origin-tl:hover { transform-origin: top left 0; }
 .hover_origin-tc:hover { transform-origin: top center 0; }
@@ -1064,6 +1068,10 @@ $border-width-levels: 5 !default;
 .hover_move-right-100:hover { transform: translate3d(100%, 0, 0); }
 .hover_move-down-100:hover { transform: translate3d(0, 100%, 0); }
 .hover_move-left-100:hover { transform: translate3d(-100%, 0, 0); }
+.hover_move-up-150:hover { transform: translate3d(0, -150%, 0); }
+.hover_move-right-150:hover { transform: translate3d(150%, 0, 0); }
+.hover_move-down-150:hover { transform: translate3d(0, 150%, 0); }
+.hover_move-left-150:hover { transform: translate3d(-150%, 0, 0); }
 .hover_transform-none:hover, .hover_accelerated:hover { transform: rotateZ(360deg); -webkit-transform: rotateZ(360deg); }
 .active_origin-tl:active { transform-origin: top left 0; }
 .active_origin-tc:active { transform-origin: top center 0; }
@@ -1084,6 +1092,10 @@ $border-width-levels: 5 !default;
 .active_move-right-100:active { transform: translate3d(100%, 0, 0); }
 .active_move-down-100:active { transform: translate3d(0, 100%, 0); }
 .active_move-left-100:active { transform: translate3d(-100%, 0, 0); }
+.active_move-up-150:active { transform: translate3d(0, -150%, 0); }
+.active_move-right-150:active { transform: translate3d(150%, 0, 0); }
+.active_move-down-150:active { transform: translate3d(0, 150%, 0); }
+.active_move-left-150:active { transform: translate3d(-150%, 0, 0); }
 .active_transform-none:active, .active_accelerated:active { transform: rotateZ(360deg); -webkit-transform: rotateZ(360deg); }
 .focus_origin-tl:focus { transform-origin: top left 0; }
 .focus_origin-tc:focus { transform-origin: top center 0; }
@@ -1104,6 +1116,10 @@ $border-width-levels: 5 !default;
 .focus_move-right-100:focus { transform: translate3d(100%, 0, 0); }
 .focus_move-down-100:focus { transform: translate3d(0, 100%, 0); }
 .focus_move-left-100:focus { transform: translate3d(-100%, 0, 0); }
+.focus_move-up-150:focus { transform: translate3d(0, -150%, 0); }
+.focus_move-right-150:focus { transform: translate3d(150%, 0, 0); }
+.focus_move-down-150:focus { transform: translate3d(0, 150%, 0); }
+.focus_move-left-150:focus { transform: translate3d(-150%, 0, 0); }
 .focus_transform-none:focus, .focus_accelerated:focus { transform: rotateZ(360deg); -webkit-transform: rotateZ(360deg); }
 
 /* Spacing (MARGINS, PADDING, NEGATIVE MARGINS) */
