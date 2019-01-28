@@ -73,7 +73,7 @@ $spacing-base: .25rem;
 
 ### Coordinates
 
-Coordinates classes (`.top-1` => `top: 1rem`) were
+Coordinates classes (`.top-1` => `top: .25rem`) were
 too restrictive to be useful. They now follow the same pattern
 as the power of two spacing scale. (`.t1` => `top: .25rem`)
 
