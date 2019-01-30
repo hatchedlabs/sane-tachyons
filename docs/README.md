@@ -1361,8 +1361,11 @@ wrapping inline text around something */
 .cf:before, .cf:after { content: " "; display: table; }
 .cf:after { clear: both; }
 .sr-only { position: absolute !important; height: 1px; width: 1px; opacity: 0; overflow: hidden; pointer-events: none; clip: rect(1px, 1px, 1px, 1px); }
-.cursor-pointer { cursor: pointer; }
-.cursor-default { cursor: default; }
+
+// on hover
+.cursor-pointer:hover { cursor: pointer; }
+.cursor-default:hover { cursor: default; }
+
 .underline-hover:hover { text-decoration: underline; }
 
 /* Z-Index */
