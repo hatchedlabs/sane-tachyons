@@ -751,7 +751,7 @@ $border-width-levels: 5 !default;
 .b-solid { border-style: solid; }
 .b-none { border-style: none; }
 .bw0 { border-width: 0; }
-.bw1 { border-width: 0.0625rem; }
+.bw1 { border-width: 1px; }
 .bw2 { border-width: 0.125rem; }
 .bw3 { border-width: 0.25rem; }
 .bw4 { border-width: 0.5rem; }
@@ -763,7 +763,7 @@ $border-width-levels: 5 !default;
 .bb0 { border-bottom-width: 0; }
 .bl0 { border-left-width: 0; }
 .hover_bw0:hover { border-width: 0; }
-.hover_bw1:hover { border-width: 0.0625rem; }
+.hover_bw1:hover { border-width: 1px; }
 .hover_bw2:hover { border-width: 0.125rem; }
 .hover_bw3:hover { border-width: 0.25rem; }
 .hover_bw4:hover { border-width: 0.5rem; }
@@ -775,7 +775,7 @@ $border-width-levels: 5 !default;
 .hover_bb0:hover { border-bottom-width: 0; }
 .hover_bl0:hover { border-left-width: 0; }
 .active_bw0:active { border-width: 0; }
-.active_bw1:active { border-width: 0.0625rem; }
+.active_bw1:active { border-width: 1px; }
 .active_bw2:active { border-width: 0.125rem; }
 .active_bw3:active { border-width: 0.25rem; }
 .active_bw4:active { border-width: 0.5rem; }
@@ -787,7 +787,7 @@ $border-width-levels: 5 !default;
 .active_bb0:active { border-bottom-width: 0; }
 .active_bl0:active { border-left-width: 0; }
 .focus_bw0:focus { border-width: 0; }
-.focus_bw1:focus { border-width: 0.0625rem; }
+.focus_bw1:focus { border-width: 1px; }
 .focus_bw2:focus { border-width: 0.125rem; }
 .focus_bw3:focus { border-width: 0.25rem; }
 .focus_bw4:focus { border-width: 0.5rem; }
