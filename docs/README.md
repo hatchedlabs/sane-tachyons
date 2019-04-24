@@ -588,6 +588,10 @@ $border-width-levels: 5 !default;
 .b-gray-10 { border-color: #14171A; }
 .b-black { border-color: #000; }
 .b-transparent { border-color: transparent; }
+.bt-transparent { border-top-color: transparent; }
+.br-transparent { border-right-color: transparent;}
+.bb-transparent { border-bottom-color: transparent; }
+.bl-transparent { border-left-color: transparent; }
 .b-black-05 { border-color: rgba(0, 0, 0, 0.05); }
 .b-black-10 { border-color: rgba(0, 0, 0, 0.1); }
 .b-black-20 { border-color: rgba(0, 0, 0, 0.2); }
@@ -997,6 +1001,7 @@ $border-width-levels: 5 !default;
 .relative { position: relative; }
 .absolute { position: absolute; }
 .fixed { position: fixed; }
+.sticky { position: sticky; }
 
 /* Opacity */
 .o-100 { opacity: 1; }
@@ -1475,6 +1480,10 @@ wrapping inline text around something */
   .gt100_difx { display: inline-flex; }
   .gt100_dn { display: none; } }
 
+/* Visibility */
+.hidden { visibility: hidden; }
+.visible { visibility: visible; }
+
 /* Show/Hide classes */
 .hide-kids > * { opacity: 0; pointer-events: none; }
 .hide-last > :last-child { opacity: 0; pointer-events: none; }
@@ -1516,6 +1525,7 @@ e.g. .transition-top.duration-250.on-on
 .transition-left { transition-property: left; }
 .transition-right { transition-property: right; }
 .transition-bottom { transition-property: bottom; }
+.transition-shadow { transition-property: box-shadow; }
 
 /* Do not use `all` unless there's no alternative */
 .transition-all { transition-property: all; }
@@ -1554,6 +1564,7 @@ e.g. .transition-top.duration-250.on-on
 .hover_transition-left:hover { transition-property: left; }
 .hover_transition-right:hover { transition-property: right; }
 .hover_transition-bottom:hover { transition-property: bottom; }
+.hover_transition-shadow:hover { transition-property: box-shadow; }
 
 /* Do not use `all` unless there's no alternative */
 .hover_transition-all:hover { transition-property: all; }
@@ -1668,7 +1679,9 @@ e.g. .transition-top.duration-250.on-on
 .pointer-none { pointer-events: none; }
 .pointer-all { pointer-events: all; }
 
+/* User Select */
+.user-select-none { user-select: none; }
+
 /* for creating custom focus states */
 .focus_no-outline:focus { outline: 0; }
 ```
-
