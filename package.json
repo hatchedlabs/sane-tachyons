@@ -1,6 +1,6 @@
 {
   "name": "sane-tachyons",
-  "version": "3.4.5",
+  "version": "3.4.6",
   "description": "Tachyons, but marginally more coherent",
   "main": "index.js",
   "repository": "https://github.com/hatchedlabs/tachyons.git",
