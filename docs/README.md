@@ -726,6 +726,10 @@ $border-width-levels: 5 !default;
 .focus_b-info:focus { border-color: #3d70b2; }
 .focus_b-info-faded:focus { border-color: #EBF0F7; }
 .focus_b-inherit:focus { border-color: inherit; }
+.bt-transparent { border-top-color: transparent; }
+.br-transparent { border-right-color: transparent; }
+.bb-transparent { border-bottom-color: transparent; }
+.bl-transparent { border-left-color: transparent; }
 
 /* Border-radius:
 .br-100 = oval
@@ -997,6 +1001,7 @@ $border-width-levels: 5 !default;
 .relative { position: relative; }
 .absolute { position: absolute; }
 .fixed { position: fixed; }
+.sticky { position: sticky; }
 
 /* Opacity */
 .o-100 { opacity: 1; }
@@ -1361,6 +1366,7 @@ wrapping inline text around something */
 .cf:before, .cf:after { content: " "; display: table; }
 .cf:after { clear: both; }
 .sr-only { position: absolute !important; height: 1px; width: 1px; opacity: 0; overflow: hidden; pointer-events: none; clip: rect(1px, 1px, 1px, 1px); }
+.hidden { visibility: hidden; }
 .cursor-pointer { cursor: pointer; }
 .cursor-default { cursor: default; }
 .underline-hover:hover { text-decoration: underline; }
@@ -1670,5 +1676,6 @@ e.g. .transition-top.duration-250.on-on
 
 /* for creating custom focus states */
 .focus_no-outline:focus { outline: 0; }
+.no-select { user-select: none; }
 ```
 
