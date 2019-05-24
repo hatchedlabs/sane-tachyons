@@ -7,9 +7,6 @@
 // Mixins
 @import "src/__mixins";
 
-// Reset
-@import "src/__reset";
-
 // Establish rem base
 html {
   font-size: $one-rem;

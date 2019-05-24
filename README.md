@@ -20,12 +20,8 @@ yarn add sane-tachyons # or `npm install sane-tachyons`
 $grid-columns: 12;
 
 /* import sane-tachyons */
+@import "~sane-tachyons/reset";
 @import "~sane-tachyons/sane-tachyons";
-
-/* (optional) obscure project specific stuff */
-.fx-95a {
-  flex: 9 5 auto;
-}
 ```
 
 ## Motivation
