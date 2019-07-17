@@ -16,35 +16,35 @@
 */
 .fx-11a {
   flex: 1 1 auto;
-  min-width: 1px; // needed to fix chrome 44 bug
-  min-height: 1px; // needed to fix chrome 44 bug
+  min-width: 1px; // flexbug #1
+  min-height: 1px; // flexbug #1
 }
 .fx-10a {
   flex: 1 0 auto;
-  min-width: 1px; // needed to fix chrome 44 bug
-  min-height: 1px; // needed to fix chrome 44 bug
+  min-width: 1px; // flexbug #1
+  min-height: 1px; // flexbug #1
 }
 .fx-01a {
   flex: 0 1 auto;
-  min-width: 1px; // needed to fix chrome 44 bug
-  min-height: 1px; // needed to fix chrome 44 bug
+  min-width: 1px; // flexbug #1
+  min-height: 1px; // flexbug #1
 }
 .fx-00a {
   flex: 0 0 auto;
-  min-width: 1px; // needed to fix chrome 44 bug
-  min-height: 1px; // needed to fix chrome 44 bug
+  min-width: 1px; // flexbug #1
+  min-height: 1px; // flexbug #1
 }
 .fx-110 {
-  flex: 1 1 0;
+  flex: 1 1 0%; // 0% instead of 0: flexbug #4
 }
 .fx-100 {
-  flex: 1 0 0;
+  flex: 1 0 0%; // 0% instead of 0: flexbug #4
 }
 .fx-010 {
-  flex: 0 1 0;
+  flex: 0 1 0%; // 0% instead of 0: flexbug #4
 }
 .fx-000 {
-  flex: 0 0 0;
+  flex: 0 0 0%; // 0% instead of 0: flexbug #4
 }
 
 .fx-grow-max {

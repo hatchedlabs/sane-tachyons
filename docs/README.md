@@ -808,10 +808,10 @@ $border-width-levels: 5 !default;
 .fx-10a { flex: 1 0 auto; min-width: 1px; min-height: 1px; }
 .fx-01a { flex: 0 1 auto; min-width: 1px; min-height: 1px; }
 .fx-00a { flex: 0 0 auto; min-width: 1px; min-height: 1px; }
-.fx-110 { flex: 1 1 0; }
-.fx-100 { flex: 1 0 0; }
-.fx-010 { flex: 0 1 0; }
-.fx-000 { flex: 0 0 0; }
+.fx-110 { flex: 1 1 0%; }
+.fx-100 { flex: 1 0 0%; }
+.fx-010 { flex: 0 1 0%; }
+.fx-000 { flex: 0 0 0%; }
 .fx-grow-max { flex-grow: 2147483647; }
 .fx-shrink-max { flex-shrink: 2147483647; }
 .fx-column { flex-direction: column; }
