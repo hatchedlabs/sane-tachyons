@@ -1,10 +1,10 @@
 {
-  "name": "sane-tachyons",
+  "name": "ainsley",
   "version": "4.0.0",
-  "description": "Tachyons, but marginally more coherent",
+  "description": "Pragmatic functional CSS",
   "main": "index.js",
-  "repository": "https://github.com/hatchedlabs/tachyons.git",
-  "author": "Tom Golden <tom@hatchedlabs.com>",
+  "repository": "https://github.com/tbjgolden/ainsley.git",
+  "author": "Tom Golden",
   "license": "MIT",
   "private": false,
   "devDependencies": {
