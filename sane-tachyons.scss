@@ -4,9 +4,6 @@
 // Functions
 @import "src/__functions";
 
-// Mixins
-@import "src/__mixins";
-
 // Establish rem base
 html {
   font-size: $one-rem;
@@ -21,7 +18,6 @@ html {
 @import "src/_borders";
 @import "src/_border-colors";
 @import "src/_border-radius";
-@import "src/_border-style";
 @import "src/_border-widths";
 @import "src/_flexbox";
 @import "src/_heights";

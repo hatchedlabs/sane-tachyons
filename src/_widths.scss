@@ -1,5 +1,6 @@
 /* Width Scale */
-.w0, .w-0 {
+.w0,
+.w0 {
   width: 0;
 }
 @for $i from 1 through $width-levels {
@@ -19,10 +20,10 @@
     width: #{100% * $i / $grid-columns};
   }
 }
-.w-100 {
+.w100 {
   width: 100%;
 }
 
-.w-auto {
+.wAuto {
   width: auto;
 }

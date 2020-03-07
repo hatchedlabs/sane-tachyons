@@ -1,9 +1,9 @@
 /* Border-radius:
-.br-100 = oval
-.br-pill = rounded rectangle
+.br100 = oval
+.brPill = rounded rectangle
 */
 
-.br-0 {
+.br0 {
   border-radius: 0;
 }
 @for $i from 1 through $border-radius-levels {
@@ -11,25 +11,25 @@
     border-radius: $border-radius-base * pow(2, ($i - 1));
   }
 }
-.br-100 {
+.br100 {
   border-radius: 100%;
 }
-.br-pill {
+.brPill {
   border-radius: 9999px;
 }
-.br-b {
+.brB {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-.br-t {
+.brT {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
-.br-r {
+.brR {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
-.br-l {
+.brL {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }

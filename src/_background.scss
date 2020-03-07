@@ -1,50 +1,56 @@
 /* Background repeat */
-[class^="bg-"], [class*=" bg-"] {
+[class^="bg-"],
+[class*=" bg-"] {
   background-repeat: no-repeat;
 }
 
-.bg-repeat {
+.bgRepeat {
   background-repeat: repeat;
 }
-.bg-no-repeat {
+.bgNoRepeat {
   background-repeat: no-repeat;
 }
 
 /* Background positions */
-.bg-tl {
+.bgTl {
   background-position: top left;
 }
-.bg-tc, .bg-t {
+.bgTc,
+.bgT {
   background-position: top center;
 }
-.bg-tr {
+.bgTr {
   background-position: top right;
 }
 
-.bg-cl, .bg-l {
+.bgCl,
+.bgL {
   background-position: center left;
 }
-.bg-cc, .bg-c {
+.bgCc,
+.bgC {
   background-position: center center;
 }
-.bg-cr, .bg-r {
+.bgCr,
+.bgR {
   background-position: center right;
 }
 
-.bg-bl {
+.bgBl {
   background-position: bottom left;
 }
-.bg-bc, .bg-b {
+.bgBc,
+.bgB {
   background-position: bottom center;
 }
-.bg-br {
+.bgBr {
   background-position: bottom right;
 }
 
 /* Background size */
-.bg-cover {
+.bgCover {
   background-size: cover;
 }
-.bg-contain {
+.bgContain {
   background-size: contain;
 }
