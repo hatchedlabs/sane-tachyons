@@ -2,6 +2,10 @@
   cursor: pointer;
 }
 
-.cursorDefault {
+.cursor-default {
   cursor: default;
+}
+
+.underline-hover:hover {
+  text-decoration: underline;
 }

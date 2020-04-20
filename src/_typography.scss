@@ -6,7 +6,7 @@
   }
 }
 
-.fontInherit {
+.font-inherit {
   font: inherit;
 }
 
@@ -57,58 +57,58 @@
 .upper {
   text-transform: uppercase;
 }
-.ttN {
+.tt-n {
   text-transform: none;
 }
 
-.lsNarrow {
+.ls-narrow {
   letter-spacing: $letter-spacing-narrow;
 }
-.lsNormal {
+.ls-normal {
   letter-spacing: $letter-spacing-normal;
 }
-.lsWide {
+.ls-wide {
   letter-spacing: $letter-spacing-wide;
 }
 
-.lhSolid {
+.lh-solid {
   line-height: $line-height-solid;
 }
-.lhTitle {
+.lh-title {
   line-height: $line-height-title;
 }
-.lhCopy {
+.lh-copy {
   line-height: $line-height-copy;
 }
 
-.wsNormal,
-.wsCollapseWrap {
+.ws-normal,
+.ws-collapse-wrap {
   white-space: normal;
 }
-.wsCollapseNowrap {
+.ws-collapse-nowrap {
   white-space: nowrap;
 }
-.wsWrap {
+.ws-wrap {
   white-space: pre-wrap;
 }
-.wsNowrap {
+.ws-nowrap {
   white-space: pre;
 }
 
 .hyphenate {
   hyphens: auto;
 }
-.doNotHyphenate {
+.do-not-hyphenate {
   hyphens: none;
 }
 
-.wrapLongWords {
+.wrap-long-words {
   overflow-wrap: break-word;
 }
-.doNotWrapLongWords {
+.do-not-wrap-long-words {
   overflow-wrap: normal;
 }
-.lineClamp {
+.line-clamp {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

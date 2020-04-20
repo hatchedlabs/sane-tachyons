@@ -3,7 +3,7 @@
   .difx => display: inline-flex;
    (they are in _display.scss)
 
-  .fxabc {
+  .fx-abc {
     flex: a b c;
     // a = flex-grow
     // b = flex-shrink
@@ -14,122 +14,153 @@
   b: {0, 1}
   c: {0, a} (where a is short for auto)
 */
-.fx11a {
+.fx-11a {
   flex: 1 1 auto;
   min-width: 1px; // flexbug #1
   min-height: 1px; // flexbug #1
 }
-.fx10a {
+.fx-10a {
   flex: 1 0 auto;
   min-width: 1px; // flexbug #1
   min-height: 1px; // flexbug #1
 }
-.fx01a {
+.fx-01a {
   flex: 0 1 auto;
   min-width: 1px; // flexbug #1
   min-height: 1px; // flexbug #1
 }
-.fx00a {
+.fx-00a {
   flex: 0 0 auto;
   min-width: 1px; // flexbug #1
   min-height: 1px; // flexbug #1
 }
-.fx110 {
+.fx-110 {
   flex: 1 1 0%; // 0% instead of 0: flexbug #4
 }
-.fx100 {
+.fx-100 {
   flex: 1 0 0%; // 0% instead of 0: flexbug #4
 }
-.fx010 {
+.fx-010 {
   flex: 0 1 0%; // 0% instead of 0: flexbug #4
 }
-.fx000 {
+.fx-000 {
   flex: 0 0 0%; // 0% instead of 0: flexbug #4
 }
 
-.fxCol {
-  flex-direction: column;
+.fx-grow-max {
+  flex-grow: 2147483647;
 }
-.fxColRev {
-  flex-direction: column-reverse;
-}
-.fxRowRev {
-  flex-direction: row-reverse;
-}
-.fxWrap {
-  flex-wrap: wrap;
-}
-.fxWrapRev {
-  flex-wrap: wrap-reverse;
+.fx-shrink-max {
+  flex-shrink: 2147483647;
 }
 
-.fxItemsStart {
+.fx-column {
+  flex-direction: column;
+}
+.fx-row {
+  flex-direction: row;
+}
+.fx-wrap {
+  flex-wrap: wrap;
+}
+.fx-nowrap {
+  flex-wrap: nowrap;
+}
+.fx-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+.fx-column-reverse {
+  flex-direction: column-reverse;
+}
+.fx-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.items-start {
   align-items: flex-start;
 }
-.fxItemsEnd {
+.items-end {
   align-items: flex-end;
 }
-.fxItemsCenter {
+.items-center {
   align-items: center;
 }
-.fxItemsBaseline {
+.items-baseline {
   align-items: baseline;
 }
-.fxItemsStretch {
+.items-stretch {
   align-items: stretch;
 }
 
-.fxSelfStart {
+.self-start {
   align-self: flex-start;
 }
-.fxSelfEnd {
+.self-end {
   align-self: flex-end;
 }
-.fxSelfCenter {
+.self-center {
   align-self: center;
 }
-.fxSelfBaseline {
+.self-baseline {
   align-self: baseline;
 }
-.fxSelfStretch {
+.self-stretch {
   align-self: stretch;
 }
 
-.fxJustifyStart {
+.justify-start {
   justify-content: flex-start;
 }
-.fxJustifyEnd {
+.justify-end {
   justify-content: flex-end;
 }
-.fxJustifyCenter {
+.justify-center {
   justify-content: center;
 }
-.fxJustifyBetween {
+.justify-between {
   justify-content: space-between;
 }
-.fxJustifyEvenly {
-  justify-content: space-evenly;
+.justify-around {
+  justify-content: space-around;
 }
 
-.fxContentStart {
+.content-start {
   align-content: flex-start;
 }
-.fxContentEnd {
+.content-end {
   align-content: flex-end;
 }
-.fxContentCenter {
+.content-center {
   align-content: center;
 }
-.fxContentBetween {
+.content-between {
   align-content: space-between;
 }
-.fxContentStretch {
+.content-around {
+  align-content: space-around;
+}
+.content-stretch {
   align-content: stretch;
 }
 
-.fxBefore {
+.order-first {
+  order: -1;
+}
+.order-0 {
+  order: 0;
+}
+.order-1 {
   order: 1;
 }
-.fxAfter {
+.order-2 {
   order: 2;
+}
+.order-3 {
+  order: 3;
+}
+.order-4 {
+  order: 4;
+}
+.order-last {
+  order: 99999;
 }

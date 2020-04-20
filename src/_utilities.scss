@@ -1,17 +1,17 @@
 /* Utilities */
-.hCenter {
+.h-center {
   margin-right: auto;
   margin-left: auto;
 }
 
-.mrAuto {
+.mr-auto {
   margin-right: auto;
 }
-.mlAuto {
+.ml-auto {
   margin-left: auto;
 }
 
-.absoluteCenter {
+.absolute-center {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -19,7 +19,7 @@
   transform: translate(-50%, -50%);
 }
 
-.absoluteFill {
+.absolute-fill {
   position: absolute;
   width: auto;
   height: auto;
@@ -29,19 +29,19 @@
   left: 0;
 }
 
-.pointerNone {
+.pointer-none {
   pointer-events: none;
 }
 
-.pointerAll {
+.pointer-all {
   pointer-events: all;
 }
 
 /* for creating custom focus states */
-.focus_noOutline:focus {
+.focus_no-outline:focus {
   outline: 0;
 }
 
-.noSelect {
+.no-select {
   user-select: none;
 }

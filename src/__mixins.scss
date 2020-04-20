@@ -1,0 +1,13 @@
+@mixin breakify($breakpoints, $default-only: false) {
+  @content;
+
+  @if $default-only == false {
+    @each $prefix, $condition in $breakpoints {
+      @media #{$condition} {
+        .#{$prefix}_ {
+          @content;
+        }
+      }
+    }
+  }
+}

@@ -1,6 +1,5 @@
 /* Max Width Scale */
-.mw0,
-.mw0 {
+.mw0, .mw-0 {
   max-width: 0;
 }
 @for $i from 1 through $max-width-levels {
@@ -20,11 +19,11 @@
     max-width: #{100% * $i / $grid-columns};
   }
 }
-.mw100 {
+.mw-100 {
   max-width: 100%;
 }
 
 /* Max Width String Properties */
-.mwNone {
+.mw-none {
   max-width: none;
 }
