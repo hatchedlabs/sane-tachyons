@@ -161,6 +161,9 @@ $width-levels: 7 !default;
 $max-width-base: 0.25rem !default;
 $max-width-levels: 10 !default;
 
+$min-width-base: 0.25rem !default;
+$min-width-levels: 7 !default;
+
 $border-radius-base: 0.0625rem !default;
 $border-radius-levels: 6 !default;
 
@@ -947,6 +950,34 @@ $border-width-levels: 5 !default;
 .w-12-12 { width: 100%; }
 .w-100 { width: 100%; }
 .w-auto { width: auto; }
+.nw0, .nw-0 { min-width: 0; }
+.nw1 { min-width: 0.25rem; }
+.nw1-5 { min-width: 0.375rem; }
+.nw2 { min-width: 0.5rem; }
+.nw2-5 { min-width: 0.75rem; }
+.nw3 { min-width: 1rem; }
+.nw3-5 { min-width: 1.5rem; }
+.nw4 { min-width: 2rem; }
+.nw4-5 { min-width: 3rem; }
+.nw5 { min-width: 4rem; }
+.nw5-5 { min-width: 6rem; }
+.nw6 { min-width: 8rem; }
+.nw6-5 { min-width: 12rem; }
+.nw7 { min-width: 16rem; }
+.nw-1-12 { min-width: 8.33333%; }
+.nw-2-12 { min-width: 16.66667%; }
+.nw-3-12 { min-width: 25%; }
+.nw-4-12 { min-width: 33.33333%; }
+.nw-5-12 { min-width: 41.66667%; }
+.nw-6-12 { min-width: 50%; }
+.nw-7-12 { min-width: 58.33333%; }
+.nw-8-12 { min-width: 66.66667%; }
+.nw-9-12 { min-width: 75%; }
+.nw-10-12 { min-width: 83.33333%; }
+.nw-11-12 { min-width: 91.66667%; }
+.nw-12-12 { min-width: 100%; }
+.nw-100 { min-width: 100%; }
+.nw-auto { min-width: auto; }
 
 /* Overflow */
 .overflow-visible { overflow: visible; }
