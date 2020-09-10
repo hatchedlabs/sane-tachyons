@@ -1,10 +1,10 @@
 {
-  "name": "ainsley",
+  "name": "sane-tachyons",
   "version": "4.1.0",
   "description": "Pragmatic functional CSS",
   "main": "index.js",
-  "repository": "https://github.com/tbjgolden/ainsley.git",
-  "author": "Tom Golden",
+  "repository": "https://github.com/hatchedlabs/sane-tachyons.git",
+  "author": "Sheldon 🐦",
   "license": "MIT",
   "private": false,
   "devDependencies": {
